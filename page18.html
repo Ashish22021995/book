@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 73</div>
+            <div class="pb-4 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    3. <b>In Quadratic Equations:</b> If the <b>sum of numerators</b> and the <b>sum of denominators</b>
+                    on both sides are
+                    equal, then 0 is one of the solutions. And, if the <b>difference between numerators and
+                        denominators</b> is
+                    equal on both sides, the solution is found by setting this difference to 0, which is another
+                    solution of the equation.
+                </p>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>ax+b</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">cx+d</div>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>px+q</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">rx+s</div>
+                    </div>
+                </div>
+                <p>Where, (p-r)=(a-c)and (b-d)=(s-q).</p>
+
+                <p class="mb-2">
+                    <b>Example: 1</b>
+                </p>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>2x+5</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">3x+2</div>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>5x+2</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">4x+5</div>
+                    </div>
+                </div>
+                <p>
+                    <strong>Steps: </strong>
+                </p>
+                <div>
+                    <p>
+                        Add numerators: (2x+5)+(5x+2)= 7x+7
+                    </p>
+                    <p>
+                        Add denominators: (3x+2)+(4x+5)= 7x+7
+                    </p>
+                    <p>
+                        Removing the constant term, the samuccaya x+1=0
+                    </p>
+                    <p>
+                        It is a sum of the numerator or denominator, (-1) is one root of the given equation.
+                    </p>
+                    <p>
+                        Also, difference between numerator and denominator (N1 – D1) = (N2 – D2) = 0
+                    </p>
+                    <p>
+                        Difference between N1 & D1: (2x+5)-(3x+2)= -x+3=-(x-3)
+                    </p>
+                    <p>
+                        Difference between N2 & D2: (5x+2)-(4x+5)= x-3
+                    </p>
+                    <p>
+                        Here, Samuccaya is –(x-3), therefore 3 is another root of the equation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    4. <b>In Special Cubic Equations:</b> When the sum of terms in a cube equation (on either side)
+                    matches,
+                    the <span class="spectral">Samuccaya</span> is the common term. The solution is found by setting
+                    this term to zero.
+                </p>
+                <p class="mb-2">
+                    Example: (x-a)<sup>3</sup>+(x-b)<sup>3</sup>=2(x-c)<sup>3</sup> implies the Samuccaya is x-c and the solution is x=c.
+                </p>
+                
+                <p>
+                    Solve: (x-1)<sup>3</sup>+(x-5)<sup>3</sup>=2(x-4)<sup>3</sup>
+                </p>
+                <div>
+                    <p>1.	Expand and simplify:</p>
+                    <div class="ml-10">
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>(x-1)<sup>3</sup>+(x-5)<sup>3</sup>=2(x-4)<sup>3</sup></p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>	x-4 (neglecting the constant term) is common across the terms.</p>
+                        </div>
+                    </div>
+                    <p>2.   The Samuccaya is x-4=0. </p>
+                    <p>3.	Solution: x=4 is the root of the given equation.</p>
+                </div>
+
+                <p class="mb-2">
+                    <b>Example: </b>Calculating Equilibrium Concentrations
+                </p>
+                <p class="mb-2">
+                    <b>Problem:</b>At equilibrium, the concentrations of species in a reaction are governed by the equation:
+                </p>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>[A]<sup>2</sup></div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">[B][c]</div>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>[D]<sup>3</sup></div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">[E]<sup>2</sup></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

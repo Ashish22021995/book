@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 71</div>
+            <div class="pb-4 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-16 rounded-lg">
+                <p class=" text-justify"><span class="spectral">Parāvartya Yojayet</span> simplifies
+                    complex operations like division, equation solving, and partial fraction decomposition by using
+                    transposition and sign reversal. Its logical structure supports accurate and efficient
+                    problem-solving in scientific applications such as dilution calculations, gas laws, and polynomial
+                    breakdowns that make it a powerful tool for algebraic reasoning in chemistry and related fields.
+                </p>
+            </div>
+
+            <div class="mb-4 px-2 text-center">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 5. Shunyam Sämyasamuchchaye (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        शून्यं साम्यसमुच्चये
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> If the samuchchaya is the same, it is zero.
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Use:</strong> This sutra is used to determine those numbers which is common to all, that
+                    must be equal to zero. This may be used in the following ways.
+                </p>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    1. <b>In Simple Equations:</b> The <span class="spectral">Samuccaya</span> is the common factor or
+                    sum
+                    of terms that appear in
+                    all parts of the equation. The solution is often found by setting this factor to zero.
+                </p>
+                <p class="mb-2">
+                    Example: If az+b=cz+d, then z is the <span class="spectral">Samuccaya</span>, and the solution is z
+                    = 0.
+                </p>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">The fifth sutra of Vedic Mathematics, <span class="spectral">Shunyam
+                        Sāmyasamuchchaye</span>, introduces
+                    a principle rooted in the idea of balance and equivalence. It suggests that if there is a common
+                    aggregate or expression (called <span class="spectral">samuccaya</span>) across both sides of an
+                    equation or within its
+                    components, then that common element can be equated to zero to simplify the problem. This sutra is
+                    especially valuable in identifying hidden patterns and simplifying complex equations without the
+                    need for extensive algebraic treatment. This sutra is applied in various contexts such as linear
+                    equations, partial fractions, quadratic and cubic expressions. It helps identify symmetries or
+                    repeated structures within equations and uses that repetition as a tool to deduce a solution
+                    quickly.
+                </p>
+                <p class="text-justify">Within scientific fields such as chemistry, <span class="spectral">Shunyam
+                        Sāmyasamuchchaye</span> supports
+                    efficiency in analyzing relationships among variables, especially in equilibrium-based calculations.
+                    In problems involving ratios of concentrations, partial pressures, or chemical equations where
+                    symmetric expressions appear on both sides. By fostering an ability to recognize patterns and apply
+                    logic over rote operations, <span class="spectral">Shunyam Sāmyasamuchchaye</span> empowers learners
+                    to solve complex problems
+                    with clarity and confidence, both in pure mathematics and scientific applications.
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

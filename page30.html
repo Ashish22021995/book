@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 85</div>
+            <div class="mb-4 px-2 text-[#3F4F44]">
+                <div class="mb-4">
+                    <p class="">
+                        <strong>Use:</strong> This sutra is used in the following two cases.
+                    </p>
+                    <p>(i) To find the roots of a quadratic.</p>
+                    <p>(ii) To factorize higher-degree polynomials, such as those of 3rd, 4th, and 5th degrees.</p>
+                </div>
+                <p class="mb-1"><b>Key Concept for Chalana-kalanabhyam</b></p>
+                <p class="mb-1">Using the sutra, the <b>discriminant</b> (Δ) of a standard quadratic equation ax^2+bx+c=0 can be
+                    calculated as:</p>
+                <p class="text-center">∆ = b <sup>2</sup> - 4ac</p>
+                <p class="mb-1">Once the discriminant is found, the roots of the quadratic equation can be determined using the
+                    calculus-derived formula:</p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">dy</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">dx</div>
+                    </div>
+                    <div>(ax <sup>2</sup> + bx + c) = ±√∆</div>
+                </div>
+                <p class="mb-4">
+                    This process breaks the quadratic equation into two linear equations, which can be solved to find
+                    the roots.
+                </p>
+                <p class="mb-1"><b>Key Concept for Higher-Degree Polynomials</b></p>
+                <p>There is a relationship between the <b>factorization</b> of higher-degree polynomials (e.g., 3rd,
+                    4th, or
+                    5th degree) and <b>differential calculus</b>. By differentiating the polynomial, you can
+                    systematically
+                    identify roots, simplify the expression, and break it into smaller factors.</p>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2  rounded-lg">
+                <p class="text-justify mb-4">The ninth sutra of Vedic Mathematics, <span
+                        class="spectral">Chalana-kalanābhyām</span>, is a dynamic
+                    technique that draws upon the principles of motion and change concepts, foundational to differential
+                    calculus. This sutra demonstrates the deep interconnection between algebra and calculus by enabling
+                    the factorization of quadratic and higher-degree polynomials through the use of derivatives and
+                    discriminants. It brings out the elegance of solving algebraic expressions by focusing on how
+                    quantities vary, thus transforming abstract operations into more intuitive and manageable processes.
+                    Additionally, the sutra proves instrumental in factorizing cubic and quadratic polynomials by
+                    identifying roots through derivatives and successive simplification.
+                </p>
+                <p class="text-justify">The utility of this sutra extends seamlessly into scientific contexts, where
+                    many relationships are governed by quadratic or exponential functions. For instance, in reaction
+                    kinetics, <span class="spectral">Chalana-kalanābhyām</span> aids in solving the Arrhenius equation, a cornerstone in determining
+                    activation energy. Similarly, the sutra proves effective when working with equilibrium expressions
+                    that yield quadratic relationships, such as in dissociation reactions or concentration-based
+                    problems in chemical equilibrium. By applying the principles of differentiation and factorization,
+                    the sutra simplifies complex numerical computations, leading to faster and more accurate analytical
+                    insights.
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

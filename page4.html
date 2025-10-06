@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 59</div>
+            <div class="mb-4 px-2 text-center">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra 1. Ekādhikena Pürvena (एकािधके न पूवőण)
+                </p>
+                <p class="text-[#8D5F8C]">
+                    <strong>Meaning:</strong> By one more than the one before.
+                </p>
+                <p class="text-[#8D5F8C]">
+                    <strong>Use:</strong> This sutra is used to get the next number to a given number.
+                </p>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#FFF1F1] to-[#DDC3C3] px-2 mb-4 rounded-lg">
+                <p class="mb-4 text-justify">
+                    The first sutra of Vedic Mathematics, <span class="spectral">Ekādhikena Pūrvena</span>, is a
+                    powerful mental tool that
+                    translates to "by one more than the previous one." This concise yet profound principle is
+                    primarily used for rapid calculations, particularly when finding the square of numbers ending in
+                    5. In mathematics, this sutra enables learners to square the numbers like 25, 35, or 95 instantly,
+                    without needing paper or calculators. The simplicity of multiplying the preceding digit by its
+                    successor and appending "25" at the end transforms the way students approach squaring
+                    problems.
+                </p>
+                <p class="text-justify">Beyond pure mathematics, <span class="spectral">Ekādhikena Pūrvena</span> finds
+                    practical value in science as well. In
+                    chemistry, where accurate calculations of quantities such as theoretical and percentage yields are
+                    critical, this sutra can simplify steps when squaring values is required, like estimating squared
+                    values in molar mass comparisons, energy levels, or yield-based computations. This method
+                    eliminates complexity, allowing students to focus on interpreting the results rather than being
+                    slowed down by computation. Thus, this sutra not only sharpens arithmetic skills but also
+                    supports faster, more confident problem-solving in scientific contexts for enhancing numerical
+                    fluency where precision and speed are essential.
+                </p>
+            </div>
+            <div class="pb-4 bg-gradient-to-r from-[#E7F2EF] to-[#CBDCEB] px-2 mb-4 rounded-lg">
+                <p>
+                    <strong>Example:</strong> To get the next number to 16, Add 1 to 16, thus next number = 16 + 1 = 17.
+                </p>
+                <p>
+                    This sutra is particularly useful in finding the square of a number that ends with 5.
+                </p>
+                <p>
+                    Let's take <strong>25²</strong> as an example:
+                </p>
+                <p>
+                    <strong>Step 1:</strong> Observe the first digit(s) of the number before the 5. For 25, the first
+                    digit is <strong>2</strong>.
+                </p>
+                <p>
+                    <strong>Step 2:</strong> Add 1 to this digit <strong>2</strong>. This gives <strong>3</strong>.
+                </p>
+                <strong>Step 3: </strong> Multiply the original digit (2) by the number you obtained in Step 2 (3).
+                </p>
+                <p class="ps-[50px]">
+                    This gives 2 × 3 = 6
+                </p>
+                <p>
+                    <strong>Step 4:</strong> Write "25" at the end of this product. Hence, 252 = 625
+                </p>
+            </div>
+
+            <p class="spectral font-bold mb-4">Application of Ekādhikena Pürvena in Chemistry: Calculating Reaction
+                Yield</p>
+
+            <div class="pb-4 bg-gradient-to-r from-[#EEEEEE] to-[#EFF5D2] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4">
+                    <strong>Problem:</strong> A chemical reaction produces 15.5 grams of a compound. Suppose the
+                    theoretical
+                    yield of the compound is given as 252
+                    grams. Use the <span class="spectral">Ekādhikena Pürvena</span> sutra to quickly
+                    calculate the theoretical yield and determine the percentage yield of the reaction.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+
+</body>
+
+</html>

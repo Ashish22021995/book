@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="page-number">Part 1: Theoretical Overview | 57</div>
+        <div class="bg-gradient-to-r from-orange-50 to-amber-50 px-2 mb-4 rounded-lg">
+            <p class="text-indigo-700 font-bold mb-4">
+                SUTRA OF VEDIC MATHEMATICS STRATEGIES AND ITS APPLICATION
+            </p>
+
+            <p class="pb-4 text-justify">
+                The <span class="math-columbia text-red-500">Vedic Mathematics strategies</span> are a collection of techniques and
+                principles derived from
+                ancient Indian texts, designed to simplify complex mathematical calculations. It encompasses a
+                unique set of sutras (aphorisms) and sub-sutras that guide quick and efficient problem-solving
+                across arithmetic, algebra, geometry, and calculus. This framework emphasizes intuitive methods
+                and mental strategies, allowing learners to solve equations and perform computations without the
+                need for extensive written work. Its applicability spans academic learning, competitive exams,
+                and even daily calculations, making it a versatile tool for improving mathematical proficiency.
+                The foundation of this system lies in its ability to break down intricate problems into manageable
+                steps, fostering both speed and accuracy. To illustrate the application of Vedic Mathematics
+                sutras in a scientific context, let us explore an example that demonstrates how these principles
+                can simplify complex calculations and enhance problem-solving efficiency. The 16 sutras of
+                Vedic mathematics are given below with its meaning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+
+</body>
+
+</html>

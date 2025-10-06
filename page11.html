@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 66</div>
+            <p class="spectral font-bold mb-4">Application of the Sutra in Chemistry: Determining the Number of Ions in
+                a Sample</p>
+
+            <div class="pb-4 bg-gradient-to-r from-[#F8ED8C] to-[#F6F0F0] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4 text-justify">
+                    <strong>Problem:</strong> A sample contains 42 g of sodium chloride (NaCl). The molar mass of NaCl
+                    is
+                    58.5 g/mol. Determine the total number of sodium (Na⁺) and chloride (Cl⁻) ions in the sample
+                    using Avogadro's number. Simplify the calculation by using 42×102, where 102 represents
+                    2×6.022×1023 divided by 58.5.
+                </p>
+                <p class="font-bold mb-4">
+                    Solution:
+                </p>
+                <div class="ps-5">
+                    <div>
+                        <div>
+                            1.<strong> Given Values:</strong>
+                        </div>
+                        <div class="ms-12">
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p>Mass of NaCl: 42 g</p>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p>Simplified multiplier for ions: 102 (double the number of moles, since NaCl
+                                    <br>dissociates into two ions).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        2. <strong>Apply the Sutra to Calculate 42×102:</strong>
+                    </p>
+                    <div class="ms-12">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Write the numbers: 42 and 102.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p><b>Step 1:</b> Multiply the unit digits: <br><span class="ml-12">2×2=4. Write 4 in the
+                                    unit's place, with no carry-over.</span></p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p><b>Step 2:</b> Multiply crosswise: <br><span class="ml-12">(4×2) + (2×0) = 8. Write 8 in
+                                    the tens place, with no carry-over.</span></p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p><b>Step 3:</b> Multiply the tens digits: 4×1=4. Write 4 in the hundreds place.</p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Combine the results: 4284.</p>
+                        </div>
+                    </div>
+                    <p>
+                        3. <strong>Interpretation:</strong> The total number of ions in the sample is approximately:
+                        4.284×1023 ions.
+                    </p>
+                    <p class="pl-4">
+                        Complement (Unreacted mass) = <strong>3258 mg</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-16 rounded-lg">
+                <p class=" text-justify"><span class="spectral">Urdhva-tiryagbhyam</span> provides a structured and
+                    efficient method for multiplying
+                    numbers of any
+                    size using vertical and crosswise steps. Its visual approach simplifies large or complex
+                    multiplications, making it especially valuable in scientific calculations involving molecular
+                    quantities, conversions, and constants supporting speed, accuracy, and confidence in data
+                    handling.
+                </p>
+            </div>
+
+            <div class="mb-4 px-2 text-center">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 4. Parävartya Yojayet (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        परावर्त्य योजयेत्
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> Transpose and apply.
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Use:</strong> This sutra simplifies various types of mathematical operations by "transposing
+                    and
+                    applying." It is useful in divisions, solving equations, and transforming expressions by
+                    rearranging and reversing signs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

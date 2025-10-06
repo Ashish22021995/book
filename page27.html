@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 82</div>
+            <div class="pb-4 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <b>Example 1: Find x-y, if x+y=12 and xy=35</b>
+                </p>
+                <div>
+                    <p>
+                        <b>Step 1:</b> Use the identity for the square of a difference:
+                    </p>
+                    <p class="math-columbia text-center">(x - y) <sup>2</sup> = (x + y) <sup>2</sup> - 4xy</p>
+                    <p>
+                        <b>Step 2:</b> Substitute the given values:
+                    </p>
+                    <p class="math-columbia text-center">(x - y) <sup>2</sup> = (12) <sup>2</sup> - 4×35</p>
+                    <p class="math-columbia text-center">(x - y) <sup>2</sup> = 144 - 140 = 4</p>
+                    <p>
+                        <b>Step 3:</b> Solve for x-y
+                    </p>
+                    <div class="math-columbia flex gap-2 items-center justify-center">
+                        <div>(x - y) =</div>
+                        <div class="flex flex-col items-center leading-[0.5]">
+                            <span>+</span>
+                            <span>-</span>
+                        </div>
+                        <div>√4</div>
+                    </div>
+                    <div class="math-columbia flex gap-2 items-center justify-center">
+                        <div>x - y =</div>
+                        <div class="flex flex-col items-center leading-[0.5]">
+                            <span>+</span>
+                            <span>-</span>
+                        </div>
+                        <div>2</div>
+                    </div>
+                </div>
+
+                <p class="mb-2">
+                    <b>Example 2: Solve the equation </b>
+                </p>
+                <p class="math-columbia text-center">
+                    x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6 = 0
+                </p>
+                <div>
+                    <p>
+                        <b>Step 1:</b> Look for ways to rewrite the equation as a perfect cube. Notice that:
+                    </p>
+                    <p class="math-columbia text-center">x <sup>3</sup> + 6x <sup>2</sup> + 12x + 8 = (x + 2)
+                        <sup>3</sup>
+                    </p>
+                    <p>
+                        <b>Step 2:</b> Modify the given equation to match this form:
+                    </p>
+                    <p class="math-columbia text-center">x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6 + (x + 2) = (x + 2)
+                        <sup>3</sup>
+                    </p>
+                    <p>Simplify:</p>
+                    <p class="math-columbia text-center">x <sup>3</sup> + 6x <sup>2</sup> + 12x + 8 = (x + 2)
+                        <sup>3</sup>
+                    </p>
+                    <p>
+                        <b>Step 3:</b> Factorize:
+                    </p>
+                    <p class="math-columbia text-center">(x + 2) <sup>3</sup> - (x + 2) = 0</p>
+                    <p>Factor further:</p>
+                    <p class="math-columbia text-center">(x + 2) ((x + 2) <sup>2</sup> - 1) = 0</p>
+                    <p>
+                        <b>Step 4:</b> Solve each factor:
+                    </p>
+                    <div class="math-columbia ml-12">
+                        <p>1. x + 2 = 0, gives x = -2</p>
+                        <div>
+                            <p>2. (x+2) <sup>2</sup> = 1</p>
+                            <div class="ml-10">
+                                <div class="flex items-end">
+                                    <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                    <div class="math-columbia flex gap-2 items-center justify-center">
+                                        <div>x + 2 =</div>
+                                        <div class="flex flex-col items-center leading-[0.5]">
+                                            <span>+</span>
+                                            <span>-</span>
+                                        </div>
+                                        <div>1</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-end">
+                                    <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                    <p> x = -1, and x = -3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b>Solution:</b> <span class="flex justify-center">x = -2, x = -1, x = -3</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Example: Determining Mole Ratios in a Reaction</b>
+                </p>
+                <p class="mb-2">
+                    <b>Problem:</b>In a reaction:
+                </p>
+                <p class="text-center math-columbia">
+                    xA + yB → zC
+                </p>
+                <p>
+                    The mole ratio of reactants A and B is given as x+y=10, and the product C is formed in such a way
+                    that the product of x and y equals 21 (i.e., xy = 21). Determine the values of x and y.
+                </p>
+                <p>
+                    <b>Solution:</b>
+                </p>
+                <p><b>Step 1: Use the identity for the square of a sum or difference</b></p>   
+            </div>
+
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

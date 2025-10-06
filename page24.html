@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 79</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(45x-23y)+(23x-45y)=113+91</p>
+                    <p>(45x+23x)+(-23y-45y)= 204</p>
+                    <p>68x-68y= 204</p>
+                    <div class="flex items-center gap-2">
+                        <div>x - y =</div>
+                        <div class="flex flex-col items-center">
+                            <div>204</div>
+                            <div class="h-px bg-black w-12 mt-2"></div>
+                            <div class="-mt-3">68</div>
+                        </div>
+                        <div>= 3 ... ...(iii)</div>
+                    </div>
+                </div>
+                
+                <p><b>Step 2: Subtract the equations</b></p>
+                <p>Subtract equation (ii) from equation (i):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(45x-23y)-(23x-45y)=113-91</p>
+                    <p>(45x-23x)+(-23y+45y)= 22</p>
+                    <p>22x+22y= 22</p>
+                    <div class="flex items-center gap-2">
+                        <div>x + y =</div>
+                        <div class="flex flex-col items-center">
+                            <div>22</div>
+                            <div class="h-px bg-black w-12 mt-2"></div>
+                            <div class="-mt-3">22</div>
+                        </div>
+                        <div>= 1 ... ...(iv)</div>
+                    </div>
+                </div>
+
+                <p><b>Step 3: Solve the simplified equations</b></p>
+                <p>From equations (iii) and (iv):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>x - y = 3</p>
+                    <p>x + y = 1</p>
+                </div>
+                <p><b>Adding these equations:</b></p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2x = 4 ⇒ x = 2</p>
+                </div>
+                <p><b>Subtracting these equations:</b></p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2y = -2 ⇒ y = -1</p>
+                </div>
+                <p><b>Solution:</b></p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>x = 2,   y = -1</p>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-0 rounded-lg">
+                <p class="mb-2">
+                    <b>Example 2: Solve the system of equations:</b>
+                </p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>21x - 14y = 77 ... ...(i)</p>
+                    <p>14x - 21y = 49 ... ...(ii)</p>
+                </div>
+                <p><b>Step 1: Add the equations</b></p>
+                <p>Adding equations (i) and (ii):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(21x-14y)+(14x-21y)=77+49</p>
+                    <p>35x-35y= 126</p>
+                    <div class="flex items-center gap-2">
+                        <div>x - y =</div>
+                        <div class="flex flex-col items-center">
+                            <div>126</div>
+                            <div class="h-px bg-black w-12 mt-2"></div>
+                            <div class="-mt-3">35</div>
+                        </div>
+                        <div>= 3.6 ... ...(iii)</div>
+                    </div>
+                </div>
+                <p><b>Step 2: Subtract the equations</b></p>
+                <p>Subtract equation (ii) from equation (i):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(21x-14y)-(14x-21y)=77-49</p>
+                    <p>7x+7y= 28</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

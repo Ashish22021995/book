@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 88</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem: Solving for Equilibrium Concentrations in a Reaction</b>
+                </p>
+                <p class="">
+                    In the dissociation reaction:
+                </p>
+                <p class="text-center math-columbia">
+                    A<sub>2</sub> ⇌ 2A
+                </p>
+                <p>
+                    The equilibrium constant at a given temperature is <span class="math-columbia">K <sub>c</sub> =
+                        10</span>. Initially, the concentration
+                    of <span class="math-columbia">A<sub>2</sub></span> is
+                    1.0 M, and there is no A present ([A] = 0).
+                </p>
+                <p>
+                    Solve for:
+                </p>
+                <p>
+                    1. x, the amount of <span class="math-columbia">A<sub>2</sub></span> dissociated,
+                </p>
+                <p class="mb-2">
+                    2. The equilibrium concentrations of <span class="math-columbia">A<sub>2</sub></span> and <span
+                        class="math-columbia">A</span>.
+                </p>
+                <p>
+                    Consider a reaction:
+                </p>
+                <p class="text-center math-columbia">
+                    A<sub>2</sub> ⇌ 2A
+                </p>
+                <p>
+                    The equilibrium constant <span class="math-columbia">K <sub>c</sub></span> for this reaction at a
+                    given temperature is <span class="math-columbia">K <sub>c</sub> =
+                        10</span>.
+                </p>
+                <p>
+                    Initially, <span class="math-columbia">[A<sub>2</sub>] = 1 M and [A] = 0.</span> At equilibrium,
+                </p>
+                <p>
+                    Let <span class="math-columbia">x</span> be the amount of <span
+                        class="math-columbia">A<sub>2</sub></span> dissociated. The equilibrium concentrations are:
+                </p>
+                <div class="ml-7 math-columbia">
+                    <div class="flex items-end">
+                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                        <p>[A<sub>2</sub>] = 1 − x,</p>
+                    </div>
+                    <div class="flex items-end">
+                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                        <p>[A] = 2x.</p>
+                    </div>
+                </div>
+                <p>
+                    Using the equilibrium expression:
+                </p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>A<sub>2</sub> =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">[A] <sup>2</sup></div>
+                        <div class="h-px bg-black w-10 mt-3"></div>
+                        <div class="-mt-2">[A<sub>2</sub>]</div>
+                    </div>
+                </div>
+                <p>
+                    Substitute the values:
+                </p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>10 =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">(2x) <sup>2</sup></div>
+                        <div class="h-px bg-black w-10 mt-3"></div>
+                        <div class="-mt-2">(1 - x)</div>
+                    </div>
+                </div>
+                <p class="math-columbia text-center">
+                    10 - 10x = 4x <sup>2</sup>
+                </p>
+                <div class="ml-10">
+                    <p class="ml-4">Rearrange into standard form:</p>
+                    <p class="math-columbia text-center">
+                        4x <sup>2</sup> + 10x -10 = 0
+                    </p>
+                    <p>1. <b>Find the Derivative:</b> Differentiate the polynomial:</p>
+                    <p class="math-columbia text-center">
+                        f (x) = 4x <sup>2</sup> + 10x - 10
+                    </p>
+                    <p class="math-columbia text-center">
+                        f <span class="font-bold"><sup>'</sup></span>(x) = 8x + 10
+                    </p>
+                    <p>
+                        2. <b>Solve Using Chalana-kalanabhyam:</b> Use the discriminant to find the roots of the
+                        quadratic:
+                    </p>
+                    <p class="math-columbia text-center">
+                        ∆ = b <sup>2</sup> - 4ac
+                    </p>
+                    <p class="ml-4">
+                        Where a = 4, b = 10, c = −10.
+                    </p>
+                    <p class="math-columbia text-center">
+                        ∆ = b <sup>2</sup> - 4ac = 10 <sup>2</sup> - 4 (4) (-10) = 100 + 160 = 260
+                    </p>
+                    <p class="ml-4">
+                        The roots are:
+                    </p>
+                    <div class="math-columbia flex gap-1 justify-center items-center">
+                        <div>x =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">- b ± √∆</div>
+                            <div class="h-px bg-black w-12 mt-3"></div>
+                            <div class="-mt-2">2a</div>
+                        </div>
+                    </div>
+                    <div class="math-columbia flex gap-1 justify-center items-center">
+                        <div>x =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">- 10 ± √260</div>
+                            <div class="h-px bg-black w-12 mt-3"></div>
+                            <div class="-mt-2">2 x 4</div>
+                        </div>
+                        <div>=</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">- 10 ± 16.12</div>
+                            <div class="h-px bg-black w-12 mt-3"></div>
+                            <div class="-mt-2">8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

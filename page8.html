@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 63</div>
+            <div class="pb-4 bg-gradient-to-r from-[#C0C9EE] to-[#EBD6FB] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">The third sutra of Vedic Mathematics, <span
+                        class="spectral">Urdhva-tiryagbhyam</span>, meaning “vertically
+                    and crosswise,”
+                    introduces a unique and efficient method of multiplication. This sutra enables quick computation
+                    by organizing the multiplication process into vertical and diagonal (crosswise) steps. This sutra
+                    offers a more visual and organized approach that minimizes error and streamlines the steps
+                    involved. It supports multiplication of numbers of any length by breaking down the problem into
+                    manageable parts and following a consistent structure.
+                </p>
+                <p class="text-justify">In scientific contexts such as chemistry, where large numbers and constants like
+                    Avogadro’s
+                    number are commonly involved, <span class="spectral">Urdhva-tiryagbhyam</span> becomes particularly
+                    useful. Calculations
+                    related to moles, molecular quantities, and conversions often require multiplying large or
+                    multidigit numbers. It allows for quick approximations and accurate results in problem-solving
+                    scenarios, making it an effective strategy for enhancing computational fluency in science-based
+                    applications. Ultimately, <span class="spectral">Urdhva-tiryagbhyam</span> strengthens the ability
+                    of a learner to handle
+                    complex multiplications with confidence and ease, both in mathematics and in scientific
+                    disciplines where numerical reasoning is essential.
+
+                </p>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#F9F3EF] to-[#D9A299] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4">
+                    <strong>Steps to Apply:</strong>
+                </p>
+                <p>
+                    <strong>Step 1: Align the digits</strong> of the numbers to be multiplied.
+                </p>
+                <p>
+                    <strong>Step 2:</strong> Multiply digits <b>vertically</b> and <b>crosswise</b>, adding results when
+                    necessary.
+                </p>
+                <p>
+                    <strong>Step 3:</strong> Write the results step by step, ensuring the correct placement of digits
+                    for each step.
+                </p>
+            </div>
+
+            <p class="spectral text-[#0B1D51] mb-2">
+                This method works for numbers of any size but is most commonly illustrated with two-digit
+                numbers.
+            </p>
+
+            <div class="pb-4 bg-gradient-to-r from-[#FEEBF6] to-[#FFE3BB] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4">
+                    <strong>Example 1: Multiply 23 × 12</strong>
+                </p>
+                <div class="ps-5 mb-4">
+                    <p>
+                        1. <b>Write the numbers:</b> 23 and 12.
+                    </p>
+                    <p>
+                        2. <b>Steps:</b>
+                    </p>
+                    <ul class="pl-12 space-y-1">
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply the <b>unit digits</b>: 3×2=6. Write 6 in the unit's place.</p>
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply <b>crosswise</b>: (2×2)+(3×1)=4+3=7. Write 7 in the tens place.</p>
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply the <b> tens digits</b>: 2×1=2. Write 2 in the hundreds place. </p>
+                        </li>
+                    </ul>
+                    <p class="">
+                        3. <b>Result</b> Combine the digits: 276.
+                    </p>
+                </div>
+                <p class="mb-4">
+                    <b>Another way to understand this sutra</b>
+                </p>
+                <p class="mb-2">
+                    Suppose one has to multiply 13 × 12.
+                </p>
+                <p>
+                    Here we can get the answer after the completion of 3 steps only.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

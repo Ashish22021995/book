@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 68</div>
+            <div class="pb-4 bg-gradient-to-r from-[#D1F8EF] to-[#CCDF92] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4">
+                    <strong>Example: Solve <span class="math-columbia">8x+3=5x+6</span></strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        1. Rearrange: <span class="math-columbia">8x − 5x = 6 − 3</span> (transpose terms and reverse
+                        signs).
+                    </p>
+                    <p>
+                        2. Simplify: <span class="math-columbia">3x = 3</span>.
+                    </p>
+                    <p>
+                        3. Solve: <span class="math-columbia">x = 3/3 = 1</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#CCDF92] to-[#EAFAEA] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <strong>3. Polynomial Division</strong>
+                </p>
+                <p class="mb-2">
+                    <strong>Steps to Apply:</strong>
+                </p>
+                <p>
+                    1. Write the polynomial division in synthetic form.
+                </p>
+                <p>
+                    2. Keep the leading coefficient as it is, and reverse the signs of subsequent coefficients
+                    based on <br><span class="ms-4">the divisor.</span>
+                </p>
+                <p>
+                    3. Solve step-by-step until all terms are divided.
+                </p>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#EAFAEA] to-[#DAD2FF] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4">
+                    <strong>Example: Divide x<sup>3</sup>−7x2 + 41x−35 by x−1</strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        1. <b>Divisor:</b> x−1 → Transform by keeping the sign of 1 as it is.
+                    </p>
+                    <div>
+                        <div>2. Write coefficients of the polynomial:</div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>[1, −7, 41, −35]. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>3. Perform synthetic division:</div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>The first coefficient (1) remains the same. [1, −7, 41, −35].</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>Multiply 1×1 and add to −7: −7+1= −6.</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>Multiply −6×1 and add to 41: 41−6=35.</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>Multiply 35×1 and add to −35: −35+35=0.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>4. <b>Result:</b></div>
+                        <div class="flex ml-8 items-end">
+                            <span class="mr-2 text-green-600">✔</span>
+                            <p>Quotient: Q=x<sup>2</sup>−6x+35,</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <span class="mr-2 text-green-600">✔</span>
+                            <p>Remainder: R=0.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-4 bg-gradient-to-r from-[#D1F8EF] to-[#F5F5F5] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <strong>4. Solving Partial Fractions</strong>
+                </p>
+                <p class="mb-2">
+                    <strong>Steps to Apply:</strong>
+                </p>
+                <div class="flex items-center gap-2">
+                    <div>
+                        1. Break the given fraction into partial fractions of the form
+                    </div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>A</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">x - a</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>B</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">x - b</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>C</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">x - c</div>
+                    </div>
+                </div>
+                <p>
+                    2. Use the sutra to find A, B, and C by substituting the roots of x=a,b,c into the equation.
+                </p>
+                <p>
+                    3. Simplify to find values.
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

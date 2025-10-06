@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+    <style>
+
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 65</div>
+            <div class="pb-4 bg-gradient-to-r from-[#FFDBDB] to-[#EFEEEA] text-justify mb-4 px-2 rounded-lg">
+                <p class="mb-4">
+                    <strong>Example 3: Multiply 123 × 45 (Three-digit × Two-digit)</strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        1. <b>Write the numbers:</b> 123 and 45.
+                    </p>
+                    <p>
+                        2. <b>Steps:</b>
+                    </p>
+                    <ul class="pl-12 space-y-1">
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply the <b>unit digits</b>: 3×5=15. Write 5 and carry over 1.</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply <b>crosswise</b>: (2×5) + (3×4)=10+12=22. Add the carry-over 1: 22+1=23.
+                                <br>Write 3 and carry over 2.
+                            </p>
+
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply crosswise again with the remaining digits: <br>(1×5) + (2×4) + (5×0) = 5 + 8 + 0
+                                = 13.</p>
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Add the carry-over 2: 13+2=15. Write 5 and carry over 1.</p>
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Multiply the <b>leftmost digits vertically</b>: 1×4=4. Add the carry-over 1: 4+1=5.</p>
+                        </li>
+                    </ul>
+                    <p class="">
+                        3. <b>Result</b> Combine the digits: 5535.
+                    </p>
+                </div>
+            </div>
+            <p class="spectral font-bold mb-4">Application of Urdhva-tiryagbhyam in Chemistry: Number of Molecules in a
+                Compound</p>
+
+            <div class="pb-4 bg-gradient-to-r from-[#F8ED8C] to-[#F6F0F0] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-4 text-justify">
+                    <strong>Problem:</strong> A laboratory sample contains 34g of water (H₂O). The molar mass of water
+                    is
+                    18g/mol. Calculate the total number of water molecules in the sample using 34×56, where 56
+                    represents Avogadro's constant in simplified form (6.022×1023) divided by 18.
+                </p>
+                <p class="font-bold mb-4">
+                    Solution:
+                </p>
+                <div class="ps-5">
+                    <div>
+                        <div>
+                            1.<strong> Given Values:</strong>
+                        </div>
+                        <div class="ms-12">
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p>Mass of water: 34 g</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p>Simplified value for (Avogadro’s constant)/(Molar Mass) = 56</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        2. <strong>Apply the Sutra to Calculate 34×56:</strong>
+                    </p>
+                    <div class="ms-12">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Write the numbers: 34 and 56.</p>
+                        </div>
+                    </div>
+                    <p class="ms-4">
+                        <strong>Step-by-Step Multiplication Using the Sutra:</strong>
+                    </p>
+                    <div class="ms-12">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p><b>Step 1:</b> Multiply the unit digits: 4×6=24. Write 4 in the unit's place. Carry over 2.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p><b>Step 2:</b> Multiply crosswise: (3×6)+(4×5)=18+20=38. <br ><span class="ms-12">Add the carry-over 2: 38+2=40. Write 0 in the tens place and carry over 4.</span></p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p><b>Step 3:</b> Multiply the tens digits: 3×5=15. Add the carry-over 4: 15+4=19.</p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Combine the results: 1904.</p>
+                        </div>
+                    </div>
+                    <p>
+                        3. <strong>Interpretation:</strong> The total number of water molecules in the sample is approximately: 1.904×1023 molecules.
+                    </p>
+                    <p class="pl-4">
+                        Complement (Unreacted mass) = <strong>3258 mg</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

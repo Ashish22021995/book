@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 84</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <p class="math-columbia text-center">10V <sup>2</sup> (V - 0.1) = 0.0821 × 300 V <sup>2</sup> - V</p>
+                <p>Simplify:</p>
+                <p class="math-columbia text-center">10V <sup>3</sup> - 1V <sup>2</sup> = 24.63V <sup>2</sup> - V</p>
+
+                <p class="">
+                    <b>Step 2: Rearrange into a cubic equation</b>
+                </p>
+                <p class="math-columbia text-center">
+                    10V <sup>3</sup> - 25.63V <sup>2</sup> + V = 0
+                </p>
+                <p>Factor out V:</p>
+                <p class="math-columbia text-center">
+                    V(10V <sup>2</sup> - 25.63V + 1) = 0
+                </p>
+                <p class="">
+                    <b>Step 3: Solve for V</b>
+                </p>
+                <div class="ml-10">
+                    <p>1. The first root is V=0, which is unphysical for volume. Ignore this root.</p>
+                    <p>2. Solve the quadratic part:</p>
+                </div>
+                <p class="math-columbia text-center">
+                    10V <sup>2</sup> - 25.63V + 1 = 0
+                </p>
+                <p class="">
+                    <b>Step 4: Use the Purna Puranabhyam Sutra</b>
+                </p>
+                <p>Transform the quadratic equation into a perfect square:</p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>(10V <sup>2</sup> - 25.63V + 1) =</div>
+                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">(</div>
+                    <div>√10V -</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">25.63</div>
+                        <div class="h-px bg-black w-24 mt-3"></div>
+                        <div class="-mt-2">2√10</div>
+                    </div>
+                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">)</div>
+                    <div class="-mt-4"><sup>2</sup></div>
+                </div>
+                <p>Equate to zero:</p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">(</div>
+                    <div>√10V -</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">25.63</div>
+                        <div class="h-px bg-black w-16 mt-3"></div>
+                        <div class="-mt-2">2√10</div>
+                    </div>
+                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">)</div>
+                    <div class="-mt-4"><sup>2</sup></div>
+                    <div>= 0</div>
+                </div>
+                <p>Solve for V:</p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>√10V -</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">25.63</div>
+                        <div class="h-px bg-black w-16 mt-3"></div>
+                        <div class="-mt-2">2√10</div>
+                    </div>
+                </div>
+                <div class="math-columbia flex gap-2 justify-center items-center">
+                    <div>V =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">25.63</div>
+                        <div class="h-px bg-black w-16 mt-3"></div>
+                        <div class="-mt-2">20</div>
+                    </div>
+                    <div>= 1.2815</div>
+                </div>
+                <p class="mb-2"><b>Result:</b></p>
+                <p class="mb-2">The molar volume of the gas at P=10 atm and T=300 K is approximately:</p>
+                <p class="math-columbia text-center">V = 1.2815 L/mol</p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-16 rounded-lg">
+                <p class="text-justify"><span class="spectral">Pūrṇa Pūraṇābhyām</span> empowers problem-solving by
+                    transforming expressions into perfect squares or cubes, making it ideal for factoring equations or
+                    solving complex algebraic forms. In scientific applications like mole ratio determination or real
+                    gas behavior, this sutra enhances clarity, simplifies cubic equations, and aids in deriving precise
+                    results efficiently.
+                </p>
+            </div>
+            <div class="px-2 text-center">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 9. Chalana-kalanabhyam (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        चलनकलनाभ्याम्
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> Sequential motion or the application of Differential Calculus.
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>
