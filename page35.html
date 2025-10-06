@@ -87,6 +87,136 @@
                 </p>
             </div>
 
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
+                <div class="mb-4">
+                    <p class="mb-2">
+                        <b>Case 1: Finding the Complement to the Nearest Functional Base</b>
+                    </p>
+                    <p>
+                        <b>Example:</b> Find the complement of 118 to the nearest base (100).
+                    </p>
+                    <p>
+                        <b>Solution:</b>
+                    </p>
+                    <div class="ml-5">
+                        <p>1. Identify the functional base: The nearest base to 118 is 100.</p>
+                        <p>2. Calculate the complement: Complement = Base − Number = 100 − 118 = −18</p>
+                        <p>3. In absolute terms: Complement = 18</p>
+                    </div>
+                    <p>
+                        <b>Answer:</b> The complement of 118 to the base 100 is ±18.
+                    </p>
+                </div>
+
+                <p class="mb-2">
+                    <b>Case 2: Finding the Cube of a Two-Digit Number</b>
+                </p>
+                <div class="ml-5">
+                    <p>1. Split the number into digits:</p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Let the number xy have: </p>
+                        </div>
+                        <p class="text-center">
+                            x = tens digit, y = units digit.
+                        </p>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <p>2. Compute the six terms:</p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Calculate the following:</p>
+                        </div>
+                        <div class="ml-8">
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>x<sup>3</sup>: Cube of the tens digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>x<sup>2</sup>y: Square of the tens digit multiplied by the units digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>xy<sup>2</sup>: Tens digit multiplied by the square of the unit digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>y<sup>3</sup>: Cube of the units’ digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>2x<sup>2</sup>: Twice the product of x<sup>2</sup> and y.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>2xy<sup>2</sup>: Twice the product of xxx and y<sup>2</sup>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <p>3. Arrange the terms:</p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Write them in the order: </p>
+                        </div>
+                        <p class="text-center">
+                            x<sup>3</sup> (x<sup>2</sup>y+2x2y) (xy<sup>2</sup>+2xy<sup>2</sup>) y<sup>3</sup>
+                        </p>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <p>4. Handle carryovers:</p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Add the terms column by column, carrying over any extra digits to the next column.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <p>5. Write the final result:</p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>The digits from the sums and carryovers give the cube of the number.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2">
+                        <b>Example: Find the cube of 12</b>
+                </div>
+
+
+                <div class="ml-5">
+                    <p>1. Split 12 into digits x = 1 and y = 2.</p>
+                </div>
+                <div class="ml-5">
+                    <p>2. Compute each term:</p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>x<sup>3</sup> = 1<sup>3</sup> = 1</p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>x<sup>2</sup>y = 1<sup>2</sup> × 2 = 2</p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>xy<sup>2</sup> = 1 × 2<sup>2</sup> = 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- Download button -->
