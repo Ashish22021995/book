@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 100</div>
+
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 13. Sopantyadvayamantyam (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        सोपान्त्यद्वयमन्तयम्
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> The ultimate and twice the penultimate.
+                </p>
+            </div>
+
+            <div class="mb-4 px-2 text-[#3F4F44]">
+                <div class="text-[#3F4F44] leading-relaxed">
+                    <strong>Use:</strong> This sutra focuses on operations involving the <b>ultimate digit</b> (last
+                    digit) and
+                    <b>penultimate digit</b> (second-to-last digit). It is primarily used for:
+                </div>
+                <div class="ml-5">
+                    <div>
+                        <p>1. <b>Checking divisibility by 4.</b></p>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>Add the <b>last digit</b> and twice the <b>second-last digit</b> of the number.</p>
+                        </div>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>If the sum is divisible by 4, the entire number is divisible by 4.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>2. <b>Simplifying multiplication by 12</b> using a systematic approach.</p>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>Add a zero before and after the number.</p>
+                        </div>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>Work step-by-step, adding the last digit and twice the second-last digit, accounting for
+                                carryovers.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>3. This sutra can be used to find the value of a variable in an equation where terms A, B, C,
+                            D are in <b>Arithmetic Progression (AP)</b>, and the equation takes the form:</p>
+                        <div class="math-columbia mb-2 flex gap-1 justify-start items-center">
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">AB</div>
+                            </div>
+                            <div>+</div>
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">AC</div>
+                            </div>
+                            <div>=</div>
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">AD</div>
+                            </div>
+                            <div>+</div>
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">BC</div>
+                            </div>
+                        </div>
+                        <p>
+                            And, A, B, C, and D are in Arithmetic Progression, the equation has a solution derived from
+                            D + 2C = 0
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">The thirteenth sutra of Vedic Mathematics,
+                    <span class="spectral">Sopāntyadvayamantyam</span>, reveals a method grounded in positional digit
+                    manipulation specifically
+                    focusing on the last digit (ultimate) and the second-to-last digit (penultimate) of numbers. Though
+                    subtle in appearance, this technique provides insightful shortcuts for arithmetic processes like
+                    divisibility checks and rapid multiplication, as well as algebraic simplifications. This approach
+                    breaks down what might seem like a complex multiplication into manageable steps by operating on
+                    digit pairs. It also deals with rational expressions involving products of binomials arranged in an
+                    arithmetic progression.
+                </p>
+                <p class="text-justify">In scientific domains, the sutra extends its value by aiding in problems
+                    involving structured sequences. For example, ionization energy trends in chemistry. When successive
+                    ionization energies form an arithmetic progression, <span
+                        class="spectral">Sopāntyadvayamantyam</span> helps to deduce unknown
+                    values from symmetric expressions that would otherwise require multi-step algebraic work. By merging
+                    digit-wise logic with pattern recognition, this sutra empowers learners to handle arithmetic and
+                    algebraic challenges with precision.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Divisibility by 4</b>
+                </div>
+                <p class="mb-2">Check if <span class="math-columbia">12384</span> is divisible by <span class="math-columbia">4</span>.</p>
+                <p class="mb-2">
+                    <b>Step 1:</b> Identify the last digit and the second-last digit:
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

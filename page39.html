@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 94</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <p>
+                    Add these:
+                </p>
+                <p class="text-center">
+                    <span class="math-columbia">(a + 1) <sup>4</sup> + (a - 1) <sup>4</sup> = 2a <sup>4</sup> + 12a
+                        <sup>2</sup> + 2 = 706</span> (Odd powers cancle out)
+                </p>
+
+                <p>
+                    <b>Step 4: Simplify and rearrange the equation</b>
+                </p>
+                <p class="math-columbia text-center mb-2">
+                    a <sup>4</sup> + 6a <sup>2</sup> -352 = 0
+                </p>
+                <p>
+                    <b>Step 5: Substitute Z = a <sup>2</sup> so the equation becomes:</b>
+                </p>
+                <p class="math-columbia text-center mb-2">
+                    Z <sup>2</sup> + 6z - 352 = 0
+                </p>
+                <p>
+                    <b>Step 6: Solve the quadratic equation</b>
+                </p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>Z =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-6 ± √(36 + 1408)</div>
+                        <div class="h-px bg-black w-28 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                    <div>, Where a = 1, b = 6, and c = -352</div>
+                </div>
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div>Z =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-6 ± √1444</div>
+                        <div class="h-px bg-black w-20 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-6 ± 38</div>
+                        <div class="h-px bg-black w-16 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                </div>
+                <p>
+                    <b>Step 7: Solve for Z</b>
+                </p>
+
+                <div class="flex justify-center gap-10">
+                    <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                        <div>Z =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">-6 + 38</div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">2</div>
+                        </div>
+                        <div>= 16,</div>
+                    </div>
+                    <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                        <div>Z =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">-6 - 38</div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">2</div>
+                        </div>
+                        <div>= -22</div>
+                    </div>
+                </div>
+
+                <p>
+                    Since <span class="math-columbia">Z = a <sup>2</sup></span> ,and <span class="math-columbia">a
+                        <sup>2</sup> ≥ 0</span>, we discard <span class="math-columbia">Z = -22</span>
+                </p>
+                <p class="math-columbia text-center">
+                    a <sup>2</sup> = 16 = ±4
+                </p>
+                <p>
+                    <b>Step 8: Back-substitute for x</b>
+                </p>
+                <p>
+                    Recall a = x + 6:
+                </p>
+                <div class="math-columbia text-center">
+                    <p>x + 6 = 4 = -2</p>
+                    <p>x + 6 = -4 = -10</p>
+                </div>
+                <p>
+                    <b>Final Answer:</b>
+                </p>
+                <div class="flex justify-center gap-10 math-columbia">
+                    <div>x = -2,</div>
+                    <div>or</div>
+                    <div>x = -10</div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2">
+                    <b>Example: Energy of Two Orbital</b>
+                </div>
+                <p>
+                    The energy of two molecular orbitals is related as follows:
+                </p>
+                <p class="mb-2 text-center math-columbia">
+                    (E + 6) <sup>4</sup> + (E + 4) <sup>4</sup> = 1042
+                </p>
+                <p class="mb-2">
+                    Solve for the possible energy values of E.
+                </p>
+                
+                <p class="mb-1">
+                    <b>Solution Using Vyasti Samastih</b>
+                </p>
+                <p>
+                    <b>Step 1: Take the Average of the Two Energies</b>
+                </p>
+                <p>
+                    The two terms are <span class="math-columbia">E + 6 and E + 4</span>.
+                </p>
+                <p>
+                    Find their average:
+                </p>
+
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div>a =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">(E + 6) + (E + 4)</div>
+                        <div class="h-px bg-black w-28 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                    <div>E + 5</div>
+                </div>
+
+                <p>
+                    Thus:
+                </p>
+                <p class="math-columbia text-center">
+                    E + 6 = a + 1 and E + 4 = a - 1
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 93</div>
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 11. Vyasti Samastih (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        व्यष्टि समष्टिः
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> Specific and general or Whole as one and One as whole
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Use:</strong> The sutra enables solving special bi-quadratic equations by removing odd power
+                    terms (e.g., cubic or linear terms) and simplifying the equation into a manageable form, often by
+                    averaging terms or dividing the middle term into two quadratic equations.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">The eleventh sutra of Vedic Mathematics, <span class="spectral">Vyasti
+                        Samastih</span>, introduces a
+                    strategic approach to solving bi-quadratic equations by transforming them into symmetric forms. This
+                    sutra is especially valuable in simplifying expressions where two binomial terms differ by a
+                    constant and their powers generate complex polynomial equations. The method involves taking the
+                    average of binomial expressions, thereby converting the problem into a more manageable form. When
+                    applied to fourth powers (bi-quadratics), this sutra effectively cancels out the odd-powered terms
+                    through algebraic symmetry. The resulting equation typically contains only even powers, which can
+                    then be further simplified into a quadratic form using substitution. Solving this quadratic yields
+                    intermediate values that are then traced back to determine the original unknowns.
+                </p>
+                <p class="text-justify"><span class="spectral">Vyasti Samastih</span> has practical value beyond
+                    theoretical algebra. In scientific
+                    applications, the energy expressions involving symmetrical orbitals or related particle interactions
+                    often involve fourth power terms. This sutra simplifies such expressions when energy levels are
+                    centered on a mean value, offering a systematic pathway to compute possible energy states
+                    efficiently. By reducing the complexity of high-degree polynomial equations and focusing on balanced
+                    transformations.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2">
+                    <b>Example: Solve</b>
+                </div>
+                <p class="mb-2 text-center math-columbia">
+                    (x + 7) <sup>4</sup> + (x + 5) <sup>4</sup> = 706
+                </p>
+                <p>
+                    <b>Step 1: Take the average of the two binomials</b>
+                </p>
+                <p>
+                    The two binomials are <span class="math-columbia">x + 7</span> and <span class="math-columbia">x +
+                        5</span>.
+                </p>
+                <p>
+                    Find their average:
+                </p>
+                <p class="mb-2 text-center">
+                    <span class="math-columbia">x + 6</span> (Let this be a)
+                </p>
+                <p class="mb-2">
+                    Thus, <span class="math-columbia">x + 7 + a + 1</span> and <span class="math-columbia">x + 5 = a -
+                        1</span>
+                </p>
+
+                <p>
+                    <b>Step 2: Replace the binomials in the equation</b>
+                </p>
+                <p class="math-columbia text-center mb-2">
+                    (x + 7) <sup>4</sup> + (x + 5) <sup>4</sup> = (a + 1) <sup>4</sup> + (a - 1) <sup>4</sup> = 706
+                </p>
+
+                <p>
+                    <b>Step 3: Expand and cancel odd powers</b>
+                </p>
+                <p>
+                    Expand both terms:
+                </p>
+                <div class="text-center math-columbia mb-2">
+                    <p>(a + 1) <sup>4</sup> = a <sup>4</sup> + 4a <sup>3</sup> + 6a <sup>2</sup> + 4a + 1</p>
+                    <p>(a - 1) <sup>4</sup> = a <sup>4</sup> - 4a <sup>3</sup> + 6a <sup>2</sup> - 4a + 1</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 98</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-4">
+                    <p class="">
+                        Use the remainder <span class="math-columbia">1,10,9,12,3,4,</span> and multiply each by <span
+                            class="math-columbia">13</span>, recording only the last digit of the product:
+                    </p>
+                    <div class="ml-5 mb-2 math-columbia">
+                        <p>1. 1 × 13 = 13: Record 3.</p>
+                        <p>2. 10 × 13 = 130: Record 0.</p>
+                        <p>3. 9 × 13 = 117: Record 7.</p>
+                        <p>4. 12 × 13 = 156: Record 6.</p>
+                        <p>5. 3 × 13 = 39: Record 9.</p>
+                        <p>6. 4 × 13 = 52: Record 2.</p>
+                    </div>
+
+                    <p>
+                        <b>Step 3: Assemble the Recurring Sequence</b>
+                    </p>
+                    <p class=" mb-2">
+                        The recurring sequence is:
+                    </p>
+                    <div class="math-columbia flex justify-center items-end">
+                        <div>0.</div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-px bg-black ml-1 w-12 mt-4"></div>
+                            <div class="-mt-3">076923</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2">
+                    <b>Example: Calculating the Mole Fraction</b>
+                </div>
+                <p class="mb-2">
+                    <b>Problem:</b> A solution contains 1 mol of solute and 6 mol of solvent. Determine the mole
+                    fraction of the solute and express its value as a recurring decimal.
+                </p>
+                <p class="mb-2">
+                    <b>Solution:</b>
+                </p>
+
+                <p>
+                    <b>Step 1: Write the Formula</b>
+                </p>
+                <p>
+                    The mole fraction of the solute (<span class="math-columbia">X</span> <sub>Solute</sub>) is given
+                    by:
+                </p>
+
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div>X <sub>Solute</sub> =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">Moles of solute</div>
+                        <div class="h-px bg-black w-28 mt-3"></div>
+                        <div class="-mt-2">Total moles</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-10 mt-3"></div>
+                        <div class="-mt-2">1 + 6</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-5 mt-3"></div>
+                        <div class="-mt-2">7</div>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 2: Perform Long Division</b>
+                </p>
+                <p class="leading-relaxed">
+                    Use the sutra to represent
+                    <span
+                        class="math-columbia inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
+                        <span>1</span>
+                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
+                        <span class="-mt-1.5">7</span>
+                    </span>
+                    as a recurring decimal. Divide 1 by 7 step-by-step, recording the remainders:
+                </p>
+
+                <div class="ml-5 mb-2 math-columbia">
+                    <p>1. 1 ÷ 7: Quotient 0, remainder 1 → append 0.</p>
+                    <p>2. 10 ÷ 7: Quotient 1, remainder 3 → append 0.</p>
+                    <p>3. 30 ÷ 7: Quotient 4, remainder 2 → append 0.</p>
+                    <p>4. 20 ÷ 7: Quotient 2, remainder 6 → append 0.</p>
+                    <p>5. 60 ÷ 7: Quotient 8, remainder 4 → append 0.</p>
+                    <p>6. 40 ÷ 7: Quotient 5, remainder 5 → append 0.</p>
+                    <p>7. 50 ÷ 7: Quotient 7, remainder 1 → cycle repeats.</p>
+                </div>
+
+                <p class="leading-relaxed">
+                    Thus, the decimal representation of
+                    <span
+                        class="math-columbia inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
+                        <span>1</span>
+                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
+                        <span class="-mt-1.5">7</span>
+                    </span>
+                    is:
+                </p>
+
+                <div class="mb-2 math-columbia flex justify-center items-end">
+                    <div>X <sub>Solute</sub> = 0.</div>
+                    <div class="flex flex-col items-center">
+                        <div class="h-px bg-black ml-1 w-12 mt-4"></div>
+                        <div class="-mt-3">142857</div>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 3: Verify Using Multiplication</b>
+                </p>
+                <p>
+                    Multiply each remainder by the denominator (7), recording only the last digit:
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

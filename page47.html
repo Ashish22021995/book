@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 102</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="">
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p><b>Third step:</b> <span class="math-columbia">2</span> (ultimate) and <span
+                                class="math-columbia">8</span> (penultimate):</p>
+                    </div>
+                    <p class="text-center math-columbia">2 + 2(8) = 2 + 16 = 18</p>
+                </div>
+                <p>
+                    Write <span class="math-columbia">8</span>, carry over <span class="math-columbia">1</span>.
+                </p>
+                <div class="">
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p><b>Fourth step:</b> <span class="math-columbia">8</span> (ultimate) and <span
+                                class="math-columbia">0</span> (penultimate):</p>
+                    </div>
+                    <p class="text-center math-columbia">8 + 2(0) = 8</p>
+                </div>
+                <p>
+                    Add the carryover 1: <span class="math-columbia">8 + 1 = 9</span>.
+                </p>
+                <p class="mb-2">
+                    <b>Step 3:</b> Write the final result:
+                </p>
+                <p class="mb-2 text-center math-columbia">
+                    824 × 12 = 9888
+                </p>
+                <p class="mb-2">
+                    <b>Answer :</b> <span class="math-columbia">824 × 12 = 9888.</span>
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example: Solve for <span class="math-columbia">x</span></b>
+                </div>
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">x <sup>2</sup> + 5x + 6 </div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">x <sup>2</sup> + 6x + 8</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">x <sup>2</sup> + 7x + 10</div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">x <sup>2</sup> +7x + 12</div>
+                    </div>
+                </div>
+                <p class="mb-2">
+                    <b>Step 1: Identify A, B, C, D</b>
+                </p>
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">(x + 2) (x + 3)</div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">(x + 2) (x + 4)</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">(x + 2) (x + 5)</div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">(x + 3) (x + 4)</div>
+                    </div>
+                </div>
+                <div class="mb-2 flex gap-16 justify-center">
+                    <div>Or, <span class="math-columbia">A = x + 2,</span></div>
+                    <div><span class="math-columbia">B = x + 3,</span></div>
+                    <div><span class="math-columbia">C = x + 4,</span></div>
+                    <div><span class="math-columbia">D = x + 5</span></div>
+                </div>
+                <p class="ml-12 mb-2">Also, A, B, C, and D are in Arithmetic Progression.</p>
+                <p class="mb-2">
+                    <b>Step 2: Verify Arithmetic Progression</b>
+                </p>
+                <p>
+                    Check if A, B, C, and D are in AP:
+                </p>
+                <p>
+                    Difference between terms: (B − A) = (C − B) = (D − C) = 1
+                </p>
+                <p>
+                    (x + 3) – (x + 2) = (x + 4) – (x + 3) = (x + 5) – (x + 4) = 1
+                </p>
+                <p class="mb-2">
+                    Thus, A, B, C, and D are in AP.
+                </p>
+
+                <p class="mb-2">
+                    <b>Step 3: Apply the Property D+2C=0</b>
+                </p>
+                <div class="flex gap-5">
+                    <div>Substitute</div>
+                    <div>A = x + 2,</div>
+                    <div>B = x + 3,</div>
+                    <div>C = x + 4,</div>
+                    <div>D = x + 5</div>
+                    <div>into the formula.</div>
+                </div>
+                <div class="ml-5">
+                    <p>Therefore, <span class="math-columbia">x + 5 + 2 (x + 4) = 0</span></p>
+                    <p>Or, <span class="math-columbia">x + 5 + 2x + 8 = 0</span></p>
+                    <p>Or, <span class="math-columbia">3x + 13 = 0</span></p>
+                    <p>Or, <span class="math-columbia">3x = -13</span></p>
+                    <div class="math-columbia mb-2 flex gap-1 items-center">
+                        <div>Hence, <span class="math-columbia">x =</span></div>
+                        <div class="flex math-columbia flex-col items-center">
+                            <div class="-mb-1">-13</div>
+                            <div class="h-px bg-black w-8 mt-3"></div>
+                            <div class="-mt-2">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

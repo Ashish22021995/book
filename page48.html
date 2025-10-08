@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 103</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example: Determining Successive Ionization Energies</b>
+                </div>
+                <p>
+                    The ionization energies <span class="math-columbia">(IE)</span> of an element are related to its
+                    atomic structure. For a hypothetical
+                    element, the ionization energies <span class="math-columbia">(IE <sub>1</sub>, IE <sub>2</sub>, IE
+                        <sub>3</sub>, IE <sub>4</sub>)</span> form an arithmetic progression (AP).
+                    Given the equations:
+                </p>
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>1</sub> ×, IE <sub>2</sub></div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>1</sub> ×, IE <sub>3</sub></div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>1</sub> ×, IE <sub>4</sub></div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>2</sub> ×, IE <sub>3</sub></div>
+                    </div>
+                </div>
+
+                <p class="math-columbia mb-2">
+                    Find IE <sub>1</sub> , if IE <sub>2</sub> = IE <sub>1</sub> + 20KJ/mol, IE <sub>3</sub> = IE <sub>1</sub> + 40KJ/mol, IE <sub>4</sub> = IE <sub>1</sub> + 60KJ/mol.
+                </p>
+                
+                <p class="mb-2">
+                    <b>Solution:</b>
+                </p>
+                
+                <p class="mb-2">
+                    <b>Step 1: Identify A, B, C, D</b>
+                </p>
+                <p>
+                    From the equation:
+                </p>
+
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>1</sub> ×, IE <sub>2</sub></div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>1</sub> ×, IE <sub>3</sub></div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>1</sub> ×, IE <sub>4</sub></div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">1</div>
+                        <div class="h-px bg-black w-8 mt-3"></div>
+                        <div class="-mt-2">IE <sub>2</sub> ×, IE <sub>3</sub></div>
+                    </div>
+                </div>
+                
+                <p>
+                    We identify:
+                </p>
+
+                <p class="math-columbia text-center">
+                    A = IE <sub>1</sub>, B = IE <sub>2</sub>, C = IE <sub>3</sub>, D = IE <sub>4</sub>
+                </p>
+                <p>
+                    Substitute:
+                </p>
+                <div class="math-columbia flex gap-10 justify-center">
+                    <div>B = A + 20,</div>
+                    <div>C = A + 40,</div>
+                    <div>D = A + 60</div>
+                </div>
+                <p class="mb-2">
+                    <b>Step 2: Verify AP</b>
+                </p>
+                <div class="math-columbia flex gap-10 justify-center">
+                    <div>B − A = 20,</div>
+                    <div>C − B = 20,</div>
+                    <div>D − C = 20.</div>
+                </div>
+                <p class="mb-2 text-center math-columbia">
+                    Sum = 9 + 2(1) = 9 + 2 = 11
+                </p>
+                <p class="mb-2">
+                    <b>Step 3:</b> Check divisibility:
+                </p>
+                <p class="mb-2 text-center">
+                    <span class="math-columbia">11 ÷ 4</span> = not divisible.
+                </p>
+                <p class="mb-2">
+                    <b>Answer :</b> <span class="math-columbia">25619</span> is not divisible by <span
+                        class="math-columbia">4</span>.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 3: Multiplication by <span class="math-columbia">12</span></b>
+                </div>
+                <p class="mb-2">Multiply <span class="math-columbia">824</span> by <span
+                        class="math-columbia">12</span>.</p>
+                <p class="mb-2">
+                    <b>Step 1:</b> Write the number with a zero before and after:
+                </p>
+                <p class="math-columbia text-center">
+                    824 → 08240824
+                </p>
+                <p class="mb-2">
+                    <b>Step 2:</b> Apply the sutra step-by-step:
+                </p>
+                <div class="">
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p><b>First step:</b> Last digit <span class="math-columbia">0</span> (ultimate) and second-last
+                            digit <span class="math-columbia">4</span> (penultimate):</p>
+                    </div>
+                    <p class="text-center math-columbia">0 + 2(4) = 0 + 8 = 8</p>
+                </div>
+                <p>
+                    Write <span class="math-columbia">8</span>, no carryover.
+                </p>
+                <div class="">
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p><b>Second step:</b> <span class="math-columbia">4</span> (ultimate) and <span
+                                class="math-columbia">2</span> (penultimate):</p>
+                    </div>
+                    <p class="text-center math-columbia">4 + 2(2) = 4 + 4 = 8</p>
+                </div>
+                <p>
+                    Write <span class="math-columbia">8</span>, no carryover.
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

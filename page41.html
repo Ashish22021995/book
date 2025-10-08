@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 96</div>
+
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 12. Sesanyankena Caramena (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        शेषरायङ्केन चरमेण
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> The remainders by the last digit.
+                </p>
+                <div class="text-[#3F4F44] leading-relaxed">
+                    <strong>Use:</strong> This sutra is used to express a fraction as a decimal, to all its decimal
+                    places. It provides an efficient method to determine the recurring decimal representation of
+                    fractions like
+                    <span
+                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
+                        <span>1</span>
+                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
+                        <span class="-mt-1.5">7</span>
+                    </span>,
+                    <span
+                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
+                        <span>1</span>
+                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
+                        <span class="-mt-1.5">13</span>
+                    </span>,
+                    etc. without performing complete long division. Instead, it uses
+                    <b>remainders</b> and <b>multiplications by the last digit</b>.
+                </div>
+            </div>
+
+            <div class="mb-4 px-2 text-[#3F4F44]">
+                <p class="mb-1"><b>Key Idea:</b></p>
+                <div class="ml-5 mb-2">
+                    <p>1. <b>Division Methodology:</b> The remainders from dividing a number step-by-step are used to
+                        generate recurring decimals.</p>
+                    <p>2. <b>Multiplication Methodology:</b> The remainders are multiplied by the denominator (or a
+                        "last digit") to determine the recurring sequence directly.</p>
+                </div>
+
+                <p class="mb-1">
+                    <b>Steps:</b>
+                </p>
+                <div class="ml-5">
+                    <p>1. <b>Long Division for Remainders:</b> Perform the division to record the sequence of
+                        remainders.</p>
+                    <p>2. <b>Multiplication Using Last Digit:</b> Multiply each remainder by the denominator (or a key
+                        multiplier) to compute the recurring digits.</p>
+                    <p>3. <b>Use Complements:</b> For certain fractions, the recurring sequence can be derived faster
+                        using complements from 999 (explained below).</p>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4 leading-relaxed">The twelfth sutra of Vedic Mathematics, <span
+                        class="spectral">Śeṣānyankena Carameṇa</span>, provides a
+                    distinctive and efficient approach to converting fractions into recurring decimal representations.
+                    Rather than depending on long, laborious division, this sutra leverages the patterns formed by
+                    remainders and the numerical properties of the denominator to extract recurring digits. By tracking
+                    remainders during successive division steps and combining them with strategic multiplications
+                    involving the last digit or base of the denominator, this method reveals the full decimal cycle with
+                    minimal computation. This sutra is particularly useful when expressing fractions like
+                    <span
+                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
+                        <span>1</span>
+                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
+                        <span class="-mt-1.5">7</span>
+                    </span>,
+                    <span
+                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
+                        <span>1</span>
+                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
+                        <span class="-mt-1.5">13</span>
+                    </span>,
+                    or
+                    other non-terminating decimals especially those with longer recurring cycles.
+                </p>
+                <p class="text-justify">Its relevance extends to scientific domains as well. In physical chemistry,
+                    where mole fractions and concentration ratios frequently yield recurring decimal values, this sutra
+                    aids in obtaining exact representations quickly and reliably. Ultimately, <span
+                        class="spectral">Śeṣānyankena Carameṇa</span>
+                    reinforces the elegance of mathematical cycles, transforming what appears to be a complex decimal
+                    expansion into an intuitive pattern which simply revealed through remainders and repetition.
+                </p>
+            </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>
