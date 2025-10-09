@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 104</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-16 px-2 rounded-lg">
+                <p class="text-justify">The <span class="spectral">Sopantyadvayamantyam</span> sutra, focusing on the
+                    last and second-last digits of a
+                    number, provides powerful shortcuts for divisibility tests, multiplication by specific numbers like
+                    12, and solving algebraic expressions involving sequences in arithmetic progression. By linking
+                    digit-wise manipulation with broader algebraic symmetry, this sutra enhances efficiency in both
+                    numerical and scientific problem-solving, especially in scenarios involving progressive quantities
+                    like ionization energies or arithmetic series relationships.
+                </p>
+            </div>
+
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#1B4D3E] font-bold cinzel">
+                    Sutra 14. Ekanyunena Purvena (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        एकन्यूनेन पूर्वेण
+                    </span>)
+                </p>
+                <p class="text-[#3F4F44]">
+                    <strong>Meaning:</strong> By one less than the one before.
+                </p>
+                <p class="text-[#3F4F44] leading-relaxed">
+                    <strong>Use:</strong> This sutra is a corollary of the <b>Nikhilam Sutra</b> and the converse of the
+                    <b>Ekādhikena Pūrveṇa Sutra</b>. It simplifies multiplication problems where the multiplier consists
+                    entirely of the digit 9 or its equivalent in binary or recurring decimals.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">This sutra, a corollary to <span class="spectral">Nikhilam Navataścaramam
+                        Daśatah</span>, offers an
+                    elegant approach to multiplication, particularly where the multiplier is composed entirely of 9s
+                    (like 9, 99, 999, etc.). It is the inverse of the more commonly known <span
+                        class="spectral">Ekādhikena Pūrveṇa</span> sutra and
+                    is especially useful when one of the numbers in the multiplication pair consists of repeated nines.
+                    Beyond arithmetic, the sutra is applicable in binary multiplication, where it aligns with numbers of
+                    the form 2<sup>n</sup> - 1, and also finds use in expressing recurring decimals in rational
+                    fractions involving
+                    the digit 9 or its variations.
+                </p>
+                <p class="text-justify">In scientific settings, this sutra proves beneficial when scaling fixed units.
+                    Whether used for multiplying in decimal or binary, simplifying repeating fractions, or executing
+                    scale-up problems in science, <span class="spectral">Ekanyūnena Pūrveṇa</span> reinforces the Vedic
+                    principle of simplifying
+                    through patterns. It demonstrates how profound insight into number structure can lead to
+                    computational clarity and speed, especially where traditional multiplication would require multiple
+                    steps.
+                </p>
+            </div>
+
+            <p class="spectral font-bold mb-4">Applications of Ekanyūnena Pūrveṇa</p>
+            <p class="mb-2"><b>1. Multiplications with a Multiplier of All 9's</b></p>
+            <div class="ml-10">
+                <div>
+                    <p><b>1. When the multiplicand and multiplier have the same number of digits:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Subtract 1 from the multiplicand for the left-hand side of the product.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>For the right-hand side, take the complement of the left-hand side with respect to the
+                                multiplier (e.g., 9, 99, and 999…).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 108</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+
+                <p class="text-justify">energy
+                    transformations, or molecular interactions, where terms often reflect combinations of species or
+                    concentrations.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <p class="mb-2">
+                    <b>Steps to Use Guṇitasamuccaya Sūtra:</b>
+                </p>
+                <div class="ml-5">
+                    <p>1. <b>Identify the factors:</b> Break the given polynomial or expression into its factors.</p>
+                    <p>2. <b>Sum the coefficients of each factor:</b> Calculate the sum of coefficients for each factor
+                        (ignore the variable terms and add the coefficients as numbers).</p>
+                    <p>3. <b>Multiply the sums of coefficients:</b> Find the product of the sums of coefficients.</p>
+                    <p>4. <b>Sum coefficients of the original polynomial:</b> Do the same for the expanded (or original)
+                        polynomial.</p>
+                    <p>5. <b>Verify:</b> Compare the two results. If they match, the factorization or computation is
+                        correct.</p>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Factorization Verification</b>
+                </div>
+                <p class="mb-2">
+                    <b>Verify:</b> <span class="math-columbia">(y + 2) (y + 3) (y + 5)</span>
+                </p>
+                <p>
+                    <b>Step 1: Sum coefficients of each factor</b>
+                </p>
+                <div class="mb-2 ml-5">
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 2)</span>, the coefficients are <span class="math-columbia">1</span> (of y) and <span class="math-columbia">2</span> : <span class="math-columbia">Sum = 1 + 2 = 3</span>
+                        </p>
+                    </div>
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 3)</span>, the coefficients are <span class="math-columbia">1</span> and <span class="math-columbia">3</span> : <span class="math-columbia">Sum = 1 + 3 = 4</span>
+                        </p>
+                    </div>
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 5)</span>, the coefficients are <span class="math-columbia">1</span> and <span class="math-columbia">5</span> : <span class="math-columbia">Sum = 1 + 5 = 6</span>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 2: Multiply sums of coefficients</b>
+                </p>
+                <p class="text-center mb-2">
+                    Product of sums <span class="math-columbia">= 3 × 4 × 6 = 72</span>
+                </p>
+                <p>
+                    <b>Step 3: Expand the product</b>
+                </p>
+                <p>
+                    Expand <span class="math-columbia ml-2">(y + 2) (y + 3) (y + 5) = (y + 2) ((y + 3) (y + 5))</span>
+                </p>
+                <div class="math-columbia ml-52 mb-2">
+                    <p>= (y + 2) (y <sup>2</sup> + 8y + 15)</p>
+                    <p>= y <sup>3</sup> + 8y <sup>2</sup> + 15y + 2y <sup>2</sup> + 16y + 30</p>
+                    <p>= y <sup>3</sup> + 10y <sup>2</sup> + 31y + 30</p>
+                </div>
+
+                <p>
+                    <b>Step 4: Sum coefficients of the expanded polynomial</b>
+                </p>
+                <p class="math-columbia text-center mb-2">
+                    1 + 10 + 31 + 30 = 72
+                </p>
+                <p>
+                    <b>Step 5: Verify</b>
+                </p>
+                <p class="mb-2">
+                    Product of sums <span class="math-columbia">(72)</span> = Sum of coefficients of expanded polynomial <span class="math-columbia">(72)</span>
+                </p>
+                
+                <p>
+                    <b>Conclusion:</b> The factorization is correct.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 2: Verification in Division</b>
+                </div>
+                <p class="mb-2">
+                    <b>Problem:</b> Divide <span class="math-columbia">y <sup>3</sup> + 6y <sup>2</sup> + 11y + 6 by (y + 1).</span>
+                </p>
+                <p>
+                    <b>Step 1: Factorize the polynomial</b>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 115</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#CBDCEB] to-[#D9E9CF] mb-4 px-2 rounded-lg">
+                <p class="text-justify mb-4">mathematical structure almost instantly, allowing the learner to
+                    proceed not through rote, but through insight.
+                </p>
+                <p>
+                    In essence, the Sub-Sutras are like hidden keys that unlock quicker pathways within the broader
+                    structure of Vedic Mathematics. They complement the main Sutras and complete the system, giving it
+                    flexibility, depth, and elegance. Whether used for mental arithmetic, algebraic simplification, or
+                    number theory, they reflect the ancient Indian vision that mathematics, when rightly understood, is
+                    not just logical but also beautiful and profoundly efficient. Here are the 13 Sub-Sutras given below
+                    with their meaning:
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-4">
+                    <div class="w-[48%]"><img src="assets/sl-last.jpg" alt="Left Image" class=""></div>
+                    <div class="w-[48%]"><img src="assets/l-last.jpg" alt="Left Image" class=""></div>
+                </div>
+                <div class="text-center">Figure 2: Sub-Sutras of Vedic Mathematics</div>
+            </div>
+
+            <div class="spectral font-bold mb-4 text-[#3A6F43]">
+                APPLICATIONS OF SUB-SUTRAS OF VEDIC MATHEMATICS
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#EEEEEE] to-[#E7D3D3] px-2 rounded-lg">
+                <p class="text-justify">
+                    The sub-sutras of Vedic Mathematics serve as a valuable asset for higher secondary school students,
+                    especially those studying science. These concise and intuitive mathematical principles simplify
+                    calculations that frequently appear in subjects such as Chemistry, Physics and advanced Mathematics.
+                    Many scientific problems demand quick and accurate arithmetic solutions for a problem. Such as
+                    squaring numbers, solving algebraic expressions, or working with proportions and this is where
+                    sub-sutras like <span class="spectral">Yāvadūnam Tāvadūnam</span> (reduce by the deficiency and add
+                    its square) or
+                    <span class="spectral">Antyayor-Dasake’pi</span> (useful in completing base-10 squares and cubes)
+                    become extremely effective.
+                    These techniques reduce cognitive load during complex calculations, allowing students to focus more
+                    on concepts rather than lengthy computations.
+                </p>
+            </div>
+
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

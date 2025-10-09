@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 111</div>
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#3F4F44] leading-relaxed">
+                    differential calculus. For a quadratic expression, the <b>first differential</b> is obtained by
+                    summing the
+                    linear factors into which the quadratic expression is factorized. The method can be extended to
+                    cubic and bi-quadratic expressions as well.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] mb-4 px-2 rounded-lg">
+                <p class="text-justify mb-4">The sutra <span class="spectral">Guṇakasamuccaya</span> bridges algebraic
+                    expressions with concepts from
+                    differential calculus, providing an elegant method for deriving the first differential of a
+                    polynomial based on its factorized form. This sutra utilizes the sum of the linear factors of a
+                    polynomial to construct its derivative, making it particularly effective for quadratic, cubic, and
+                    bi-quadratic expressions. This technique emphasizes the conceptual relationship between algebraic
+                    structure and rate of change.
+                </p>
+                <p class="text-justify">The application of this sutra extends naturally into scientific contexts. In
+                    chemistry, for example, where rate laws often take the form of polynomial equations in terms of
+                    concentration, <span class="spectral">Guṇakasamuccaya</span> allows for a quick and intuitive
+                    derivation of rate-of-change
+                    expressions. This becomes particularly valuable in reaction kinetics, where understanding how a
+                    small change in concentration affects the reaction rate is essential. By factorizing the rate law
+                    expression and summing its linear terms, students can obtain the first derivative with clarity and
+                    efficiency without relying solely on formal calculus procedures.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <p><b>Key Concept</b></p>
+                <div class="mb-2 ml-5">
+                    <div class="flex items-center mb-2">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            When a quadratic expression <span class="math-columbia">ax <sup>2</sup> + bx + c</span> is
+                            factorized into two linear factors <span class="math-columbia">(x − p)(x − q)</span>,
+                            the first differential of the expression can be found by summing the factors:
+                        </p>
+                    </div>
+                    <div class="text-center mb-2">First Differential <span class="math-columbia">= (x − p) + (x − q) =
+                            2x − (p + q)</span></div>
+                    <div class="flex items-center">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p class="math-columbia">
+                            For cubic or bi-quadratic expressions, the sum of factors relates to the higher-order
+                            differentials.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    <b>Steps to Apply Guṇakasamuccaya Sūtra</b>
+                </p>
+                <div class="ml-5 mb-2">
+                    <p>1. Factorize the given polynomial into its linear or simpler factors.</p>
+                    <p>2. Add the factors to derive the first differential of the expression.</p>
+                    <p>3. Optionally verify by differentiating the polynomial directly.</p>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Quadratic Expression</b>
+                </div>
+                <p class="mb-2">
+                    <b>Problem:</b> Find the first differential of <span class="math-columbia">x <sup>2</sup> − 5x +
+                        4</span>.
+                </p>
+                <p>
+                    <b>Step 1: Factorize the expression</b>
+                </p>
+                <p class="mb-2">Factorize: <span class="math-columbia">x <sup>2</sup> − 5x + 4 = (x − 4) (x − 1)</span>
+                </p>
+
+                <p>
+                    <b>Step 2: Sum the factors</b>
+                </p>
+                <p class="">
+                    Sum the linear factors: <span class="math-columbia">(x − 4) + (x − 1) = x + x − 4 − 1 = 2x −
+                        5</span>
+                </p>
+            </div>
+
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>
