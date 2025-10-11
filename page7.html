@@ -14,21 +14,20 @@
             position: absolute;
             top: 5mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 10mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 20mm 20mm 20mm 30mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,14 +78,14 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 62</div>
+            <div class="page-number">Part 1: Theoretical Overview | 61</div>
             <div class="pb-4 bg-gradient-to-r from-[#FEEBF6] to-[#FFE3BB] text-justify px-2 mb-4 rounded-lg">
                 <p class="mb-4">
-                    <strong>Example 3: Find 10000−67421</strong>
+                    <strong>Example 3: Find <span class="math-columbia"><b>10000 − 67421</b></span></strong>
                 </p>
                 <div class="ps-5">
                     <p>
-                        1. Functional base: 10000.
+                        1. Functional base: <span class="math-columbia">10000</span>.
                     </p>
                     <p>
                         2. Subtract:
@@ -94,27 +93,27 @@
                     <ul class="pl-6 space-y-1">
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            9 − 6 = 3 (first digit)
+                            <span class="math-columbia">9 − 6 = 3</span> (first digit)
                         </li>
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            9 − 7 = 2 (last digit)
+                            <span class="math-columbia">9 − 7 = 2</span> (last digit)
                         </li>
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            9 − 4 = 5 (third digit)
+                            <span class="math-columbia">9 − 4 = 5</span> (third digit)
                         </li>
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            10 − 2 = 8 (last digit)
+                            <span class="math-columbia">10 − 2 = 8</span> (last digit)
                         </li>
                     </ul>
                     <p class="pl-4">
-                        Complement: <strong>3258</strong>.
+                        Complement: <span class="math-columbia"><b>3258</b></span>.
                     </p>
                 </div>
                 <p>
-                    <strong>Result:</strong> 10000 – 6742 = 3258.
+                    <strong>Result:</strong> <span class="math-columbia">10000 – 6742 = 3258</span>.
                 </p>
             </div>
 
@@ -123,9 +122,9 @@
 
             <div class="pb-4 bg-gradient-to-r from-[#EEEEEE] to-[#EFF5D2] text-justify px-2 mb-4 rounded-lg">
                 <p class="mb-4 text-justify">
-                    <strong>Problem:</strong> A chemical reaction starts with 10000 mg of a reactant. After the
-                    reaction, 6742 mg is
-                    consumed. Use the <span class="spectral">Nikhilam Navatas'caramam Dasatah</span> sutra to find the
+                    <strong>Problem:</strong> A chemical reaction starts with <span class="math-columbia">10000</span> mg of a reactant. After the
+                    reaction, <span class="math-columbia">6742</span> mg is
+                    consumed. Use the Nikhilam Navatas'caramam Dasatah sutra to find the
                     unreacted mass of
                     the molecule.
                 </p>
@@ -134,38 +133,38 @@
                 </p>
                 <div class="ps-5">
                     <p>
-                        1. Functional base: 10000.
+                        1. Functional base: <span class="math-columbia">10000</span>.
                     </p>
                     <p>
-                        2. Subtract each digit of 6742:
+                        2. Subtract each digit of <span class="math-columbia">6742</span>:
                     </p>
                     <ul class="pl-6 space-y-1">
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            9 − 6 = 3 (first digit)
+                            <span class="math-columbia">9 − 6 = 3</span> (first digit)
                         </li>
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            9 − 7 = 2 (last digit)
+                            <span class="math-columbia">9 − 7 = 2</span> (last digit)
                         </li>
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            9 − 4 = 5 (third digit)
+                            <span class="math-columbia">9 − 4 = 5</span> (third digit)
                         </li>
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            10 − 2 = 8 (last digit)
+                            <span class="math-columbia">10 − 2 = 8</span> (last digit)
                         </li>
                     </ul>
                     <p class="pl-4">
-                        Complement (Unreacted mass) = <strong>3258 mg</strong>.
+                        Complement (Unreacted mass) = <span class="math-columbia"><b>3258 mg</b></span>.
                     </p>
                 </div>
             </div>
 
             <div class="pb-4 bg-gradient-to-r from-[#FFF1F1] to-[#DDC3C3] px-2 mb-16 rounded-lg">
                 <p class=" text-justify">
-                    <span class="spectral">Nikhilam Navataścaramam Daśataḥ</span> offers a fast and intuitive method for
+                    Nikhilam Navataścaramam Daśataḥ offers a fast and intuitive method for
                     subtraction by finding
                     complements from base values, making it especially effective in scientific tasks like calculating
                     remaining quantities or unreacted substances. It enhances efficiency, accuracy, and mental clarity
@@ -175,16 +174,16 @@
             </div>
 
             <div class="mb-4 px-2 text-center">
-                <p class="text-[#471396] font-bold cinzel">
+                <p class="text-[#6B3F69] font-bold cinzel">
                     Sutra 3. Urdhva-tiryagbhyam (
                 <span style="font-family: 'Noto Serif Devanagari', serif;">
                     उर्ध्वतिर्यग्भ्याम्
                 </span>)
                 </p>
-                <p class="text-[#725CAD]">
+                <p class="text-[#6B3F69]">
                     <strong>Meaning:</strong> Vertically and crosswise.
                 </p>
-                <p class="text-[#725CAD]">
+                <p class="text-[#6B3F69]">
                     <strong>Use:</strong> This sutra is used to multiply numbers vertically and crosswise.
                 </p>
             </div>

@@ -14,20 +14,21 @@
             position: absolute;
             top: 5mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 10mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
+
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 20mm 30mm 20mm 20mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -78,7 +79,7 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 69</div>
+            <div class="page-number">Part 1: Theoretical Overview | 68</div>
             <div class="pb-4 bg-gradient-to-r from-[#EFF3EA] to-[#F9E6CF] text-justify px-2 mb-4 rounded-lg">
                 <p class="mb-1">
                     <strong>Example: Solve</strong>
@@ -94,8 +95,8 @@
                         <div class="-mt-2">(x − 3) (x − 4) (x − 5)</div>
                     </div>
                 </div>
-                <p>Substituting x = 3,4,5</p>
-                <p class="mb-1">For A, set x = 3: Ignore (x - 3) in the denominator and evaluate:</p>
+                <p>Substituting <span class="math-columbia">x = 3, 4, 5</span></p>
+                <p class="mb-1">For A, set <span class="math-columbia">x = 3</span>: Ignore <span class="math-columbia">(x - 3)</span> in the denominator and evaluate:</p>
                 <div class="math-columbia flex items-center justify-center gap-1 mb-2">
                     <div>A</div>
                     <div>=</div>
@@ -103,13 +104,13 @@
                         <div>
                             2(3)<sup>2</sup> − 3 − 5
                         </div>
-                        <div class="h-px bg-black w-36 mt-2"></div>
+                        <div class="h-px bg-black w-28 mt-2"></div>
                         <div class="-mt-2">(3 − 4) (3 − 5)</div>
                     </div>
                     <div>=</div>
                     <div>5</div>
                 </div>
-                <p class="mb-1">For B, set x = 4: Ignore (x − 4):</p>
+                <p class="mb-1">For B, set <span class="math-columbia">x = 4</span>: Ignore <span class="math-columbia">(x − 4)</span>:</p>
                 <div class="math-columbia flex items-center justify-center gap-1 mb-2">
                     <div>B</div>
                     <div>=</div>
@@ -117,13 +118,13 @@
                         <div>
                             2(4)<sup>2</sup> − 4 − 5
                         </div>
-                        <div class="h-px bg-black w-36 mt-2"></div>
+                        <div class="h-px bg-black w-28 mt-2"></div>
                         <div class="-mt-2">(4 − 3) (4 − 5)</div>
                     </div>
                     <div>=</div>
                     <div>-23</div>
                 </div>
-                <p class="mb-1">For C, set x = 5: Ignore (x − 5):</p>
+                <p class="mb-1">For C, set <span class="math-columbia">x = 5</span>: Ignore <span class="math-columbia">(x − 5)</span>:</p>
                 <div class="math-columbia flex items-center justify-center gap-1 mb-2">
                     <div>C</div>
                     <div>=</div>
@@ -131,7 +132,7 @@
                         <div>
                             2(5)<sup>2</sup> − 5 − 5
                         </div>
-                        <div class="h-px bg-black w-36 mt-2"></div>
+                        <div class="h-px bg-black w-28 mt-2"></div>
                         <div class="-mt-2">(5 − 3) (5 − 4)</div>
                     </div>
                     <div>=</div>
@@ -166,11 +167,11 @@
             <p class="spectral font-bold mb-4">Application of the Parāvartya in Chemistry: Concentration Dilution
                 Calculation</p>
 
-            <div class="pb-4 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] text-justify px-2 mb-4 rounded-lg">
-                <p class="mb-2 text-justify">
-                    <strong>Problem:</strong> A chemist has 1697 mL of a concentrated acid solution and wants to divide
+            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] text-justify px-2 rounded-lg">
+                <p class=" text-justify">
+                    <strong>Problem:</strong> A chemist has <span class="math-columbia">1697</span> mL of a concentrated acid solution and wants to divide
                     it into
-                    smaller containers, each holding 13 mL. How many containers can be filled, and how much acid
+                    smaller containers, each holding <span class="math-columbia">13 mL</span>. How many containers can be filled, and how much acid
                     will remain? Solve this using the division method from the sutra.
                 </p>
                 <p class="font-bold mb-1">
@@ -184,25 +185,25 @@
                         <div class="ms-12">
                             <div class="flex items-end">
                                 <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p>Total volume: 1697 mL</p>
+                                <p>Total volume: <span class="math-columbia">1697 mL</span></p>
                             </div>
-                            <div class="flex items-center">
+                            <div class="flex items-end">
                                 <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p>Volume per container: 13 mL</p>
+                                <p>Volume per container: <span class="math-columbia">13 mL</span></p>
                             </div>
                         </div>
                     </div>
                     <p>
-                        <strong>Apply the Sutra to Divide 1697÷13:</strong>
+                        <strong>Apply the Sutra to Divide <span class="math-columbia">1697÷13</span>:</strong>
                     </p>
                     <p>
                         <Strong>Step-by-Step Division Using the Sutra:</Strong>
                     </p>
                     <p>
-                        <b>Divisor:</b> 13 → Keep 1 as it is and reverse the sign of 3: Transformed divisor = −3.
+                        <b>Divisor:</b> <span class="math-columbia">13</span> → Keep <span class="math-columbia">1</span> as it is and reverse the sign of <span class="math-columbia">3:</span> Transformed divisor <span class="math-columbia">= −3</span>.
                     </p>
                     <p>
-                        <b>Dividend:</b> 1697.
+                        <b>Dividend:</b> <span class="math-columbia">1697</span>.
                     </p>
                     <p>
                         Perform division step-by-step:
@@ -210,15 +211,15 @@
                     <ul class="pl-12 space-y-1">
                         <li class="flex items-end">
                             <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p>Multiply the first digit (1) of the dividend by 1: Result = 1.</p>
+                            <p>Multiply the first digit <span class="math-columbia">(1)</span> of the dividend by <span class="math-columbia">1:</span> Result <span class="math-columbia">= 1</span>.</p>
                         </li>
                         <li>
                             <div class="flex items-end">
                                 <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p>Apply −3 to subsequent digits:</p>
+                                <p>Apply <span class="math-columbia">−3</span> to subsequent digits:</p>
                             </div>
                             <div class="ml-8">
-                                <div class="flex items-end">
+                                <div class="math-columbia flex items-end">
                                     <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
                                     <p>6 − 3 = 3,</p>
                                 </div>

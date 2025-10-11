@@ -14,21 +14,20 @@
             position: absolute;
             top: 5mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 10mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 20mm 20mm 20mm 30mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,10 +78,10 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 68</div>
+            <div class="page-number">Part 1: Theoretical Overview | 67</div>
             <div class="pb-4 bg-gradient-to-r from-[#D1F8EF] to-[#CCDF92] text-justify px-2 mb-4 rounded-lg">
                 <p class="mb-4">
-                    <strong>Example: Solve <span class="math-columbia">8x+3=5x+6</span></strong>
+                    <b>Example: Solve <span class="math-columbia font-semibold">8x + 3 = 5x + 6</span></b>
                 </p>
                 <div class="ps-5">
                     <p>
@@ -106,60 +105,60 @@
                     <strong>Steps to Apply:</strong>
                 </p>
                 <p>
-                    1. Write the polynomial division in synthetic form.
+                    <b>Step 1:</b>   Write the polynomial division in synthetic form.
                 </p>
                 <p>
-                    2. Keep the leading coefficient as it is, and reverse the signs of subsequent coefficients
-                    based on <br><span class="ms-4">the divisor.</span>
+                    <b>Step 2:</b>   Keep the leading coefficient as it is, and reverse the signs of subsequent coefficients
+                    based on <span class="">the divisor.</span>
                 </p>
                 <p>
-                    3. Solve step-by-step until all terms are divided.
+                    <b>Step 3:</b>   Solve step-by-step until all terms are divided.
                 </p>
             </div>
 
             <div class="pb-4 bg-gradient-to-r from-[#EAFAEA] to-[#DAD2FF] text-justify px-2 mb-4 rounded-lg">
                 <p class="mb-4">
-                    <strong>Example: Divide x<sup>3</sup>−7x2 + 41x−35 by x−1</strong>
+                    <strong>Example: Divide <span class="math-columbia"><b>x<sup>3</sup> − 7x<sup>2</sup> + 41 x −35 by x − 1</b></span></strong>
                 </p>
                 <div class="ps-5">
                     <p>
-                        1. <b>Divisor:</b> x−1 → Transform by keeping the sign of 1 as it is.
+                        <b>1.</b> Divisor: <span class="math-columbia">x − 1</span> → Transform by keeping the sign of <span class="math-columbia">1</span> as it is.
                     </p>
                     <div>
-                        <div>2. Write coefficients of the polynomial:</div>
+                        <div><b>2.</b> Write coefficients of the polynomial:</div>
                         <div class="flex ml-8 items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>[1, −7, 41, −35]. </p>
+                            <p class="math-columbia">[1, −7, 41, −35].</p>
                         </div>
                     </div>
                     <div>
-                        <div>3. Perform synthetic division:</div>
+                        <div><b>3.</b> Perform synthetic division:</div>
                         <div class="flex ml-8 items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>The first coefficient (1) remains the same. [1, −7, 41, −35].</p>
+                            <p>The first coefficient (1) remains the same.</p>
                         </div>
                         <div class="flex ml-8 items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>Multiply 1×1 and add to −7: −7+1= −6.</p>
+                            <p>Multiply <span class="math-columbia">1 × 1</span> and add to <span class="math-columbia">−7: −7 + 1 = −6</span>.</p>
                         </div>
                         <div class="flex ml-8 items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>Multiply −6×1 and add to 41: 41−6=35.</p>
+                            <p>Multiply <span class="math-columbia">−6 × 1</span> and add to <span class="math-columbia">41: 41 − 6 = 35</span>.</p>
                         </div>
                         <div class="flex ml-8 items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>Multiply 35×1 and add to −35: −35+35=0.</p>
+                            <p>Multiply <span class="math-columbia">35 × 1</span> and add to <span class="math-columbia">−35: −35 + 35 = 0</span>.</p>
                         </div>
                     </div>
                     <div>
-                        <div>4. <b>Result:</b></div>
+                        <div><b>Result:</b></div>
                         <div class="flex ml-8 items-end">
-                            <span class="mr-2 text-green-600">✔</span>
-                            <p>Quotient: Q=x<sup>2</sup>−6x+35,</p>
+                            <!-- <span class="mr-2 text-green-600">✔</span> -->
+                            <p>Quotient: <span class="math-columbia">Q = x<sup>2</sup>−6x + 35</span>,</p>
                         </div>
                         <div class="flex ml-8 items-end">
-                            <span class="mr-2 text-green-600">✔</span>
-                            <p>Remainder: R=0.</p>
+                            <!-- <span class="mr-2 text-green-600">✔</span> -->
+                            <p>Remainder: <span class="math-columbia">R = 0</span>.</p>
                         </div>
                     </div>
                 </div>
@@ -195,7 +194,7 @@
                     </div>
                 </div>
                 <p>
-                    2. Use the sutra to find A, B, and C by substituting the roots of x=a,b,c into the equation.
+                    2. Use the sutra to find A, B, and C by substituting the roots of <span class="math-columbia">x = a, b, c</span> into the equation.
                 </p>
                 <p>
                     3. Simplify to find values.
