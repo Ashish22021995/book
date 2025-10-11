@@ -14,9 +14,9 @@
             position: absolute;
             top: 5mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 10mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 20mm 30mm 20mm 20mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,7 +79,7 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 91</div>
+            <div class="page-number">Part 1: Theoretical Overview | 90</div>
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
                 <div class="ml-5">
                     <div class="ml-8">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="ml-5">
-                    <p>3. Arrange the terms:</p>
+                    <p><b>3. Arrange the terms:</b></p>
                     <div class="flex math-columbia justify-center gap-8">
                         <div>x <sup>3</sup></div>
                         <div>(x <sup>2</sup>y + 2x <sup>2</sup>y)</div>
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="ml-5">
-                    <p>4. Handle carryovers:</p>
+                    <p><b>4. Handle carryovers:</b></p>
                     <div class="ml-8">
                         <div class="flex items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
@@ -139,11 +139,11 @@
                     <div class="">
                         <div class="flex items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>Split: <span class="math-columbia">x = 2, y = 3</span></p>
+                            <p><b>Split: <span class="math-columbia"><b>x = 2, y = 3</b></span></b></p>
                         </div>
                         <div class="flex items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>Compute:</p>
+                            <p><b>Compute:</b></p>
                         </div>
                         <div class="flex math-columbia justify-center gap-8">
                             <div>x <sup>3</sup> = 8,</div>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="flex items-end">
                             <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                            <p>Arrange:</p>
+                            <p><b>Arrange:</b></p>
                         </div>
                         <div class="flex math-columbia justify-center gap-8">
                             <div>x <sup>3</sup></div>
@@ -171,15 +171,15 @@
                         </div>
                     </div>
                 </div>
-                <p><b>Result:</b> <span class="math-columbia">233= 12167</span></p>
+                <p><b>Result:</b> <span class="math-columbia">23 <sup>3</sup> = 12167</span></p>
             </div>
 
+            <p class="spectral font-bold mb-4">Application of Yavadunam in chemistry:
+                Volume of Atoms in a Molecule</p>
+
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <div class="mb-2">
-                    <b>Example 1: Calculating the Volume of Atoms in a Molecule</b>
-                </div>
                 <p class="mb-2">
-                    <b>Problem:</b> The radius of a single atom in a face-centered cubic (FCC) structure is 1.6 Å.
+                    <b>Problem:</b> The radius of a single atom in a face-centered cubic (FCC) structure is 1.2 Å.
                     Calculate the volume of an atom in the molecule assuming the atomic structure is spherical.
                 </p>
                 <p>
@@ -199,7 +199,7 @@
                         <div>πr <sup>3</sup></div>
                     </div>
                     <p>
-                        <b>2.</b>   Substitute the Radius (<span class="math-columbia">r = 1.2 Å</span>): To compute <span class="math-columbia">r <sup>3</sup> = (1.2) <sup>3</sup></span>, use
+                        <b>2.   Substitute the Radius (<span class="math-columbia"><b>r = 1.2 Å</b></span>):</b> To compute <span class="math-columbia">r <sup>3</sup> = (1.2) <sup>3</sup></span>, use
                         Yavadunam Sutra to find the cube of <span class="math-columbia">1.2</span>.
                     </p>
                     <div class="ml-4 flex items-end">
@@ -207,7 +207,7 @@
                         <p>Split the number <span class="math-columbia">1.2</span> into <span class="math-columbia">x = 1</span> (tens digit) and <span class="math-columbia">y = 2</span>y = 2 (units digit).</p>
                     </div>
                     <div class="">
-                        <p><b>3.</b>    Compute each term:</p>
+                        <p><b>3.    Compute each term:</b></p>
                         <div class="ml-5">
                             <div class="flex items-end">
                                 <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>

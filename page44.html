@@ -14,9 +14,9 @@
             position: absolute;
             top: 5mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 10mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 20mm 30mm 20mm 20mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,7 +79,7 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 99</div>
+            <div class="page-number">Part 1: Theoretical Overview | 98</div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
                 <div class="ml-5 math-columbia">
@@ -97,7 +97,7 @@
 
                 <p>The mole fraction of the solute is:</p>
                 <div class="mb-2 math-columbia flex justify-center items-end">
-                    <div>X <sub>Solute</sub> = 0.</div>
+                    <div>X <span class="text-[14px]"><sub>Solute</sub></span> = 0.</div>
                     <div class="flex flex-col items-center">
                         <div class="h-px bg-black ml-1 w-12 mt-4"></div>
                         <div class="-mt-3">142857</div>
@@ -106,19 +106,16 @@
             </div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="mb-2">
-                    <b>Example 2: Mole Fraction of Solvent</b>
-                </div>
                 <p class="mb-2">
                     <b>Problem:</b> Find the mole fraction of the solvent (<span class="math-columbia">X</span>
-                    <sub>Solute</sub>) in the same solution.
+                    <span class="text-[14px]"><sub>Solvent</sub></span>) in the same solution.
                 </p>
 
                 <p>
                     <b>Step 1: Formula and simplification</b>
                 </p>
                 <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                    <div>X <sub>Solvent</sub> = 1 - X <sub>Solute</sub> = 1 -</div>
+                    <div>X <span class="text-[14px]"><sub>Solvent</sub></span> = 1 - X <span class="text-[14px]"><sub>Solute</sub></span> = 1 -</div>
                     <div class="flex flex-col items-center">
                         <div class="-mb-1">1</div>
                         <div class="h-px bg-black w-5 mt-3"></div>

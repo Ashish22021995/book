@@ -14,9 +14,9 @@
             position: absolute;
             top: 5mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 10mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 20mm 20mm 20mm 30mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,7 +79,7 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 96</div>
+            <div class="page-number">Part 1: Theoretical Overview | 95</div>
 
             <div class="px-2 text-center mb-4">
                 <p class="text-[#1B4D3E] font-bold cinzel">
@@ -108,16 +108,16 @@
                         <span class="-mt-1.5">13</span>
                     </span>,
                     etc. without performing complete long division. Instead, it uses
-                    <b>remainders</b> and <b>multiplications by the last digit</b>.
+                    remainders and multiplications by the last digit.
                 </div>
             </div>
 
             <div class="mb-4 px-2 text-[#3F4F44]">
                 <p class="mb-1"><b>Key Idea:</b></p>
                 <div class="ml-5 mb-2">
-                    <p>1. <b>Division Methodology:</b> The remainders from dividing a number step-by-step are used to
+                    <p><b>1. Division Methodology:</b> The remainders from dividing a number step-by-step are used to
                         generate recurring decimals.</p>
-                    <p>2. <b>Multiplication Methodology:</b> The remainders are multiplied by the denominator (or a
+                    <p><b>2. Multiplication Methodology:</b> The remainders are multiplied by the denominator (or a
                         "last digit") to determine the recurring sequence directly.</p>
                 </div>
 
@@ -125,11 +125,11 @@
                     <b>Steps:</b>
                 </p>
                 <div class="ml-5">
-                    <p>1. <b>Long Division for Remainders:</b> Perform the division to record the sequence of
+                    <p><b>1. Long Division for Remainders:</b> Perform the division to record the sequence of
                         remainders.</p>
-                    <p>2. <b>Multiplication Using Last Digit:</b> Multiply each remainder by the denominator (or a key
+                    <p><b>2. Multiplication Using Last Digit:</b> Multiply each remainder by the denominator (or a key
                         multiplier) to compute the recurring digits.</p>
-                    <p>3. <b>Use Complements:</b> For certain fractions, the recurring sequence can be derived faster
+                    <p><b>3. Use Complements:</b> For certain fractions, the recurring sequence can be derived faster
                         using complements from 999 (explained below).</p>
                 </div>
             </div>
