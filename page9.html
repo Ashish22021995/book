@@ -81,61 +81,6 @@
         <div class="">
             <div class="page-number">Part 1: Theoretical Overview | 63</div>
             <div class="pb-2 bg-gradient-to-r from-[#FEEBF6] to-[#FFE3BB] text-justify px-2 mb-4 rounded-lg">
-                <p class="mb-4">
-                    <b>Step 1:</b> We have to multiply the digits which are at the one's places of given multiplication,
-                    i.e. <span class="math-columbia">3 × 2 = 6</span>; the obtained result will be the first digit (one place) of the answer.
-                </p>
-                <div class="flex justify-center space-y-4 mb-4">
-
-                    <div class="math-columbia flex flex-col">
-                        <!-- First row -->
-                        <div class="flex items-start ml-2 space-x-8">
-                            <div class="flex flex-col items-center">
-                                <div>1</div>
-                            </div>
-
-                            <div class="flex flex-col items-center">
-                                <div>3</div>
-                                <div class="text-2xl -ml-1 -mt-3">↓</div>
-                            </div>
-                            <div class="flex gap-2 -mt-1 items-center ">
-                                <div class="text-2xl  -mt-2">→</div>
-                                <div class="text-sm">(Multiplicand)</div>
-                            </div>
-                        </div>
-
-                        <!-- Second row -->
-                        <div class="flex items-start space-x-8">
-                            <div class="flex flex-col items-center">
-                                <div class="-ml-3">× 1</div>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <div>2</div>
-                            </div>
-                            <div class="flex gap-2 -mt-1 items-center ">
-                                <div class="text-2xl -mt-2">→</div>
-                                <div class="text-sm">(Multiplier)</div>
-                            </div>
-                        </div>
-
-                        <!-- Product row -->
-                        <div class="-ml-3 flex items-center">
-                            <div class="flex flex-col items-start">
-                                <div class="h-px -ml-3 w-20 bg-black mt-2"></div>
-                                <div class="-mt-1">(2 × 3 = 6)</div>
-                                <div class="h-px -ml-3 w-20 bg-black mt-3"></div>
-                            </div>
-                            <div class="flex gap-2 -mt-1 items-center ">
-                                <div class="text-2xl ml-5 -mt-2">→</div>
-                                <div class="text-sm">(Product)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="mb-2">
-                    <b>Step 2:</b> Here, we have to cross multiply the digits and add the obtained products, i.e. <span class="math-columbia">(1 × 2) + (3 × 1) = 5</span>; the obtained result will be the second digit (tenth place) of the answer.
-                </p>
                 <div class="flex justify-center space-y-4 mb-4">
 
                     <div class="flex flex-col items-center space-y-6">
@@ -213,8 +158,8 @@
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#EBFFD8] to-[#FAFFCA] text-justify px-2 rounded-lg">
-                <p class="mb-4">
+            <div class="pb-2 bg-gradient-to-r from-[#EBFFD8] to-[#FAFFCA] text-justify mb-4 px-2 rounded-lg">
+                <p class="mb-2">
                     <strong>Example 2: Multiply <span class="math-columbia"><b>34 × 56</b></span></strong>
                 </p>
                 <div class="ps-5">
@@ -241,6 +186,41 @@
                     </ul>
                     <p class="">
                         3. <b>Result</b> Combine the digits: <span class="math-columbia">1904</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#FFDBDB] to-[#EFEEEA] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <strong>Example 3: Multiply <span class="math-columbia">123 × 45</span> (Three-digit × Two-digit)</strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        <b>1. Write the numbers:</b> <span class="math-columbia">123 and 45</span>.
+                    </p>
+                    <p>
+                        <b>2. Steps:</b>
+                    </p>
+                    <div class="">
+                        <div class="ml-10 flex items-end gap-4">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <div>Multiply the <b>unit digits</b>: <span class="math-columbia">3 × 5 = 15</span>. Write <span class="math-columbia">5</span> and carry over <span class="math-columbia">1</span>.</div>
+                        </div>
+
+                        <div class="ml-10 flex items-center gap-4">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <div>Multiply <b>crosswise</b>: <span class="math-columbia">(12 × 5) + (3 × 4) = 60 + 12 = 72</span>. Add the carry-over <span class="math-columbia">1: 72
+                                + 1 = 73</span>. Write <span class="math-columbia">3</span> and carry over <span class="math-columbia">7</span>.</div>
+                        </div>
+
+                        <div class="ml-10 flex items-center gap-4">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <div>Multiply the <b>tens digits vertically</b>: <span class="math-columbia">12 × 4 = 48</span>. Add the carry-over <span class="math-columbia">7: 48 + 7 =
+                                55</span>.</div>
+                        </div>
+                    </div>
+                    <p class="">
+                        <b>3. Result</b> Combine the digits: <span class="math-columbia">5535</span>.
                     </p>
                 </div>
             </div>
