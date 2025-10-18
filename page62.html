@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 116</div>
+
+
+            <div class="spectral text-center font-bold mb-4 text-[#3A6F43]">
+                URDHVA TIRYAKBHYAM SUTRA - AN INTERACTIVE APPROACH FOR TEACHING AND LEARNING NUMERICAL CALCULATIONS
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#EEEEEE] to-[#E7D3D3] mb-14 px-2 rounded-lg">
+                <p class="text-justify mb-4">
+                    The Urdhva Tiryakbhyam Sutra, meaning "Vertically and Crosswise," is a versatile method for
+                    numerical calculations that integrates mental computation with logical reasoning. This sutra
+                    simplifies complex multiplications by breaking them into smaller, manageable parts using a vertical
+                    and crosswise pattern. It is especially effective for teaching students how to handle multi-digit
+                    numbers, offering clarity and precision in problem-solving.
+                </p>
+                <p class="text-justify">
+                    The Urdhva Tiryakbhyam Sutra operates dynamically, allowing users to adapt calculations in real-time
+                    and explore relationships between numbers. It supports solving equations, finding proportional
+                    relationships, and analyzing numerical patterns in chemistry, such as balancing equations or
+                    calculating molecular weights. Its intuitive framework enhances understanding and engagement by
+                    linking algebraic input (number properties) that helps learners grasp complex concepts more easily
+                    while developing speed and accuracy in
+                </p>
+            </div>
+
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra: Ūrdhva-Tiryagbhyām (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        ऊर्ध्व-तिर्यग्भ्याम्
+                    </span>)
+                </p>
+                <p class="text-[#6B3F69]">
+                    <strong>Meaning:</strong> "By Vertically and Crosswise."
+                </p>
+                <div class="text-justify text-[#6B3F69]">
+                    <p class="mb-2">
+                        This sutra is extremely adaptable and applicable to a wide range of mathematical and scientific
+                        problems, including multiplication, division, solving equations, and even advanced calculus
+                        operations. Below is a structured explanation of its applications with examples.
+                    </p>
+                    <p>
+                        The Ūrdhva-Tiryagbhyām Sutra is a highly versatile and efficient mathematical tool for
+                        performing
+                        all types of multiplications and divisions, including operations involving large quantities,
+                        decimal
+                        numbers, and binary numbers. Its applications extend beyond arithmetic, playing a crucial role
+                        in
+                        solving complex problems related to determinants and matrices, such as calculating higher-order
+                        determinants, solving simultaneous linear equations, verifying the consistency of equations, and
+                        determining co-factors, adjoints, inverses, and ranks of matrices, including Jacobian
+                        determinants
+                        in multivariable systems. Furthermore, the sutra is instrumental in calculus for determining the
+                        1st, 2nd, and 3rd order derivatives of products of functions, a key requirement in analyzing
+                        rate
+                        equations, thermodynamic properties, and equilibrium systems in chemistry. It also simplifies
+                        the
+                        integration of product functions, aiding in calculations of work, energy, and reaction kinetics.
+                        With its structured and visual approach, leveraging diagrams that represent digits as dots and
+                        their
+                        relationships with lines, the Ūrdhva-Tiryagbhyām Sutra offers a powerful, systematic methodology
+                        to
+                        solve intricate numerical problems, bridging mathematical techniques and scientific computations
+                        seamlessly.
+                    </p>
+                </div>
+                
+            </div>
+
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

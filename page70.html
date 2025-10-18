@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 124</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+
+                <div class="math-columbia">
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 1: E<sub>1</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 1<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">1<sup>2</sup></div>
+                        </div>
+                        <div>= -13.6 eV</div>
+                    </div>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 2: E<sub>2</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 1<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">2<sup>2</sup></div>
+                        </div>
+                        <div>= -3.4 eV</div>
+                    </div>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 3: E<sub>3</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 1<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">3<sup>2</sup></div>
+                        </div>
+                        <div>= -1.51 eV</div>
+                    </div>
+
+                    <p>For <span class="math-columbia">Z = 2</span> (Helium ion, He<sup>+</sup>)</p>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 1: E<sub>1</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 2<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">1<sup>2</sup></div>
+                        </div>
+                        <div>= -54.4 eV</div>
+                    </div>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 2: E<sub>2</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 2<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">2<sup>2</sup></div>
+                        </div>
+                        <div>= -13.6 eV</div>
+                    </div>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 3: E<sub>3</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 2<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">3<sup>2</sup></div>
+                        </div>
+                        <div>= -6.04 eV</div>
+                    </div>
+
+
+                    <p>For <span class="math-columbia">Z = 3</span> (Lithium-ion, Li<sup>2+</sup>)</p>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 1: E<sub>1</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 3<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">1<sup>2</sup></div>
+                        </div>
+                        <div>= -122.4 eV</div>
+                    </div>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 2: E<sub>2</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 3<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">2<sup>2</sup></div>
+                        </div>
+                        <div>= -30.6 eV</div>
+                    </div>
+                    <div class="flex my-1 math-columbia items-center space-x-2">
+                        <div>1. For n = 3: E<sub>3</sub> = -</div>
+                        <div class="flex flex-col items-center">
+                            <div>13.6 × 3<sup>2</sup></div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
+                            <div class="-mt-2">3<sup>2</sup></div>
+                        </div>
+                        <div>= -13.6 eV</div>
+                    </div>
+                </div>
+
+
+                <p>Using these calculated energy levels for <span class="math-columbia">n = 1, 2, 3,</span> the
+                    determinant matrix is formed as:</p>
+
+                <div class="flex math-columbia my-2 justify-center items-center gap-2">
+                    <div>∣ A ∣ = det ⁡(A) =</div>
+                    <div class="h-[80px] border-l-2 border-black mx-2"></div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col">
+                            <div>-13.6</div>
+                            <div>-54.4</div>
+                            <div>-122.4</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>-3.4</div>
+                            <div>-13.6</div>
+                            <div>-30.6</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>-1.51</div>
+                            <div>-6.04</div>
+                            <div>-13.6</div>
+                        </div>
+                    </div>
+                    <div class="h-[80px] border-l-2 border-black mx-2"></div>
+                </div>
+
+                <p class="mb-2">This matrix represents the energy levels of hydrogen-like atoms for <span
+                        class="math-columbia">Z =
+                        1, 2, 3</span> and <span class="math-columbia">n = 1, 2, 3</span>.</p>
+
+                <p>
+                    <b>Step 2: Simplify the Determinant Using the Vertically & Crosswise Sūtra</b>
+                </p>
+                <p>
+                    Replace the second and third rows using transformations based on the <b>Vertically & Crosswise method</b>
+                    to simplify calculations:
+                </p>
+
+                <div class="flex my-2 math-columbia justify-center items-center gap-2">
+                    <div>∣ A ∣ = det ⁡(A) =</div>
+                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col">
+                            <div>-13.6</div>
+                            <div>-40.8</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>-3.4</div>
+                            <div>-30.6</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>-1.51</div>
+                            <div>-6.04</div>
+                        </div>
+                    </div>
+                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

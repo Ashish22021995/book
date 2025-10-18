@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 119</div>
+            <div class="mb-10">
+
+                <p class="mb-4"><b>For <span class="math-columbia">4 × 4</span> Digits</b></p>
+                <div class="mb-2">
+                    <div class="flex justify-between mb-1 mb-4">
+                        <div class="w-full mt-1"><img src="assets/3.jpg" alt="Left Image" class="rounded-3xl"></div>
+                    </div>
+                    <div class="text-left"><b><i>Figure 3.9:</i></b> Visual representation of <span
+                            class="math-columbia">4 × 4</span> Digit multiplication
+                    </div>
+                </div>
+            </div>
+
+            <div class="spectral font-bold mb-4">
+                Application in Chemistry: Example Using Some Basic Concepts of Chemistry
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b> Calculate the total number of atoms in 154 grams of oxygen gas (O<sub>2</sub>).
+                </p>
+                <p class="mb-2">
+                    <b>Given Data:</b>
+                </p>
+                <div class="ml-5">
+                    <div class="flex items-center">
+                        <span class="w-1.5 h-1.5 p-0.5 mr-2 bg-[#6B3F69] rounded-full"></span>
+                        <p> The molecular weight of O<sub>2</sub>: 32 g/mol.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-1.5 h-1.5 p-0.5 mr-2 bg-[#6B3F69] rounded-full"></span>
+                        <p> Avogadro’s number: 6.022×10<sup>23</sup> molecules/mol.</p>
+                    </div>
+                </div>
+                <p>
+                    To calculate the total number of atoms, we first find the number of moles of O<sub>2</sub> and
+                    multiply by Avogadro’s number, then account for the fact that each molecule of O<sub>2</sub>
+                    contains 2 atoms.
+                </p>
+
+                <p><b>Step 1: Calculate the Number of Moles</b></p>
+
+                <div class="math-columbia flex justify-center items-center space-x-2">
+                    <div>Moles of O<sub>2</sub> =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">Mass of O<sub>2</sub></div>
+                        <div class="h-px bg-black w-48 mt-3"></div>
+                        <div class="-mt-2">Molecular weight of O_2</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">154</div>
+                        <div class="h-px bg-black w-7 mt-3"></div>
+                        <div class="-mt-2">32</div>
+                    </div>
+                </div>
+                <p>
+                    Use <b>Ūrdhva-Tiryagbhyām Sutra</b> to perform the division step-by-step.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

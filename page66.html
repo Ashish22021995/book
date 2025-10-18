@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 10mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 30mm 20mm 20mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 120</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+
+                <p>
+                    <b>Step-by-Step Calculation</b>
+                </p>
+                <div class="ml-5 mb-4">
+                    <p>1. Write 154154154 and 323232.</p>
+                    <p>2. Divide step by step:</p>
+                    <div class="ml-5">
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 p-0.5 bg-black rounded-full"></span>
+                            <p> Multiply crosswise for each place value to simplify.</p>
+                        </div>
+                    </div>
+                    <p class="math-columbia my-1 text-center">Moles of O<sub>2</sub> = 4.8125 moles</p>
+                </div>
+
+                <p><b>Step 2: Calculate the Number of Molecules</b></p>
+                <p>Multiply the moles by Avogadro’s number:</p>
+                <p class="math-columbia text-center my-1">Number of molecules = 4.8125 × 6.022 × 10 <sup>23</sup></p>
+
+                <p>
+                    <b>Step-by-Step Multiplication Using the Sutra</b>
+                </p>
+                <div class="ml-5">
+                    <p>1. Align <span class="math-columbia">4812</span> (scaled moles) and <span
+                            class="math-columbia">6022</span>.</p>
+                    <p>2. Multiply crosswise for each place:</p>
+                    <div class="ml-5">
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 p-0.5 bg-black rounded-full"></span>
+                            <p> <span class="math-columbia">4 × 6, 8 × 0… </span>etc. (follow the crosswise steps).</p>
+                        </div>
+                    </div>
+                    <p>3. Combine carryovers.</p>
+                </div>
+                <p>
+                    The approximate result is:
+                </p>
+                <p class="math-columbia text-center mb-4 my-1">
+                    Number of molecules = 2.897 × 10<sup>24</sup> molecules
+                </p>
+
+
+
+                <p><b>Step 3: Calculate the Total Number of Atoms</b></p>
+                <p>Each molecule of O<sub>2</sub> contains 2 atoms:</p>
+                <p class="math-columbia text-center my-1">Number of Atoms = 2 × 2.897 × 10<sup>24</sup> = 5.794 ×
+                    10<sup>24</sup> atoms</p>
+
+                <p>
+                    <b>Final Answer:</b>
+                </p>
+
+                <p>
+                    The total number of atoms in <span class="math-columbia">154 g</span> of O<sub>2</sub> is
+                    approximately: <span class="math-columbia">5.794 × 10<sup>24</sup></span> atoms.
+                </p>
+
+            </div>
+
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>2. Stepwise Explanation of Division Using the Ūrdhva-Tiryagbhyām Sutra</b>
+                </p>
+                <p class="mb-2">
+                    This is a Vedic-based “straight division” approach that simplifies the process by bifurcating the
+                    divisor into two parts: an operator, used for division, and a dhwajank, which adjusts sub-dividend
+                    portions iteratively. This approach produces the quotient and remainder in a single step, making it
+                    faster and more efficient than traditional methods, particularly when the divisor is easily
+                    simplified.
+                </p>
+                <p>
+                    <b>Example:</b> Divide <span class="math-columbia"><b>1764</b></span> by <span
+                        class="math-columbia"><b>42</b></span>.
+                </p>
+
+                <p>
+                    <b>Step 1:</b> Use 4 as the main divisor and 2 as the flag digit. Arrange the divisor, flag digit,
+                    quotient, and remainder, placing the unit digit in the remainder column.
+                </p>
+
+                <!-- Division Layout -->
+                <div class="mt-2 math-columbia text-center">
+                    <!-- Top row -->
+                    <div class="flex justify-center items-end gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="pb-2 w-[20px] flex items-end">
+                            4<span><sup>2</sup></span>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[80px] justify-center pb-2 flex gap-6 ">
+                            <div>1</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[20px] pb-2 flex gap-6 ">
+                            <div>4</div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal line -->
+                    <div class="w-[240px] border-t border-black mx-auto"></div>
+
+                    <!-- Bottom row (Quotient & Remainder labels) -->
+                    <div class="flex -mt-2 justify-center items-center gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px] font-semibold flex items-end">
+
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[80px] justify-center flex gap-6 ">
+                            <div>Quotient</div>
+                        </div>
+
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <div class="w-[20px] flex gap-6 ">
+                            <div>Remainder</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 2: Divide <span class="math-columbia">17</span> by <span class="math-columbia">4</span></b>
+                </p>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

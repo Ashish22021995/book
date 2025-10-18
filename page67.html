@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 121</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+
+                <p>
+                    First digit of <span class="math-columbia">quotient = 4, Remainder = 1</span>
+                </p>
+                <p>
+                    Place the quotient <span class="math-columbia">4</span> in the quotient column and position the
+                    remainder <span class="math-columbia">1</span> before <span class="math-columbia">6</span> in the
+                    dividend column.
+                </p>
+
+                <div class="my-2 math-columbia text-center">
+                    <!-- Top row -->
+                    <div class="flex justify-center items-end gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px] pb-8  flex items-end">
+                            4<span><sup>2</sup></span>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="pb-2 w-[80px] flex flex-col">
+                            <div class="flex gap-6 ">
+                                <div>1</div>
+                                <div>7</div>
+                                <div>6</div>
+                            </div>
+                            <div class="ml-8">
+                                <div>1</div>
+                            </div>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[20px] pb-8 flex gap-6 ">
+                            <div>4</div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal line -->
+                    <div class="w-[340px] border-t border-black mx-auto"></div>
+
+                    <!-- Bottom row (Quotient & Remainder labels) -->
+                    <div class="flex -mt-2 justify-center items-center gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px]  font-semibold flex items-end">
+
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[80px] flex gap-6 ">
+                            <div>42</div>
+                        </div>
+
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <div class="w-[20px] flex gap-6 ">
+                            <div>Remainder</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="math-columbia ml-10">
+                    <p>
+                        Gross dividend = 16
+                    </p>
+                    <p>
+                        Net dividend = Gross dividend – First digit of quotient × Flag digit
+                    </p>
+                    <p class="ml-[88px]">
+                        = 16 – 4 × 2 = 8
+                    </p>
+                </div>
+
+                <p>
+                    <b>Step 3: Divide <span class="math-columbia"><b>8</b></span> by <span class="math-columbia"><b>4</b></span></b>
+                </p>
+                <p class="math-columbia ml-12">
+                    Quotient = 2, Remainder = 0
+                </p>
+
+                <div class="my-2 math-columbia text-center">
+                    <!-- Top row -->
+                    <div class="flex justify-center items-end gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px] pb-8  flex items-end">
+                            4<span><sup>2</sup></span>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="pb-2 w-[80px] flex flex-col">
+                            <div class="flex gap-6">
+                                <div>1</div>
+                                <div>7</div>
+                                <div>6</div>
+                            </div>
+                            <div class="ml-8">
+                                <div>1</div>
+                            </div>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[20px] pb-1 flex gap-6 ">
+                            <div class="flex flex-col">
+                                <div>4</div>
+                                <div class="-ml-5">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal line -->
+                    <div class="w-[340px] border-t border-black mx-auto"></div>
+
+                    <!-- Bottom row (Quotient & Remainder labels) -->
+                    <div class="flex -mt-2 justify-center items-center gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px]  font-semibold flex items-end">
+
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[80px] flex gap-6 ">
+                            <div>42</div>
+                        </div>
+
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <div class="w-[20px] flex gap-6 ">
+                            <div>Remainder</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ml-10">
+                    <p>
+                        The calculation now shifts to the remainder part, where the Gross Dividend is <span
+                            class="math-columbia">4</span>.
+                    </p>
+                    <p class="math-columbia">
+                        Net dividend = Gross dividend – Quotient × Flag digit
+                    </p>
+                    <p class="ml-[88px] math-columbia">
+                        = 4 – 2 × 2 = 0
+                    </p>
+                    <p>
+                        As we have reached the remainder part, the division process is complete.
+                    </p>
+                    <p>
+                        Thus, <span class="math-columbia">1764 ÷ 42 = 42</span> with a remainder of <span
+                            class="math-columbia">0</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="spectral font-bold mb-4">
+                Application in Chemistry: Example from Chemical Equilibrium
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b> A reaction at equilibrium has an equilibrium constant <span
+                        class="math-columbia">K<sub>C</sub> = 32</span>. The
+                    equilibrium concentration of one reactant <span class="math-columbia">[R<sub>1</sub>]</span> is
+                    <span class="math-columbia">1 mol/L</span>, and the concentration of the
+                    product is <span class="math-columbia">0.736 mol/L</span>. Calculate the equilibrium concentration
+                    of the second reactant
+                    <span class="math-columbia">[R<sub>2</sub>]</span>.
+                </p>
+                <p class="mb-2">
+                    <b>Solution:</b>
+                </p>
+
+                <div class="flex my-1 math-columbia justify-center items-center space-x-2">
+                    <div>K<sub>c</sub> =</div>
+                    <div class="flex flex-col items-center">
+                        <div>[Product]</div>
+                        <div class="h-px bg-black w-48 mt-3"></div>
+                        <div class="-mt-2">[Reactant 1][Reactant 2]</div>
+                    </div>
+                </div>
+
+                <p>
+                    Rearranging to find the concentration of Reactant <span class="math-columbia">2 ([R<sub>2</sub>])</span>:
+                </p>
+                <div class="flex my-1 math-columbia justify-center items-center space-x-2">
+                    <div>[R<sub>2</sub>] =</div>
+                    <div class="flex flex-col items-center">
+                        <div>[Product]</div>
+                        <div class="h-px bg-black w-20 mt-3"></div>
+                        <div class="-mt-2">K<sub>C</sub>[R<sub>1</sub>]</div>
+                    </div>
+                </div>
+                <p>
+                    Substitute the given values:
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

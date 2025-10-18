@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 5mm;
+            /* distance from bottom edge */
+            left: 0;
+            right: 10mm;
+            text-align: right;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 20mm 20mm 20mm 30mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number">Part 1: Theoretical Overview | 117</div>
+            <p class="text-[#6B3F69]">
+                <strong>Uses of the Sutra</strong>
+            </p>
+            <div class="ml-5 text-[#6B3F69] mb-4">
+                <div class="">
+                    <p><b>1. Multiplications of any number by any number:</b></p>
+                    <p class="ml-5">The sutra simplifies the multiplications having <span class="math-columbia">2 ×
+                            2</span>, <span class="math-columbia">3 × 3</span>, and <span class="math-columbia">4 ×
+                            4</span>, and so on.</p>
+                </div>
+                <div class="">
+                    <p><b>2. Division of Large Numbers:</b></p>
+                    <p class="ml-5">The sutra simplifies the division of large numbers, including decimals and binary
+                        numbers, by working backward from the product of the digits using vertical and crosswise
+                        operations.</p>
+                </div>
+                <div class="">
+                    <p><b>3. Solving Simultaneous Linear Equations:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 p-0.5 mr-2 bg-[#6B3F69] rounded-full"></span>
+                            <p> Consistency of linear equations can be checked using the determinant and adjoint
+                                properties derived using the sutra.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 p-0.5 mr-2 bg-[#6B3F69] rounded-full"></span>
+                            <p> It is instrumental in solving equations in quantum chemistry, such as predicting
+                                molecular shapes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p><b>4. Calculus Operations:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 p-0.5 bg-[#6B3F69] rounded-full"></span>
+                            <p> Useful for calculating the 1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> order
+                                derivatives of the product of two or more functions.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 p-0.5 bg-[#6B3F69] rounded-full"></span>
+                            <p> Example: In thermodynamics, calculating changes in Gibbs free energy or entropy with
+                                temperature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <p><b>5. Integration of Product Functions:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-center">
+                            <span class="w-1.5 h-1.5 mr-2 p-0.5 bg-[#6B3F69] rounded-full"></span>
+                            <p> Simplifies integration tasks, which is critical in reaction rate calculations and
+                                understanding equilibrium constants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>1. Stepwise Explanation of Multiplication Using the Ūrdhva-Tiryagbhyām Sutra</b>
+                </p>
+                <p>
+                    <b>Example:</b> Multiply <span class="math-columbia">243 × 154</span>.
+                </p>
+                <p>
+                    Align the numbers vertically and apply the sutra step by step:
+                </p>
+                <p class="mt-2">
+                    <b>Table 3.1</b> Step-by-step multiplication by using Ūrdhva-Tiryagbhyām Sutra
+                </p>
+                <div class="flex justify-center">
+                    <table class="min-w-[80%] border border-gray-400 border-collapse text-[12pt] text-center">
+                        <thead class="bg-gradient-to-r from-[#E0E7FF] to-[#F3E8FF]">
+                            <tr>
+                                <th class="border border-gray-400 px-2 py-2">Steps</th>
+                                <th class="border border-gray-400 px-2 py-2">Calculation</th>
+                                <th class="border border-gray-400 px-2 py-2">Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-[#D9E9CF]">
+                                <td class="border border-gray-400 px-2 py-2"><b>1</b></td>
+                                <td class="border border-gray-400 px-2 py-2">Multiply the first digits vertically: <span
+                                        class="math-columbia">2 × 1</span></td>
+                                <td class="border border-gray-400 px-2 py-2 math-columbia">2</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="border border-gray-400 px-2 py-2"><b>2</b></td>
+                                <td class="border border-gray-400 px-2 py-2">Multiply crosswise and sum: <span
+                                        class="math-columbia">(2 × 5) + (4 × 1)</span></td>
+                                <td class="border border-gray-400 px-2 py-2 math-columbia">14</td>
+                            </tr>
+                            <tr class="bg-[#D9E9CF]">
+                                <td class="border border-gray-400 px-2 py-2"><b>3</b></td>
+                                <td class="border border-gray-400 px-2 py-2">Multiply all digits crosswise: <span
+                                        class="math-columbia">(2 × 4) + (4 × 5) + (3 × 1)</span></td>
+                                <td class="border border-gray-400 px-2 py-2 math-columbia">31</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="border border-gray-400 px-2 py-2"><b>4</b></td>
+                                <td class="border border-gray-400 px-2 py-2">Multiply the last two digits crosswise and
+                                    vertically: <span class="math-columbia">(4 × 4) + (3 × 5)</span></td>
+                                <td class="border border-gray-400 px-2 py-2 math-columbia">31</td>
+                            </tr>
+                            <tr class="bg-[#D9E9CF]">
+                                <td class="border border-gray-400 px-2 py-2"><b>5</b></td>
+                                <td class="border border-gray-400 px-2 py-2">Multiply the last digits vertically: <span
+                                        class="math-columbia">3 × 4</span></td>
+                                <td class="border border-gray-400 px-2 py-2 math-columbia">12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Combine the results (considering the carryovers): <span class="math-columbia">37422</span>. 
+                </p>
+                <p>
+                    Thus, <span class="math-columbia">243 × 154 = 37422</span>.
+                </p>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>
