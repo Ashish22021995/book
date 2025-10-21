@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,102 +79,74 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 83</div>
+            <div class="page-number text-[15px]">88 <i>Part 1: Theoretical Overview</i></div>
+
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
                 
-                <div class="ml-5">
-                    <p>1. The first root is <span class="math-columbia">V = 0</span>, which is unphysical for volume. Ignore this root.</p>
-                    <p>2. Solve the quadratic part:</p>
+                
+                <p>Subtract equation (ii) from equation (i):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(3x-2y)-(2x-3y)=12-10</p>
+                    <p>x+y= 2</p>
+                    <p>x+y=2... ...(iv)</p>
                 </div>
-                <p class="math-columbia text-center">
-                    10V <sup>2</sup> - 25.63V + 1 = 0
-                </p>
-                <p class="">
-                    <b>Step 4: Use the Purna Puranabhyam Sutra</b>
-                </p>
-                <p>Transform the quadratic equation into a perfect square:</p>
-                <div class="math-columbia flex gap-1 justify-center items-center">
-                    <div>(10V <sup>2</sup> - 25.63V + 1) =</div>
-                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">(</div>
-                    <div>√10V -</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">25.63</div>
-                        <div class="h-px bg-black w-16 mt-3"></div>
-                        <div class="-mt-2">2√10</div>
-                    </div>
-                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">)</div>
-                    <div class="-mt-4"><sup>2</sup></div>
+                <p>From equations (iii) and (iv):</p>
+
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>x - y = 4.4</p>
+                    <p>x + y = 2</p>
                 </div>
-                <p>Equate to zero:</p>
-                <div class="math-columbia flex gap-1 justify-center items-center">
-                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">(</div>
-                    <div>√10V -</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">25.63</div>
-                        <div class="h-px bg-black w-16 mt-3"></div>
-                        <div class="-mt-2">2√10</div>
-                    </div>
-                    <div class="flex flex-col justify-center text-3xl -mt-3 leading-none">)</div>
-                    <div class="-mt-4"><sup>2</sup></div>
-                    <div>= 0</div>
+                <p>Adding these equations:</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2x = 6.4 ⇒ x = 3.2</p>
                 </div>
-                <p>Solve for V:</p>
-                <div class="math-columbia flex gap-1 justify-center items-center">
-                    <div>√10V -</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">25.63</div>
-                        <div class="h-px bg-black w-16 mt-3"></div>
-                        <div class="-mt-2">2√10</div>
-                    </div>
+                <p>Subtracting these equations:</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2y = -2.4 ⇒ y = -1.2</p>
                 </div>
-                <div class="math-columbia flex gap-2 justify-center items-center">
-                    <div>V =</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">25.63</div>
-                        <div class="h-px bg-black w-16 mt-3"></div>
-                        <div class="-mt-2">20</div>
-                    </div>
-                    <div>= 1.2815</div>
+                <p>Solution: The molar coefficients are:</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2x = 3.2 ⇒ x = -1.2</p>
                 </div>
-                <p class="mb-2"><b>Result:</b></p>
-                <p class="mb-2">The molar volume of the gas at P = 10 atm and T = 300 K is approximately:</p>
-                <p class="math-columbia text-center">V = 1.2815 L/mol</p>
             </div>
 
             <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-14 rounded-lg">
-                <p class="text-justify">Pūrṇa Pūraṇābhyām empowers problem-solving by
-                    transforming expressions into perfect squares or cubes, making it ideal for factoring equations or
-                    solving complex algebraic forms. In scientific applications like mole ratio determination or real
-                    gas behavior, this sutra enhances clarity, simplifies cubic equations, and aids in deriving precise
-                    results efficiently.
-                </p>
-            </div>
-            <div class="px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 9. Chalana-kalanabhyam (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        चलनकलनाभ्याम्
-                    </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> Sequential motion or the application of Differential Calculus.
+                <p class="text-justify">Sankalana Vyavakalanābhyam provides a simple yet
+                    effective method for solving systems of linear equations through structured addition and
+                    subtraction. Especially useful in chemical analysis and stoichiometry, it helps determine unknown
+                    quantities and molar ratios with speed and precision, enhancing algebraic problem-solving in
+                    scientific contexts.
                 </p>
             </div>
 
-            <div class="px-2 text-[#6B3F69]">
-                <div class="mb-4">
-                    <p class="">
-                        <strong>Use:</strong> This sutra is used in the following two cases.
-                    </p>
-                    <p>(i) To find the roots of a quadratic.</p>
-                    <p>(ii) To factorize higher-degree polynomials, such as those of 3rd, 4th, and 5th degrees.</p>
-                </div>
-                <p class="mb-1"><b>Key Concept for Chalana-kalanabhyam</b></p>
-                <p class="mb-1">Using the sutra, the discriminant (Δ) of a standard quadratic equation <span class="math-columbia">ax <sup>2</sup> + bx + c = 0</span> can be
-                    calculated as:</p>
-                <p class="text-center math-columbia">∆ = b <sup>2</sup> - 4ac</p>
-                
+            <div class="mb-4 px-2 text-center">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra 8. Purna Puranabhyam (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        पूरणा पूरणभ्यां
+                    </span>)
+                </p>
+                <p class="text-[#6B3F69]">
+                    <strong>Meaning:</strong> By the completion or non-completion.
+                </p>
+                <p class="text-[#6B3F69]">
+                    <strong>Use:</strong> This sutra is employed to find the value of variables by transforming an
+                    equation into a perfect square or perfect cube.
+                </p>
             </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
+                <p class="text-justify">The eighth sutra of Vedic Mathematics, Pūrṇa
+                        Pūraṇābhyām, is rooted in the
+                    principle of completing numbers or expressions to form perfect squares or cubes. This approach
+                    allows complex algebraic expressions or polynomial equations to be simplified, factored, or solved
+                    more efficiently. The sutra encourages learners to transform given expressions into familiar
+                    identities such as squares of binomials or cubes of trinomials thereby reducing cognitive load and
+                    promoting pattern recognition.
+                </p>
+            </div>
+
+            
     </section>
 
     <!-- Download button -->

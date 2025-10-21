@@ -12,9 +12,9 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
+            left: 31.75mm;
             right: 0;
             text-align: left;
             font-size: 10pt;
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,9 +79,138 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Methodology | 261</div>
+            <div class="page-number text-[15px]">273 <i>Methodology</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                
+               
+
+                
+
+                <div class="my-2 math-columbia text-center">
+                    <!-- Top row -->
+                    <div class="flex justify-center items-end gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px] pb-8  flex items-end">
+                            4<span><sup>2</sup></span>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="pb-2 w-[80px] flex flex-col">
+                            <div class="flex gap-6">
+                                <div>1</div>
+                                <div>7</div>
+                                <div>6</div>
+                            </div>
+                            <div class="ml-8">
+                                <div>1</div>
+                            </div>
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[20px] pb-1 flex gap-6 ">
+                            <div class="flex flex-col">
+                                <div>4</div>
+                                <div class="-ml-5">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal line -->
+                    <div class="w-[340px] border-t border-black mx-auto"></div>
+
+                    <!-- Bottom row (Quotient & Remainder labels) -->
+                    <div class="flex -mt-2 justify-center items-center gap-2">
+                        <!-- Divisor & Flag -->
+                        <div class="w-[20px]  font-semibold flex items-end">
+
+                        </div>
+
+                        <!-- Vertical divider -->
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <!-- Dividend digits -->
+                        <div class="w-[80px] flex gap-6 ">
+                            <div>42</div>
+                        </div>
+
+                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+
+                        <div class="w-[20px] flex gap-6 ">
+                            <div>Remainder</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ml-10">
+                    <p>
+                        The calculation now shifts to the remainder part, where the Gross Dividend is <span
+                            class="math-columbia">4</span>.
+                    </p>
+                    <p class="math-columbia">
+                        Net dividend = Gross dividend – Quotient × Flag digit
+                    </p>
+                    <p class="ml-[88px] math-columbia">
+                        = 4 – 2 × 2 = 0
+                    </p>
+                    <p>
+                        As we have reached the remainder part, the division process is complete.
+                    </p>
+                    <p>
+                        Thus, <span class="math-columbia">1764 ÷ 42 = 42</span> with a remainder of <span
+                            class="math-columbia">0</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="spectral font-bold mb-4">
+                Application in Chemistry: Example from Chemical Equilibrium
+            </div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b> A reaction at equilibrium has an equilibrium constant <span
+                        class="math-columbia">K<sub>C</sub> = 32</span>. The
+                    equilibrium concentration of one reactant <span class="math-columbia">[R<sub>1</sub>]</span> is
+                    <span class="math-columbia">1 mol/L</span>, and the concentration of the
+                    product is <span class="math-columbia">0.736 mol/L</span>. Calculate the equilibrium concentration
+                    of the second reactant
+                    <span class="math-columbia">[R<sub>2</sub>]</span>.
+                </p>
+                <p class="mb-2">
+                    <b>Solution:</b>
+                </p>
+
+                <div class="flex my-1 math-columbia justify-center items-center space-x-2">
+                    <div>K<sub>c</sub> =</div>
+                    <div class="flex flex-col items-center">
+                        <div>[Product]</div>
+                        <div class="h-px bg-black w-48 mt-3"></div>
+                        <div class="-mt-2">[Reactant 1][Reactant 2]</div>
+                    </div>
+                </div>
+
+                <p>
+                    Rearranging to find the concentration of Reactant <span class="math-columbia">2 ([R<sub>2</sub>])</span>:
+                </p>
+                <div class="flex my-1 math-columbia justify-center items-center space-x-2">
+                    <div>[R<sub>2</sub>] =</div>
+                    <div class="flex flex-col items-center">
+                        <div>[Product]</div>
+                        <div class="h-px bg-black w-20 mt-3"></div>
+                        <div class="-mt-2">K<sub>C</sub>[R<sub>1</sub>]</div>
+                    </div>
+                </div>
+                <p>
+                    Substitute the given values:
+                </p>
+
 
                 <div class="flex my-1 math-columbia justify-center items-center space-x-2">
                     <div>[R<sub>2</sub>] =</div>
@@ -105,236 +234,17 @@
                     quotient, and remainder, placing the unit digit in the remainder column.
                 </p>
 
-                <div class="my-1 math-columbia text-center">
-                    <!-- Top row -->
-                    <div class="flex justify-center items-end gap-2">
-                        <!-- Divisor & Flag -->
-                        <div class="w-[20px] pb-2  flex items-end">
-                            3<span><sup>2</sup></span>
-                        </div>
+                
 
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+                
 
-                        <!-- Dividend digits -->
-                        <div class="w-[80px] justify-center pb-2 flex gap-10 ">
-                            <div>7</div>
-                            <div>3</div>
-                        </div>
+                
 
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
+                
 
-                        <!-- Dividend digits -->
-                        <div class="w-[20px] pb-2 flex gap-6 ">
-                            <div>6</div>
-                        </div>
-                    </div>
+                
 
-                    <!-- Horizontal line -->
-                    <div class="w-[240px] border-t border-black mx-auto"></div>
-
-                    <!-- Bottom row (Quotient & Remainder labels) -->
-                    <div class="flex -mt-2 justify-center items-center gap-2">
-                        <!-- Divisor & Flag -->
-                        <div class="w-[20px]  font-semibold flex items-end">
-
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="w-[80px] justify-center flex gap-6 ">
-                            <div>Quotient</div>
-                        </div>
-
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <div class="w-[20px] flex gap-6 ">
-                            <div>Remainder</div>
-                        </div>
-                    </div>
-                </div>
-
-                <p>
-                    <b>Step 2:</b> Divide <span class="math-columbia">7</span> by <span
-                            class="math-columbia">3</span>
-                </p>
-                <p>
-                    First digit of <span class="math-columbia">quotient = 2, Remainder = 1</span>
-                </p>
-                <p>
-                    Place the quotient <span class="math-columbia">2</span> in the quotient column and position the
-                    remainder <span class="math-columbia">1</span> before <span class="math-columbia">3</span> in the
-                    dividend column.
-                </p>
-
-                <div class="my-2 math-columbia text-center">
-                    <!-- Top row -->
-                    <div class="flex justify-center items-end gap-2">
-                        <!-- Divisor & Flag -->
-                        <div class="w-[20px] pb-8  flex items-end">
-                            3<span><sup>2</sup></span>
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="pb-2 w-[60px] flex flex-col">
-                            <div class="justify-between flex gap-10 ">
-                                <div>7</div>
-                                <div>3</div>
-                            </div>
-                            <div class="ml-2">
-                                <div>1</div>
-                            </div>
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[60px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="w-[20px] pb-8 flex gap-6 ">
-                            <div>6</div>
-                        </div>
-                    </div>
-
-                    <!-- Horizontal line -->
-                    <div class="w-[240px] border-t border-black mx-auto"></div>
-
-                    <!-- Bottom row (Quotient & Remainder labels) -->
-                    <div class="flex -mt-2 justify-center items-center gap-2">
-                        <!-- Divisor & Flag -->
-                        <div class="w-[20px]  font-semibold flex items-end">
-
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="w-[60px] flex gap-6 ">
-                            <div>2</div>
-                        </div>
-
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <div class="w-[20px] flex gap-6 ">
-                            <div>Remainder</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="math-columbia ml-10">
-                    <p>
-                        Gross dividend = 13
-                    </p>
-                    <p>
-                        Net dividend = Gross dividend – First digit of quotient × Flag digit
-                    </p>
-                    <p class="ml-[88px]">
-                        = 13 – 2 × 2 = 9
-                    </p>
-                </div>
-
-                <p>
-                    <b>Step 3:</b> Divide <span class="math-columbia">9</span> by <span
-                            class="math-columbia">3</span>
-                </p>
-                <div class="ml-12">
-                    <p class="math-columbia">Quotient = 3, Remainder = 0</p>
-
-                    <div class="my-2 math-columbia text-center">
-                        <!-- Top row -->
-                        <div class="flex justify-center items-end gap-2">
-                            <!-- Divisor & Flag -->
-                            <div class="w-[20px] pb-8  flex items-end">
-                                3<span><sup>2</sup></span>
-                            </div>
-
-                            <!-- Vertical divider -->
-                            <div class="h-[60px] border-l-2 border-black mx-2"></div>
-
-                            <!-- Dividend digits -->
-                            <div class="pb-2 w-[80px] flex flex-col">
-                                <div class="justify-between flex gap-10">
-                                    <div>7</div>
-                                    <div>3</div>
-                                </div>
-                                <div class="ml-2">
-                                    <div>1</div>
-                                </div>
-                            </div>
-
-                            <!-- Vertical divider -->
-                            <div class="h-[60px] border-l-2 border-black mx-2"></div>
-
-                            <!-- Dividend digits -->
-                            <div class="w-[20px] pb-1 flex gap-6 ">
-                                <div class="flex flex-col">
-                                    <div>6</div>
-                                    <div class="-ml-5">0</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Horizontal line -->
-                        <div class="w-[340px] border-t border-black mx-auto"></div>
-
-                        <!-- Bottom row (Quotient & Remainder labels) -->
-                        <div class="flex -mt-2 justify-center items-center gap-2">
-                            <!-- Divisor & Flag -->
-                            <div class="w-[20px]  font-semibold flex items-end">
-
-                            </div>
-
-                            <!-- Vertical divider -->
-                            <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                            <!-- Dividend digits -->
-                            <div class="w-[80px] justify-between flex gap-6 ">
-                                <div>2</div>
-                                <div>3</div>
-                            </div>
-
-                            <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                            <div class="w-[20px] flex gap-6 ">
-                                <div>Remainder</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>
-                        The calculation now shifts to the remainder part, where the Gross Dividend is <span
-                            class="math-columbia">6</span>.
-                    </p>
-                    <div class="math-columbia">
-                        <p>
-                            Net dividend = Gross dividend – Quotient × Flag digit
-                        </p>
-                        <p class="ml-[88px]">
-                            = 6 – 3 × 2 = 0
-                        </p>
-                        <p>
-                            As we have reached the remainder part, the division process is complete.
-                        </p>
-                        <p>
-                            Hence, <span class="math-columbia">736 ÷ 32 = 23</span> with a remainder of <span
-                                class="math-columbia">0</span>.
-                        </p>
-                    </div>
-                </div>
-
-                <p>
-                    <b>Answer:</b>
-                </p>
-                <p>The equilibrium concentration of the second reactant is:</p>
-                <p class="text-center mt-1 math-columbia">
-                    [R<sub>2</sub>] = 0.023 mol/L.
-                </p>
+                
 
             </div>
         </div>

@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,89 +78,136 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 110</div>
-            <div class="px-2 text-center mb-4">
-                <p class="text-[#6B3F69] leading-relaxed">
-                    differential calculus. For a quadratic expression, the first differential is obtained by
-                    summing the
-                    linear factors into which the quadratic expression is factorized. The method can be extended to
-                    cubic and bi-quadratic expressions as well.
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 119</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                
+
+                
+                <p class="math-columbia text-center mb-2">
+                    1 + 10 + 31 + 30 = 72
+                </p>
+                <p>
+                    <b>Step 5: Verify</b>
+                </p>
+                <p class="mb-2">
+                    Product of sums <span class="math-columbia">(72)</span> = Sum of coefficients of expanded polynomial <span class="math-columbia">(72)</span>
+                </p>
+                
+                <p>
+                    <b>Conclusion:</b> The factorization is correct.
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] mb-4 px-2 rounded-lg">
-                <p class="text-justify mb-4">The sutra Guṇakasamuccaya bridges algebraic
-                    expressions with concepts from
-                    differential calculus, providing an elegant method for deriving the first differential of a
-                    polynomial based on its factorized form. This sutra utilizes the sum of the linear factors of a
-                    polynomial to construct its derivative, making it particularly effective for quadratic, cubic, and
-                    bi-quadratic expressions. This technique emphasizes the conceptual relationship between algebraic
-                    structure and rate of change.
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 2: Verification in Division</b>
+                </div>
+                <p class="mb-2">
+                    <b>Solve: Divide </b><span class="math-columbia"><b>y <sup>3</sup> + 6y <sup>2</sup> + 11y + 6 by (y + 1)</b>.</span>
                 </p>
-                <p class="text-justify">The application of this sutra extends naturally into scientific contexts. In
-                    chemistry, for example, where rate laws often take the form of polynomial equations in terms of
-                    concentration, Guṇakasamuccaya allows for a quick and intuitive
-                    derivation of rate-of-change
-                    expressions. This becomes particularly valuable in reaction kinetics, where understanding how a
-                    small change in concentration affects the reaction rate is essential. By factorizing the rate law
-                    expression and summing its linear terms, students can obtain the first derivative with clarity and
-                    efficiency without relying solely on formal calculus procedures.
+                <p>
+                    <b>Step 1: Factorize the polynomial</b>
                 </p>
-            </div>
-
-            <div class="mb-4">
-                <p><b>Key Concept</b></p>
+            
+                <p>
+                    Perform synthetic or polynomial division:
+                </p>
+                <p class="math-columbia text-center mb-2">
+                    y <sup>3</sup> + 6y <sup>2</sup> + 11y + 6 ÷ (y + 1) = (y + 1) (y <sup>2</sup> + 5y + 6)
+                </p>
+                <p>
+                    <b>Step 2: Sum coefficients of each factor</b>
+                </p>
                 <div class="mb-2 ml-5">
-                    <div class="flex items-center mb-2">
+                    <div class="flex items-end">
                         <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
                         <p>
-                            When a quadratic expression <span class="math-columbia">ax <sup>2</sup> + bx + c</span> is
-                            factorized into two linear factors <span class="math-columbia">(x − p)(x − q)</span>,
-                            the first differential of the expression can be found by summing the factors:
+                            For <span class="math-columbia">(y + 1)</span>, the sum is : <span class="math-columbia">1 +
+                                1 = 2</span>
                         </p>
                     </div>
-                    <div class="text-center mb-2">First Differential <span class="math-columbia">= (x − p) + (x − q) =
-                            2x − (p + q)</span></div>
-                    <div class="flex items-center">
+                    <div class="flex items-end">
                         <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                        <p class="math-columbia">
-                            For cubic or bi-quadratic expressions, the sum of factors relates to the higher-order
-                            differentials.
+                        <p>
+                            For <span class="math-columbia">(y <sup>2</sup> + 5y + 6)</span>, the sum is : <span
+                                class="math-columbia">1 + 5 + 6 = 12</span>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 3: Multiply sums of coefficients</b>
+                </p>
+                <p class="text-center mb-2">
+                    Product of sums <span class="math-columbia">= 2 × 12 = 24</span>
+                </p>
+                <p>
+                    <b>Step 4: Sum coefficients of the original polynomial</b>
+                </p>
+                <div class="mb-2 ml-5">
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            The sum of coefficients of <span class="math-columbia">y <sup>3</sup> + 6y <sup>2</sup> +
+                                11y + 6</span> is: <span class="math-columbia">1 + 6 + 11 + 6 = 24</span>
                         </p>
                     </div>
                 </div>
                 <p>
-                    <b>Steps to Apply Guṇakasamuccaya Sūtra</b>
+                    <b>Step 5: Verify</b>
                 </p>
-                <div class="ml-5 mb-2">
-                    <p>1. Factorize the given polynomial into its linear or simpler factors.</p>
-                    <p>2. Add the factors to derive the first differential of the expression.</p>
-                    <p>3. Optionally verify by differentiating the polynomial directly.</p>
-                </div>
+                <p class="mb-2">
+                    Product of sums <span class="math-columbia">(24) = </span>Sum of coefficients of the polynomial
+                    <span class="math-columbia">(24)</span>
+                </p>
+
+                <p>
+                    <b>Conclusion:</b> The division is correct.
+                </p>
             </div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
                 <div class="mb-2 leading-relaxed">
-                    <b>Example 1: Quadratic Expression</b>
+                    <b>Example 3: Multiplication Verification</b>
                 </div>
                 <p class="mb-2">
-                    <b>Solve: Find the first differential of </b><span class="math-columbia"><b>x <sup>2</sup> − 5x +
-                        4</b></span>.
+                    <b>Verify:</b> <span class="math-columbia"><b>(y + 2) (y <sup>2</sup> + 3y + 4)</b></span>
                 </p>
                 <p>
-                    <b>Step 1: Factorize the expression</b>
+                    <b>Step 1: Sum coefficients of each factor</b>
                 </p>
-                <p class="mb-2">Factorize: <span class="math-columbia">x <sup>2</sup> − 5x + 4 = (x − 4) (x − 1)</span>
-                </p>
+                <div class="mb-2 ml-5">
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 2) : 1 + 2 = 3</span>
+                        </p>
+                    </div>
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y <sup>2</sup> + 3y + 4) : 1 + 3 + 4 = 8</span>
+                        </p>
+                    </div>
+                </div>
 
                 <p>
-                    <b>Step 2: Sum the factors</b>
+                    <b>Step 2: Multiply sums of coefficients</b>
                 </p>
-                <p class="">
-                    Sum the linear factors: <span class="math-columbia">(x − 4) + (x − 1) = x + x − 4 − 1 = 2x −
-                        5</span>
+                <p class="text-center mb-2">
+                    Product of sums <span class="math-columbia">= 3 × 8 = 24</span>
                 </p>
+                <p>
+                    <b>Step 3: Expand the product</b>
+                </p>
+                <div class="math-columbia flex justify-center gap-1">
+                    <div>(y + 2)(y<sup>2</sup> + 3y + 4) = y<sup>3</sup> + 3y<sup>2</sup> + 4y + 2y<sup>2 <br> </sup> + 6y + 8 = y<sup>3</sup> + 3y<sup>2</sup> + 4y + 2y<sup>2</sup> + 6y + 8 = y<sup>3</sup> + 5y<sup>2</sup> + 10y + 8</div>
+                </div>
+                
+                
             </div>
+            
 
     </section>
 

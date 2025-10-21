@@ -12,22 +12,23 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
+
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -78,7 +79,80 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 61</div>
+            <div class="page-number text-[15px]">66 <i>Part 1: Theoretical Overview</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#D7D3BF] to-[#FFF5D7] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <strong>Example 2: Find <span class="math-columbia">1000 − 358</span></strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        1. Functional base: <span class="math-columbia">1000</span>.
+                    </p>
+                    <p>
+                        2. Subtract:
+                    </p>
+                    <ul class="pl-6 space-y-1">
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">9 − 3 = 6</span> (first digit)
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">9 − 5 = 4</span> (last digit)
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">10 − 8 = 2</span> (last digit)
+                        </li>
+                    </ul>
+                    <p class="pl-4 mb-2">
+                        Complement: <span class="math-columbia"><b>642</b></span>. 
+                    </p>
+                </div>
+                <p>
+                    <strong>Result:</strong> <span class="math-columbia">1000 – 358 = 642</span>.
+                </p>
+            </div>
+            
+            <div class="pb-2 bg-gradient-to-r from-[#FEEBF6] to-[#FFE3BB] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <strong>Example 3: Find <span class="math-columbia"><b>10000 − 67421</b></span></strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        1. Functional base: <span class="math-columbia">10000</span>.
+                    </p>
+                    <p>
+                        2. Subtract:
+                    </p>
+                    <ul class="ml-6">
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">9 − 6 = 3</span> (first digit)
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">9 − 7 = 2</span> (last digit)
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">9 − 4 = 5</span> (third digit)
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <span class="math-columbia">10 − 2 = 8</span> (last digit)
+                        </li>
+                    </ul>
+                    <p class="pl-4">
+                        Complement: <span class="math-columbia"><b>3258</b></span>.
+                    </p>
+                </div>
+                <p>
+                    <strong>Result:</strong> <span class="math-columbia">10000 – 6742 = 3258</span>.
+                </p>
+            </div>
+
             <p class="spectral font-bold mb-4">Application of Nikhilam sutra in chemistry: Unreacted Molecule Mass in a
                 Reaction</p>
 
@@ -118,53 +192,7 @@
                             <span class="math-columbia">10 − 2 = 8</span> (last digit)
                         </li>
                     </ul>
-                    <p class="pl-4">
-                        Complement (Unreacted mass) = <span class="math-columbia"><b>3258 mg</b></span>.
-                    </p>
                 </div>
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#FFF1F1] to-[#DDC3C3] px-2 mb-14 rounded-lg">
-                <p class=" text-justify">
-                    Nikhilam Navataścaramam Daśataḥ offers a fast and intuitive method for
-                    subtraction by finding
-                    complements from base values, making it especially effective in scientific tasks like calculating
-                    remaining quantities or unreacted substances. It enhances efficiency, accuracy, and mental clarity
-                    in both academic and non-academic settings.
-
-                </p>
-            </div>
-
-            <div class="mb-4 px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 3. Urdhva-tiryagbhyam (
-                <span style="font-family: 'Noto Serif Devanagari', serif;">
-                    उर्ध्वतिर्यग्भ्याम्
-                </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> Vertically and crosswise.
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Use:</strong> This sutra is used to multiply numbers vertically and crosswise.
-                </p>
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#C0C9EE] to-[#EBD6FB] px-2 rounded-lg">
-                <p class="text-justify mb-4">The third sutra of Vedic Mathematics, Urdhva-tiryagbhyam, meaning “vertically
-                    and crosswise,”
-                    introduces a unique and efficient method of multiplication. This sutra enables quick computation
-                    by organizing the multiplication process into vertical and diagonal (crosswise) steps. This sutra
-                    offers a more visual and organized approach that minimizes error and streamlines the steps
-                    involved. It supports multiplication of numbers of any length by breaking down the problem into
-                    manageable parts and following a consistent structure.
-                </p>
-                <p class="text-justify">In scientific contexts such as chemistry, where large numbers and constants like
-                    Avogadro’s
-                    number are commonly involved, Urdhva-tiryagbhyam becomes particularly
-                    useful. Calculations
-                    related to moles, molecular quantities, and conversions often require 
-                </p>
             </div>
         </div>
     </section>

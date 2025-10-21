@@ -13,22 +13,23 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
+
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,88 +80,108 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 65</div>
-            
+            <div class="page-number text-[15px]">70 <i>Part 1: Theoretical Overview</i></div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F8ED8C] to-[#F6F0F0] text-justify px-2 mb-4 rounded-lg">
+            <div class="pb-2 bg-gradient-to-r from-[#FFDBDB] to-[#EFEEEA] mb-4 text-justify px-2 rounded-lg">
+                
                 <div class="ps-5">
-                    <div class="ms-12">
-                        <div class="flex items-center">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p><b>Step 1:</b> Multiply the unit digits: <br><span class="ml-12"><span class="math-columbia">2 × 2 = 4</span>. Write <span class="math-columbia">4</span> in the
-                                    unit's place, with no carry-over.</span></p>
+                    
+                    <div class="">
+                        
+
+                        <div class="ml-10 flex items-center gap-4">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <div>Multiply <b>crosswise</b>: <span class="math-columbia">(12 × 5) + (3 × 4) = 60 + 12 = 72</span>. Add the carry-over <span class="math-columbia">1: 72
+                                + 1 = 73</span>. Write <span class="math-columbia">3</span> and carry over <span class="math-columbia">7</span>.</div>
                         </div>
-                        <div class="flex items-center">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p><b>Step 2:</b> Multiply crosswise: <br><span class="ml-12"><span class="math-columbia">(4 × 2) + (2 × 10) = 28</span>. Write <span class="math-columbia">8</span> in
-                                    the tens place, with <span class="math-columbia">2</span> carry-over.</span></p>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p><b>Step 3:</b> Multiply the tens digits: <span class="math-columbia">4 × 10 = 40</span>. And add the carry over <span class="math-columbia">40 + 2 = 42</span>.</p>
-                        </div>
-                        <div class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p>Combine the results: 4284.</p>
+
+                        <div class="ml-10 flex items-center gap-4">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <div>Multiply the <b>tens digits vertically</b>: <span class="math-columbia">12 × 4 = 48</span>. Add the carry-over <span class="math-columbia">7: 48 + 7 =
+                                55</span>.</div>
                         </div>
                     </div>
-                    <p>
-                        <strong>3. Interpretation:</strong> The total number of ions in the sample is approximately:
-                        <br><span class="math-columbia">4.284×10 <sup>23</sup></span> ions.
+                    <p class="">
+                        <b>3. Result</b> Combine the digits: <span class="math-columbia">5535</span>.
                     </p>
                 </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-14 rounded-lg">
-                <p class=" text-justify">Urdhva-tiryagbhyam provides a structured and
-                    efficient method for multiplying
-                    numbers of any
-                    size using vertical and crosswise steps. Its visual approach simplifies large or complex
-                    multiplications, making it especially valuable in scientific calculations involving molecular
-                    quantities, conversions, and constants supporting speed, accuracy, and confidence in data
-                    handling.
+            <p class="spectral font-bold mb-4">Application of Urdhva-tiryagbhyam in Chemistry: Number of Molecules in a
+                Compound</p>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F8ED8C] to-[#F6F0F0] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2 text-justify">
+                    <strong>Problem:</strong> A laboratory sample contains <span class="math-columbia">34g</span> of water (H₂O). The molar mass of water
+                    is
+                    <span class="math-columbia">18g/mol</span>. Calculate the total number of water molecules in the sample using <span class="math-columbia">34 × 56</span>, where <span class="math-columbia">56</span>
+                    represents Avogadro's constant in simplified form <span class="math-columbia">(6.022 × 10 <sup>23</sup>)</span> divided by <span class="math-columbia">18</span>.
                 </p>
+                <p class="font-bold mb-2">
+                    Solution:
+                </p>
+                <div class="ps-5">
+                    <div>
+                        <div>
+                            <strong>1. Given Values:</strong>
+                        </div>
+                        <div class="">
+                            <div class="ms-8 flex items-end gap-4">
+                                <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                                <p>Mass of water: <span class="math-columbia">34g</span></p>
+                            </div>
+                            <div class="ms-8 flex items-end gap-4">
+                                <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                                <p>Simplified value for (Avogadro’s constant)/(Molar Mass) <span class="math-columbia">= 56</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <strong>2. Apply the Sutra to Calculate <span class="math-columbia"><b>34 × 56</b></span>:</strong>
+                    </p>
+                    <div class="">
+                        <div class="ml-8 gap-4 flex items-end">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <p>Write the numbers: <span class="math-columbia">34 and 56</span>.</p>
+                        </div>
+                    </div>
+                    <p class="">
+                        <strong>Step-by-Step Multiplication Using the Sutra:</strong>
+                    </p>
+                    <div class="">
+                        <div class="ml-8 gap-4 flex items-center">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <p><b>Step 1:</b> Multiply the unit digits: <span class="math-columbia">4 × 6 = 24</span>. Write <span class="math-columbia">4</span> in the unit's place. Carry over
+                                <span class="math-columbia">2</span>.</p>
+                        </div>
+                        <div class="ml-8 gap-4 flex items-center">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <p><b>Step 2:</b> Multiply crosswise: <span class="math-columbia">(3 × 6) + (4 × 5) = 18 + 20 = 38</span>. <span class="">Add the
+                                    carry-over <span class="math-columbia">2: 38 + 2 = 40</span>. Write <span class="math-columbia">0</span> in the tens place and carry over <span class="math-columbia">4</span>.</span></p>
+                        </div>
+                        <div class="ml-8 gap-4 flex items-end">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <p><b>Step 3:</b> Multiply the tens digits: 3×5=15. Add the carry-over <span class="math-columbia">4: 15 + 4 = 19</span>.</p>
+                        </div>
+                        <div class="ml-8 gap-4 flex items-end">
+                            <span class="w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                            <p>Combine the results: <span class="math-columbia">1904</span>.</p>
+                        </div>
+                    </div>
+                    <p>
+                        <strong>3. Interpretation:</strong> The total number of water molecules in the sample is
+                        approximately: <span class="math-columbia">1.904×10 <sup>23</sup></span>  molecules.
+                    </p>
+                </div>
             </div>
 
-            <div class="mb-4 px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 4. Parävartya Yojayet (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        परावर्त्य योजयेत्
-                    </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> Transpose and apply.
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Use:</strong> This sutra simplifies various types of mathematical operations by "transposing
-                    and
-                    applying." It is useful in divisions, solving equations, and transforming expressions by
-                    rearranging and reversing signs.
-                </p>
-            </div>
+            <p class="spectral font-bold mb-4">Application of the Sutra in Chemistry: Determining the Number of Ions in
+                a Sample</p>
 
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
-                <p class="text-justify mb-4">The fourth sutra of Vedic Mathematics, Parāvartya
-                    Yojayet, meaning
-                    “transpose and apply,”
-                    serves as a versatile and logical method for simplifying a range of mathematical operations. In
-                    mathematics, it allows for simplified approaches to polynomial division and the solving of linear
-                    equations, where transposing terms and reversing signs enables quicker, more structured
-                    solutions. The strength of this sutra lies in its adaptability across different types of problems.
-                </p>
-                <p class="text-justify">Within scientific disciplines such as chemistry, Parāvartya
-                    Yojayet becomes
-                    particularly relevant
-                    in quantitative contexts. Whether dividing measured quantities to determine container capacity or
-                    applying it in partial pressure calculations and concentration analysis, the sutra supports both
-                    accuracy and efficiency. By transforming the way learners approach equations and numerical
-                    breakdowns, Parāvartya
-                    Yojayet reinforces core mathematical thinking
-                    and problem-solving
-                    skills that are fundamental in scientific learning environments.
-                </p>
-            </div>
+            
+            
+
+            
         </div>
     </section>
 

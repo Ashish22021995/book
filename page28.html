@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,151 +78,111 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 82</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
-                <div>
-                    <div class="math-columbia flex gap-2 items-center justify-center">
-                        <div>(x - y) =</div>
-                        <div class="flex flex-col items-center leading-[0.5]">
-                            <span>+</span>
-                            <span>-</span>
-                        </div>
-                        <div>√16</div>
-                    </div>
-                    <div class="math-columbia flex gap-2 items-center justify-center">
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 87</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    
+                    <p>35x - 35y = 126</p>
+                </div>
+
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <div class="flex items-center gap-2">
                         <div>x - y =</div>
-                        <div class="flex flex-col items-center leading-[0.5]">
-                            <span>+</span>
-                            <span>-</span>
+                        <div class="flex flex-col items-center">
+                            <div>126</div>
+                            <div class="h-px bg-black w-12 mt-2"></div>
+                            <div class="-mt-3">35</div>
                         </div>
-                        <div>4</div>
+                        <div>= 3.6 ... ...(iii)</div>
                     </div>
-                    <p>
-                        <b>Step 4: </b>Solve for x and y
-                    </p>
-                    <p>
-                        We now have two equations:
-                    </p>
-                    <div class="ml-10 math-columbia">
-                        <p>1. x + y = 10,</p>
-                        <div class="flex gap-2 items-center">
-                            <div>2. x - y =</div>
-                            <div class="flex flex-col items-center leading-[0.5]">
-                                <span>+</span>
-                                <span>-</span>
-                            </div>
-                            <div>4</div>
+                </div>
+                <p><b>Step 2: Subtract the equations</b></p>
+                <p>Subtract equation (ii) from equation (i):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(21x - 14y) - (14x - 21y) = 77 - 49</p>
+                    <p>7x + 7y = 28</p>
+                    <div class="flex items-center gap-2">
+                        <div>x + y =</div>
+                        <div class="flex flex-col items-center">
+                            <div>28</div>
+                            <div class="h-px bg-black w-12 mt-2"></div>
+                            <div class="-mt-3">7</div>
                         </div>
+                        <div>= 4 ... ...(iv)</div>
                     </div>
-                    <div class="ml-16">
-                        <div class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p>Add the equations: <span class="math-columbia">2x = 10 + 4 = 14 ⇒ x = 7</span></p>
-                        </div>
-                        <div class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p>Subtract the equations: <span class="math-columbia">2y = 10 - 4 = 6 ⇒ y = 3</span></p>
-                        </div>
-                    </div>
-                    <p><b>Results:</b></p>
-                    <p>The mole ratios are <span class="math-columbia">x = 7</span>, and <span class="math-columbia">y =
-                            3</span></p>
+                </div> 
+                
+                <p><b>Step 3: Solve the simplified equations</b></p>
+                <p>From equations (iii) and (iv):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>x - y = 3.6</p>
+                    
+                </div>
+            
+                
+                
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    
+                    <p>x + y = 4</p>
+                </div>
+                <p><b>Adding these equations:</b></p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2x = 7.6 ⇒ x = 3.8</p>
+                </div>
+                <p><b>Subtracting these equations:</b></p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>2y = -0.4 ⇒ y = -0.2</p>
+                </div>
+                <p><b>Solution:</b></p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>x = 2,   y = -1</p>
                 </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-2 rounded-lg">
-                <p class="mb-2">
-                    <b>Problem: The Van der Waals Equation for Real Gases</b>
-                </p>
+            <p class="spectral font-bold mb-4">Application of Sankalana Vyavakalanābhyam in chemistry:
+                Determining Reaction Coefficients</p>
 
-                <div class="math-columbia flex gap-2 justify-center items-center">
-                    <div>P =</div>
-                    <div class="flex flex-col items-center">
-                        <div>RT</div>
-                        <div class="h-px bg-black w-12 mt-2"></div>
-                        <div class="-mt-3">V - b</div>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b>For a chemical reaction, the relationship between reactants A and B is represented by:
+                </p>
+                <div>
+                    <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                        <p>3x - 2y = 12 ... ...(i)</p>
+                        <p>2x - 3y = 10 ... ...(ii)</p>
                     </div>
-                    <div>-</div>
-                    <div class="flex flex-col items-center">
-                        <div>a</div>
-                        <div class="h-px bg-black w-12 mt-2"></div>
-                        <div class="-mt-3">V <sup>2</sup></div>
-                    </div>
+                    <p>Find the coefficients x and y, which represent the molar ratios of A and B.</p>
                 </div>
                 <p>
-                    Where:
-                </p>
-                <div class="ml-10 mb-2">
-                    <div class="flex items-end">
-                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                        <p>P = pressure,</p>
-                    </div>
-                    <div class="flex items-end">
-                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                        <p>V = molar volume,</p>
-                    </div>
-                    <div class="flex items-end">
-                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                        <p>T = temperature,</p>
-                    </div>
-                    <div class="flex items-end">
-                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                        <p>R = universal gas constant,</p>
-                    </div>
-                    <div class="flex items-end">
-                        <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                        <p>a, b = Van der Waals constants.</p>
-                    </div>
-                </div>
-                <p class="mb-2">
-                    At a given pressure (P = 10 atm), temperature (T = 300 K), and known constants (<span
-                        class="math-columbia">a = 1, b = 0.1, R = 0.0821</span>),
-                    find V using the Purna Puranabhyam sutra.
-                </p>
-                <p class="mb-2">
                     <b>Solution:</b>
                 </p>
-                <p class="">
-                    <b>Step 1: Rewrite the Van der Waals equation</b>
-                </p>
-                <p class="mb-2">
-                    Substitute the given values into the equation:
-                </p>
-                <div class="math-columbia flex gap-2 justify-center items-center">
-                    <div>10 =</div>
-                    <div class="flex flex-col items-center">
-                        <div>0.0821 × 300</div>
-                        <div class="h-px bg-black w-24 mt-2"></div>
-                        <div class="-mt-3">V - 0.1</div>
-                    </div>
-                    <div>-</div>
-                    <div class="flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-12 mt-2"></div>
-                        <div class="-mt-3">V <sup>2</sup></div>
+                <p>Adding equations (i) and (ii):</p>
+                <div class="math-columbia flex flex-col justify-center items-center gap-2">
+                    <p>(3x-2y)+(2x-3y)=12+10</p>
+                    <p>5x-5y= 22</p>
+                    <div class="flex items-center gap-2">
+                        <div>x - y =</div>
+                        <div class="flex flex-col items-center">
+                            <div>22</div>
+                            <div class="h-px bg-black w-12 mt-2"></div>
+                            <div class="-mt-3">5</div>
+                        </div>
+                        <div>= 4.4 ... ...(iii)</div>
                     </div>
                 </div>
-                <p>Multiply through by <span class="math-columbia">V <sup>2</sup>(V-0.1)</span> to eliminate
-                    denominators:</p>
-
-                <p class="math-columbia text-center">10V <sup>2</sup> (V - 0.1) = 0.0821 × 300 V <sup>2</sup> - V</p>
-                <p>Simplify:</p>
-                <p class="math-columbia text-center">10V <sup>3</sup> - 1V <sup>2</sup> = 24.63V <sup>2</sup> - V</p>
-
-                <p class="">
-                    <b>Step 2: Rearrange into a cubic equation</b>
-                </p>
-                <p class="math-columbia text-center">
-                    10V <sup>3</sup> - 25.63V <sup>2</sup> + V = 0
-                </p>
-                <p>Factor out V:</p>
-                <p class="math-columbia text-center">
-                    V(10V <sup>2</sup> - 25.63V + 1) = 0
-                </p>
-                <p class="">
-                    <b>Step 3: Solve for V</b>
-                </p>
+                
+                
+                
+                
+                
+                
             </div>
+
+
+
+            
     </section>
 
     <!-- Download button -->

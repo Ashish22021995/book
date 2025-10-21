@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,113 +78,132 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 70</div>
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 75</div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
-                <p class="mb-2">
-                    <b>1. In Simple Equations:</b> The Samuccaya is the common factor or
-                    sum
-                    of terms that appear in
-                    all parts of the equation. The solution is often found by setting this factor to zero.
-                </p>
-                <p class="mb-2">
-                    Example: If az + b = cz + d, then z is the Samuccaya, and the solution is z
-                    = 0.
-                </p>
-            </div>
+            
 
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
-                <p class="text-justify mb-4">The fifth sutra of Vedic Mathematics, Shunyam
-                        Sāmyasamuchchaye, introduces
-                    a principle rooted in the idea of balance and equivalence. It suggests that if there is a common
-                    aggregate or expression (called samuccaya) across both sides of an
-                    equation or within its
-                    components, then that common element can be equated to zero to simplify the problem. This sutra is
-                    especially valuable in identifying hidden patterns and simplifying complex equations without the
-                    need for extensive algebraic treatment. This sutra is applied in various contexts such as linear
-                    equations, partial fractions, quadratic and cubic expressions. It helps identify symmetries or
-                    repeated structures within equations and uses that repetition as a tool to deduce a solution
-                    quickly.
+            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] text-justify mb-4 px-2 rounded-lg">
+                <p class=" text-justify">
+                    <strong>Problem:</strong> A chemist has <span class="math-columbia">1697</span> mL of a concentrated
+                    acid solution and wants to divide
+                    it into
+                    smaller containers, each holding <span class="math-columbia">13 mL</span>. How many containers can
+                    be filled, and how much acid
+                    will remain? Solve this using the division method from the sutra.
                 </p>
-                <p class="text-justify">Within scientific fields such as chemistry, Shunyam
-                        Sāmyasamuchchaye supports
-                    efficiency in analyzing relationships among variables, especially in equilibrium-based calculations.
-                    In problems involving ratios of concentrations, partial pressures, or chemical equations where
-                    symmetric expressions appear on both sides. By fostering an ability to recognize patterns and apply
-                    logic over rote operations, Shunyam Sāmyasamuchchaye empowers learners
-                    to solve complex problems
-                    with clarity and confidence, both in pure mathematics and scientific applications.
+                <p class="font-bold mb-1">
+                    Solution:
                 </p>
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>Example: 1 Solve</b>
-                </p>
-                <div class="flex justify-center items-center gap-2">
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>3z + 2</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">5z + 2</div>
-                    </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>z + 1</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">3z + 4</div>
-                    </div>
-                </div>
-                <p>
-                    <strong>Steps: </strong>
-                </p>
-                <div>
-                    <p>
-                        1. Add all terms in the numerator: <span class="math-columbia]">(3z + 2) + (z + 1) = 4z + 3</span>
-                    </p>
-                    <p>
-                        2. Add all terms in the denominator: <span class="math-columbia">(5z + 2)+(3z + 4) = 8z + 6</span>
-                    </p>
-                    <p>3. Neglect constant coefficients: Both sums simplify to <span class="math-columbia">4z + 3</span>. The Samuccaya is <span class="math-columbia">4z + 3</span>, and</p>
-                    <div class="flex flex-wrap items-center gap-2">
-                        <div>the solution is:</div>
-                        <div>z</div>
-                        <div>=</div>
-                        <div class="math-columbia flex flex-col items-center">
-                            <div>(-3)</div>
-                            <div class="h-px bg-black w-10 mt-2"></div>
-                            <div class="-mt-3">4</div>
+                <div class="">
+                    <div class="mb-1">
+                        <div>
+                            <strong> Given Values:</strong>
+                        </div>
+                        <div class="ms-5">
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p>Total volume: <span class="math-columbia">1697 mL</span></p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p>Volume per container: <span class="math-columbia">13 mL</span></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <p>
+                        <strong>Apply the Sutra to Divide <span class="math-columbia">1697÷13</span>:</strong>
+                    </p>
+                    <p>
+                        <Strong>Step-by-Step Division Using the Sutra:</Strong>
+                    </p>
 
-                <p class="mb-2">
-                    <b>Example: 2 Solve</b> 
-                </p>
-                <div class="flex justify-center items-center gap-2">
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>5z + 3</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">4z + 2</div>
+                    <div class="ms-1">
+                        <p>
+                            <b>1. Divisor:</b> <span class="math-columbia">13</span> → Write as <span
+                                class="math-columbia">10 + 3</span>.
+                        </p>
+                        <p class="ml-4">
+                            Reverse the sign of the deviation <span class="math-columbia">(3)</span>. Transformed
+                            divisor =
+                            <span class="math-columbia">(10 - 3)</span>. So, deviation <span class="math-columbia">=
+                                –3</span>.
+                        </p>
+                        <p>
+                            <b>2. Dividend:</b> <span class="math-columbia">1697</span>.
+                        </p>
+                        <p>
+                            <b>3. Perform division step-by-step:</b>
+                        </p>
+                        <div class="ml-5">
+                            <div>
+                                <div class="flex items-end mb-1">
+                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                    <p>Bring down the first digit <span class="math-columbia">(1)</span>. This is the
+                                        first quotient digit.</p>
+                                </div>
+                                <div class="flex items-center mb-1">
+                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                    <div>
+                                        <p>Multiply by <span class="math-columbia">(−3): 1 × (-3) = -3</span>.</p>
+                                        <p>Add to the next dividend digit <span class="math-columbia">(6): 6 + (-3) =
+                                                3</span>. Next quotient digit <span class="math-columbia">= 3</span>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-1">
+                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                    <div>
+                                        <p>Multiply by <span class="math-columbia">(−3): 3 × (-3) = -9</span>.</p>
+                                        <p>Add to the next digit <span class="math-columbia">(9): 9 + (-9) = 0</span>.
+                                            Next quotient digit <span class="math-columbia">= 0</span>.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                    <div>
+                                        <p>Multiply by <span class="math-columbia">(−3): 0 × (-3) = 0</span>.</p>
+                                        <p>Add to the last digit <span class="math-columbia">(7): 7 + 0 = 7</span>.
+                                            Remainder <span class="math-columbia">= 7</span>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="">
+                            <b>4. Result</b> Quotient <span class="math-columbia">Q = 130</span>, Remainder <span
+                                class="math-columbia">R = 7</span>.
+                        </p>
+                        <p>
+                            <b>Interpretation:</b> The chemist can fill <span class="math-columbia">103</span> full
+                            containers, and <span class="math-columbia">7 mL</span> of acid will remain
+                            unused.
+                        </p>
                     </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>2z + 1</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">3z + 2</div>
-                    </div>
-                </div>
-                <p>
-                    <strong>Steps: </strong>
-                </p>
-                <div>
-                    <p>
-                        1. Add all terms in the numerator: <span class="math-columbia">(5z + 3) + (2z + 1) = 7z + 4</span>
-                    </p>
-                    <p>
-                        2. Add all terms in the denominator: <span class="math-columbia">(4z + 2) + (3z + 2) = 7z + 4</span>
-                    </p>
                 </div>
             </div>
+
+            <p class="spectral font-bold mb-4">Application in Chemistry: Determining Partial Pressures of Gases Using
+                Dalton's Law</p>
+
+            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] mb-4 text-justify px-2 rounded-lg">
+                <p class="text-justify">
+                    <strong>Problem:</strong> A gas mixture contains three gases: oxygen (O<sub>2</sub>), nitrogen
+                    (N<sub>2</sub>), and carbon
+                    dioxide (CO<sub>2</sub>). The total pressure of the mixture is P<sub>total</sub> = 100 kPa. The
+                    partial pressures of the
+                    gases are inversely proportional to their molar masses, given by:
+                </p>
+            
+
+                
+
+                
+                
+                
+            </div>
+
+            
+
+            
     </section>
 
     <!-- Download button -->

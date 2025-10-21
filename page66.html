@@ -12,9 +12,9 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
+            left: 31.75mm;
             right: 0;
             text-align: left;
             font-size: 10pt;
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,9 +79,57 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Methodology | 259</div>
+            <div class="page-number text-[15px]">271 <i>Methodology</i></div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+            <div class="spectral font-bold mb-4">
+                Application in Chemistry: Example Using Some Basic Concepts of Chemistry
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b> Calculate the total number of atoms in 154 grams of oxygen gas (O<sub>2</sub>).
+                </p>
+                <p class="mb-2">
+                    <b>Given Data:</b>
+                </p>
+                <div class="ml-5">
+                    <div class="flex items-center">
+                        <span class="w-1.5 h-1.5 p-0.5 mr-2 bg-[#6B3F69] rounded-full"></span>
+                        <p> The molecular weight of O<sub>2</sub>: 32 g/mol.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-1.5 h-1.5 p-0.5 mr-2 bg-[#6B3F69] rounded-full"></span>
+                        <p> Avogadro’s number: 6.022×10<sup>23</sup> molecules/mol.</p>
+                    </div>
+                </div>
+                <p>
+                    To calculate the total number of atoms, we first find the number of moles of O<sub>2</sub> and
+                    multiply by Avogadro’s number, then account for the fact that each molecule of O<sub>2</sub>
+                    contains 2 atoms.
+                </p>
+
+                <p><b>Step 1: Calculate the Number of Moles</b></p>
+
+                <div class="math-columbia flex justify-center items-center space-x-2">
+                    <div>Moles of O<sub>2</sub> =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">Mass of O<sub>2</sub></div>
+                        <div class="h-px bg-black w-48 mt-3"></div>
+                        <div class="-mt-2">Molecular weight of O<sub>2</sub></div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">154</div>
+                        <div class="h-px bg-black w-7 mt-3"></div>
+                        <div class="-mt-2">32</div>
+                    </div>
+                </div>
+                <p>
+                    Use <b>Ūrdhva-Tiryagbhyām Sutra</b> to perform the division step-by-step.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
 
                 <p>
                     <b>Step-by-Step Calculation</b>
@@ -128,102 +176,14 @@
 
                 <p><b>Step 3: Calculate the Total Number of Atoms</b></p>
                 <p>Each molecule of O<sub>2</sub> contains 2 atoms:</p>
-                <p class="math-columbia text-center my-1">Number of Atoms = 2 × 2.897 × 10<sup>24</sup> = 5.794 ×
-                    10<sup>24</sup> atoms</p>
-
-                <p>
-                    <b>Final Answer:</b>
-                </p>
-
-                <p>
-                    The total number of atoms in <span class="math-columbia">154 g</span> of O<sub>2</sub> is
-                    approximately: <span class="math-columbia">5.794 × 10<sup>24</sup></span> atoms.
-                </p>
-
-            </div>
-
-
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>2. Stepwise Explanation of Division Using the Ūrdhva-Tiryagbhyām Sutra</b>
-                </p>
-                <p class="mb-2">
-                    This is a Vedic-based “straight division” approach that simplifies the process by bifurcating the
-                    divisor into two parts: an operator, used for division, and a dhwajank, which adjusts sub-dividend
-                    portions iteratively. This approach produces the quotient and remainder in a single step, making it
-                    faster and more efficient than traditional methods, particularly when the divisor is easily
-                    simplified.
-                </p>
-                <p>
-                    <b>Example:</b> Divide <span class="math-columbia">1764</span> by <span
-                        class="math-columbia">42</span>.
-                </p>
-
-                <p>
-                    <b>Step 1:</b> Use 4 as the main divisor and 2 as the flag digit. Arrange the divisor, flag digit,
-                    quotient, and remainder, placing the unit digit in the remainder column.
-                </p>
-
-                <!-- Division Layout -->
-                <div class="mt-2 math-columbia text-center">
-                    <!-- Top row -->
-                    <div class="flex justify-center items-end gap-2">
-                        <!-- Divisor & Flag -->
-                        <div class="pb-2 w-[20px] flex items-end">
-                            4<span><sup>2</sup></span>
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="w-[80px] justify-center pb-2 flex gap-6 ">
-                            <div>1</div>
-                            <div>7</div>
-                            <div>6</div>
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="w-[20px] pb-2 flex gap-6 ">
-                            <div>4</div>
-                        </div>
-                    </div>
-
-                    <!-- Horizontal line -->
-                    <div class="w-[240px] border-t border-black mx-auto"></div>
-
-                    <!-- Bottom row (Quotient & Remainder labels) -->
-                    <div class="flex -mt-2 justify-center items-center gap-2">
-                        <!-- Divisor & Flag -->
-                        <div class="w-[20px] font-semibold flex items-end">
-
-                        </div>
-
-                        <!-- Vertical divider -->
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <!-- Dividend digits -->
-                        <div class="w-[80px] justify-center flex gap-6 ">
-                            <div>Quotient</div>
-                        </div>
-
-                        <div class="h-[40px] border-l-2 border-black mx-2"></div>
-
-                        <div class="w-[20px] flex gap-6 ">
-                            <div>Remainder</div>
-                        </div>
-                    </div>
-                </div>
-
-                <p>
-                    <b>Step 2:</b> Divide <span class="math-columbia">17</span> by <span class="math-columbia">4</span>
-                </p>
+                
 
                 
+
             </div>
+
+
+            
         </div>
     </section>
 

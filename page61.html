@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,29 +79,118 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 115</div>
-            <div class="pb-2 bg-gradient-to-r from-[#EEEEEE] to-[#E7D3D3] mb-4 px-2 rounded-lg">
-                <p class="text-justify mb-4">
-                    In Chemistry, calculating molar masses, balancing equations, or applying mole concepts involves
-                    ratios and proportions in these areas where Anurupyena
-                    (proportionality) and Shishyate-Sheshasangnah
-                    (constant remainder) can be applied with ease. Similarly, in Physics, formulas involving velocity,
-                    displacement, and acceleration often require squaring or multiplying values quickly, which
-                    sub-sutras can handle effortlessly. These sutras also build a strong foundation for manipulating
-                    equations, solving quadratic or simultaneous systems, and simplifying expressions all of which are
-                    common in scientific analysis and derivation.
+            <div class="page-number text-[15px]">124 <i>Part 1: Theoretical Overview</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                
+                
+                
+                
+                <p>
+                    The quadratic expression can be factorized as:
                 </p>
+                <p class=" math-columbia text-center mb-2">
+                    [A] <sup>2</sup> + 5[A] + 3 = (A + 3)(A + 1)
+                </p>
+                <p>
+                    Sum the Linear Factors
+                </p>
+                <p class="text-center math-columbia">
+                    (A + 3) + (A + 1) = 2A + 4
+                </p>
+                <p>
+                    Thus, the first differential of the expression, according to the Sutra, is:
+                </p>
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">dR</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">d[A]</div>
+                    </div>
+                    <div>= 2A + 4</div>
+                </div>
+                <p>
+                    <b>Step 3: Evaluate the First Differential at <span class="math-columbia">[A] = 3</span></b>
+                </p>
+                <p>
+                    Substitute [A] = 3 into the first differential expression:
+                </p>
+                <div class="math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">dR</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">d[A]</div>
+                    </div>
+                    <div>= 2(3) + 4 = 10</div>
+                </div>
+                <p class="mb-2">Thus, the first differential of the rate law expression is <span
+                        class="math-columbia">10</span>.</p>
+
+                <p>
+                    <b>Step 4: Calculate the Rate of Reaction</b>
+                </p>
+                <p>
+                    Now, substitute <span class="math-columbia">[A] = 3</span> into the rate law equation to find the
+                    rate of reaction <span class="math-columbia">R</span>:
+                </p>
+                <p class="math-columbia text-center">
+                    R = [A] <sup>2</sup> + 5[A] + 3
+                </p>
+                <p>
+                    Substitute <span class="math-columbia">[A] = 3</span>:
+                </p>
+                <p class="math-columbia text-center">
+                    R = [3] <sup>2</sup> + 5[3] + 3 = 27
+                </p>
+                <p class="mb-2">
+                    Thus, the rate of reaction is <span class="math-columbia">27</span> units (depending on the units of
+                    <span class="math-columbia">k</span>).
+                </p>
+
+                <div>
+                    <p>Answer:</p>
+                    <div class="ml-5">
+                        <div class="flex items-center mb-2">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>The rate of reaction <span class="math-columbia">R = 27</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="ml-5">
+                        <div class="flex items-center mb-2">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>The first differential of the rate law with respect to <span
+                                    class="math-columbia">[A]</span> is</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-20">
+                        <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">dR</div>
+                                <div class="h-px bg-black w-12 mt-3"></div>
+                                <div class="-mt-2">d[A]</div>
+                            </div>
+                            <div>= 10,</div>
+                        </div>
+                        <div>When <span class="math-columbia">[A] = 3</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
                 <p class="text-justify">
-                    Moreover, sub-sutras encourage mental flexibility and pattern recognition skills essential for
-                    scientific inquiry. Sutras like Vilokanam (by mere observation) train students to recognize
-                    numerical relationships or approximate values at a glance, which is particularly useful in
-                    estimation and scientific measurements. Instead of relying solely on calculators, students can
-                    mentally estimate values, increasing speed during exams and fostering deeper numerical intuition.
-                    Overall, integrating the sub-sutras of Vedic Mathematics into science education not only enhances
-                    computational efficiency but also nurtures logical thinking, precision, and confidence qualities
-                    that are indispensable in any scientific pursuit.
+                    The Gunakasamuchchaya sutra elegantly connects factorized polynomial
+                    forms to their first
+                    differentials, offering a shortcut to differentiation by summing linear factors. Its practical
+                    relevance in scientific contexts particularly in analyzing rate laws in chemistry that makes it a
+                    influential tool for both verifying results and instinctively understanding changes in dynamic
+                    systems.
                 </p>
             </div>
+
+            
 
         </div>
     </section>

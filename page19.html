@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,123 +79,183 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 73</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg"> 
-                <div class="ps-5">
-                    <div>
-                        <div class="ml-5">
-                            <div class="flex items-end">
-                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p>Denominators: <span class="math-columbia">(3x + 2) + (4x + 3) + (6x + 5) = 13x + 10</span></p>
-                            </div>
+            <div class="page-number text-[15px]">78 <i>Part 1: Theoretical Overview</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                
+                <div>
+                    
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div>the solution is:</div>
+                        <div>z</div>
+                        <div>=</div>
+                        <div class="math-columbia flex flex-col items-center">
+                            <div>(-3)</div>
+                            <div class="h-px bg-black w-10 mt-2"></div>
+                            <div class="-mt-3">4</div>
                         </div>
-                        <p>3. <b>Identify the Samuccaya:</b> Since the sums of numerators and denominators are equal,
-                            the Samuccaya is: <span class="math-columbia">13x + 10 = 7x + 9</span></p>
-                        <p>4. <b>Solve for <span class="math-columbia"><b>x </b></span>:</b> <span class="math-columbia">13x - 7x = 9 - 10 ⇒ 6x = -1</span></p>
-                        <div class="math-columbia flex justify-center items-center gap-2">
-                            <div>x</div>
-                            <div>=</div>
-                            <div>-</div>
-                            <div class=" flex flex-col items-center">
-                                <div>1</div>
-                                <div class="h-px bg-black w-5 mt-2"></div>
-                                <div class="-mt-2">6</div>
-                            </div>
-                        </div>
-                        <p>
-                            <b>Interpretation of the Result</b>
-                        </p>
-                        <div class="flex items-center gap-2">
-                            <div>The solution</div>
-                            <div class="math-columbia">x = -</div>
-                            <div class="math-columbia flex flex-col items-center">
-                                <div>1</div>
-                                <div class="h-px bg-black w-5 mt-2"></div>
-                                <div class="-mt-2">6</div>
-                            </div>
-                            <div>represents the equilibrium condition for the given chemical</div>
-                        </div>
-                        <p>reaction. In this context:</p>
-                        <p><b>Equilibrium Concentrations:</b> The value of <span class="math-columbia">x</span> can now be used to calculate the
-                            equilibrium concentrations of the chemical species:</p>
-                        <div class="math-columbia ml-10 flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <div>[A] = 2x + 5 = 2</div>
-                            <div>(</div>
-                            <div class="flex flex-col items-center">
-                                <div>-1</div>
-                                <div class="h-px bg-black w-5 mt-2"></div>
-                                <div class="-mt-2">6</div>
-                            </div>
-                            <div>)</div>
-                            <div>+ 5 =</div>
-                            <div class="flex flex-col items-center">
-                                <div>28</div>
-                                <div class="h-px bg-black w-5 mt-2"></div>
-                                <div class="-mt-2">6</div>
-                            </div>
-                            <div>= 4.67M</div>
-                        </div>
-                        <div class="math-columbia ml-10 flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <div>[B] = 3x + 2 = 3</div>
-                            <div>(</div>
-                            <div class="flex flex-col items-center">
-                                <div>-1</div>
-                                <div class="h-px bg-black w-5 mt-2"></div>
-                                <div class="-mt-2">6</div>
-                            </div>
-                            <div>)</div>
-                            <div>+ 2 =</div>
-                            <div class="flex flex-col items-center">
-                                <div>9</div>
-                                <div class="h-px bg-black w-5 mt-2"></div>
-                                <div class="-mt-2">6</div>
-                            </div>
-                            <div>= 1.5M</div>
-                        </div>
-                        <div class="math-columbia ml-10 flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <div>Similarly, [C], [D], and [E] can be computed.</div>
+                    </div>
+                </div>
+
+                <p class="mb-2">
+                    <b>Example: 2 Solve</b> 
+                </p>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>5z + 3</div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-3">4z + 2</div>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>2z + 1</div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-3">3z + 2</div>
+                    </div>
+                </div>
+                <p>
+                    <strong>Steps: </strong>
+                </p>
+                <div>
+                    <p>
+                        1. Add all terms in the numerator: <span class="math-columbia">(5z + 3) + (2z + 1) = 7z + 4</span>
+                    </p>
+                    <p>
+                        2. Add all terms in the denominator: <span class="math-columbia">(4z + 2) + (3z + 2) = 7z + 4</span>
+                    </p>
+                </div>
+                <div>
+                    <p>3. Since the numerator and denominator sums are equal, the Samuccaya is <span class="math-columbia">7z + 4</span>.
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div>The solution is:</div>
+                        <div>z</div>
+                        <div>=</div>
+                        <div class="math-columbia flex flex-col items-center">
+                            <div>(-4)</div>
+                            <div class="h-px bg-black w-10 mt-2"></div>
+                            <div class="-mt-3">7</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
-                <p class="text-justify">Shunyam Sāmyasamuchchaye enables quick identification of hidden symmetry in
-                    algebraic and rational expressions by equating common terms (samuccaya) to zero. This powerful
-                    shortcut is especially effective in scientific analysis, where it helps simplify equilibrium
-                    equations, ratios, and concentrations, saving time and enhancing pattern recognition in complex
-                    chemical relationships.
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>2. In Partial Fractional Equations: </b>If the numerator is the same across all terms, the
+                    Samuccaya is the sum of the denominators. The solution is found by
+                    setting the Samuccaya (sum of denominators) equal to zero.
                 </p>
+                <p class="mb-2">
+                <div class="flex flex-wrap items-center gap-2">
+                    <div>Example: For</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-5 mt-2"></div>
+                        <div class="-mt-3">a</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-5 mt-2"></div>
+                        <div class="-mt-3">b</div>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-5 mt-2"></div>
+                        <div class="-mt-3">c</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-5 mt-2"></div>
+                        <div class="-mt-3">d</div>
+                    </div>
+                    <div>,</div>
+                    <div> the Samuccaya is <span class="math-columbia">a + b - c - d</span>, and <span class="math-columbia">a + b = c + d</span> leads to the</div>
+                </div>
+                <p>solution.</p>
+                </p>
+
+                <p class="mb-2">
+                    <b>Example: 1</b>
+                </p>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-3">3x - 2</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-3">5x + 1</div>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-3">5x - 2</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>1</div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-3">3x + 1</div>
+                    </div>
+                </div>
+                <p>
+                    <strong>Steps: </strong>
+                </p>
+                <div>
+                    <p>
+                        1.	The numerator is 1 for all fractions
+                    </p>
+                    <p>
+                        2.	Add all denominators on each side:
+                    </p>
+                    <ul class="pl-12 space-y-1">
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Left side: <span class="math-columbia">(3x - 2) + (5x + 1) = 8x - 1</span>,</p>
+                        </li>
+                        <li class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Right side: <span class="math-columbia">(5x - 2) + (3x + 1) = 8x - 1</span>.</p>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div>3. The Samuccaya is 8x - 1. The solution is: </div>
+                        <div>x</div>
+                        <div>=</div>
+                        <div class="math-columbia flex flex-col items-center">
+                            <div>1</div>
+                            <div class="h-px bg-black w-5 mt-2"></div>
+                            <div class="-mt-3">8</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-4 px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 6. Aanyarūpaye Sünyamanyat (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        आन्यरूपये शून्यंअन्यत्
-                    </span>)
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>3. In Quadratic Equations:</b> If the sum of numerators and the sum of denominators
+                    on both sides are
+                    equal, then 0 is one of the solutions. And, if the difference between numerators and
+                    denominators is
+                    equal on both sides, the solution is found
                 </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> If one is the ratio, the other is zero.
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Use:</strong> This sutra is used to find the value of one variable, if in a system of linear
-                    equations; the ratio of coefficients of other variables is equal to the ratio of constant terms. The
-                    value of the required variable is zero. This sutra simplifies solving simultaneous equations and
-                    certain types of quadratic equations.
-                </p>
+                
+
+                
+                
+                
+            
+                
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
-                <p class="text-justify">The sixth sutra of Vedic Mathematics, Ānyarūpaye Śūnyamanyat, translates to
-                    “if one is the ratio, the other is zero.” This principle is rooted in logical symmetry and offers a
-                    strategic shortcut for solving simultaneous equations. When the ratios of corresponding coefficients
-                    of two variables are identical to the ratio of the constant terms, the sutra allows us to conclude
-                    that the remaining variable is equal to zero, without the need for substitution or 
-                </p>
-            </div>
+            
     </section>
 
     <!-- Download button -->

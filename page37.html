@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,8 +79,94 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 91</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+            <div class="page-number text-[15px]">100 <i>Part 1: Theoretical Overview</i></div>
+
+
+            <p class="spectral font-bold mb-4">Application of Yavadunam in chemistry:
+                Volume of Atoms in a Molecule</p>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b> The radius of a single atom in a face-centered cubic (FCC) structure is 1.2 Å.
+                    Calculate the volume of an atom in the molecule assuming the atomic structure is spherical.
+                </p>
+                <p>
+                    <b>Solution:</b>
+                </p>
+                <div class="ml-5">
+                    <p>
+                         <b>1.  Volume of a Sphere Formula:</b> The volume of a sphere is given by:
+                    </p>
+                    <div class="math-columbia flex gap-1 justify-center items-center">
+                        <div>V =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">4</div>
+                            <div class="h-px bg-black w-5 mt-3"></div>
+                            <div class="-mt-2">3</div>
+                        </div>
+                        <div>πr <sup>3</sup></div>
+                    </div>
+                    <p>
+                        <b>2.   Substitute the Radius (<span class="math-columbia"><b>r = 1.2 Å</b></span>):</b> To compute <span class="math-columbia">r <sup>3</sup> = (1.2) <sup>3</sup></span>, use
+                        Yavadunam Sutra to find the cube of <span class="math-columbia">1.2</span>.
+                    </p>
+                    <div class="ml-4 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                        <p>Split the number <span class="math-columbia">1.2</span> into <span class="math-columbia">x = 1</span> (tens digit) and <span class="math-columbia">y = 2</span>y = 2 (units digit).</p>
+                    </div>
+                    <div class="">
+                        <p><b>3.    Compute each term:</b></p>
+                        <div class="ml-5">
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>x <sup>3</sup> = 1 <sup>3</sup> = 1</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>x <sup>2</sup>y = 1 <sup>2</sup> × 2 = 2</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>xy <sup>2</sup> = 1 × 2 <sup>2</sup> = 4</p>
+                            </div>
+                            <div class="flex math-columbia items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>y <sup>3</sup> = 2 <sup>3</sup> = 8</p>
+                            </div>
+                            <div class="flex math-columbia items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>2x <sup>2</sup>y = 2 × 1 <sup>2</sup> × 2 = 4</p>
+                            </div>
+                            <div class="flex math-columbia items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p>2xy <sup>2</sup> = 2 × 1 × 2 <sup>2</sup> = 8</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        <b>4. Arrange the terms:</b>
+                    </p>
+                    <div class="flex math-columbia justify-center gap-8">
+                        <div>x <sup>3</sup></div>
+                        <div>(x <sup>2</sup>y + 2x <sup>2</sup>y)</div>
+                        <div>(xy <sup>2</sup> + 2xy <sup>2</sup>)</div>
+                        <div>y <sup>3</sup></div>
+                    </div>
+                    <div class="flex math-columbia justify-center gap-8">
+                        <div>1</div>
+                        <div>(2 + 4 = 6)</div>
+                        <div>(4 + 8 = 12)</div>
+                        <div>8</div>
+                    </div>
+
+                    <div class="">
+                        <p><b>5. Handle carryovers:</b></p>
+                        
+                    </div>
+                </div>
+
+            
                 <div class="ml-5">
                     
                     <div class="">
@@ -130,86 +216,13 @@
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
                 <p class="mb-2">
                     <b>Problem:</b> Calculate the number of moles of a cubic molecule, if the side length of an atom in
                     a cubic molecule is <span class="math-columbia">2.3 Å</span>, and there are <span class="math-columbia">6.022 × 10 <sup>23</sup></span> atoms in the molecule.
                 </p>
-                <p>
-                    <b>Solution:</b>
-                </p>
-                <div class="ml-5">
-                    <p>
-                        <b>1. Determine the Volume of a Single Atom:</b> Using the cube of <span class="math-columbia">2.3</span> (side length of the cubic
-                        atom) to find the volume:
-                    </p>
-                    <p class="math-columbia text-center">
-                        V <sub>atom</sub> = (side length) <sup>3</sup> = (2.3Å) <sup>3</sup>
-                    </p>
-                </div>
-
-                <p>
-                    Using the <b><span class="spectral">Yavadunam Sutra</span></b>, we calculated:
-                </p>
-                <p class="math-columbia text-center">
-                    (2.3Å) <sup>3</sup> = 12.167 Å <sup>3</sup> = 12.167 × 10 <sup>-24</sup> cm <sup>3</sup>
-                </p>
-
-                <div class="ml-5">
-                    <p>
-                        <b>2. Total Volume of All Atoms:</b> Multiply the volume of one atom by the total number of
-                    </p>
-                    <p class="ml-4">
-                        atoms in the molecule:
-                    </p>
-                    <p class="math-columbia text-center">
-                        V <sub>total</sub> = V <sub>atom</sub> × N
-                    </p>
-                    <p class="ml-4">
-                        Where N is the number of atoms.
-                    </p>
-                </div>
-
-                <p>
-                    Substituting the value:
-                </p>
-                <p class="math-columbia text-center">
-                    V <sub>total</sub> = 12.167 × 10 <sup>-24</sup> cm <sup>3</sup> × 6.022 × 10 <sup>23</sup>
-                </p>
-                <p>
-                    This gives the total volume occupied by all atoms.
-                </p>
-                <p class="math-columbia text-center">
-                    V <sub>total</sub> = 7.32 cm <sup>3</sup>
-                </p>
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
-                <p class="text-justify">The Yāvadūnam Sutra
-                    demonstrates the elegance of mental arithmetic through its structured approach to complements
-                    and
-                    cubing. In scientific domains like chemistry and physics, this sutra proves especially useful
-                    for
-                    simplifying volume-based computations. From calculating the cube of atomic radii in crystalline
-                    structures to evaluating molar volumes and stoichiometric relationships, Yāvadūnam brings speed,
-                    clarity, and precision to otherwise complex calculations. It empowers learners to visualize
-                    numerical transformations and apply them directly in real-world scientific analysis.
-                </p>
-            </div>
-
-            <div class="px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 11. Vyasti Samastih (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        व्यष्टि समष्टिः
-                    </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> Specific and general or Whole as one and One as whole
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Use:</strong> The sutra enables solving special bi-quadratic equations by removing odd power
-                </p>
+               
+              
             </div>
     </section>
 

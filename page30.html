@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,90 +78,105 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 84</div>
-            <div class="mb-4 px-2 text-[#6B3F69]">
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 89</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
                 
-                <p class="mb-1">Once the discriminant is found, the roots of the quadratic equation can be determined using the
-                    calculus-derived formula:</p>
-                <div class="math-columbia flex gap-1 justify-center items-center">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">dy</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">dx</div>
-                    </div>
-                    <div>(ax <sup>2</sup> + bx + c) = ±√∆</div>
-                </div>
-                <p class="mb-4">
-                    This process breaks the quadratic equation into two linear equations, which can be solved to find
-                    the roots.
-                </p>
-                <p class="mb-1"><b>Key Concept for Higher-Degree Polynomials</b></p>
-                <p>There is a relationship between the factorization of higher-degree polynomials (e.g., 3rd,
-                    4th, or
-                    5th degree) and differential calculus. By differentiating the polynomial, you can
-                    systematically
-                    identify roots, simplify the expression, and break it into smaller factors.</p>
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2  rounded-lg">
-                <p class="text-justify mb-4">The ninth sutra of Vedic Mathematics, Chalana-kalanābhyām, is a dynamic
-                    technique that draws upon the principles of motion and change concepts, foundational to differential
-                    calculus. This sutra demonstrates the deep interconnection between algebra and calculus by enabling
-                    the factorization of quadratic and higher-degree polynomials through the use of derivatives and
-                    discriminants. It brings out the elegance of solving algebraic expressions by focusing on how
-                    quantities vary, thus transforming abstract operations into more intuitive and manageable processes.
-                    Additionally, the sutra proves instrumental in factorizing cubic and quadratic polynomials by
-                    identifying roots through derivatives and successive simplification.
-                </p>
-                <p class="text-justify">The utility of this sutra extends seamlessly into scientific contexts, where
-                    many relationships are governed by quadratic or exponential functions. For instance, in reaction
-                    kinetics, Chalana-kalanābhyām aids in solving the Arrhenius equation, a cornerstone in determining
-                    activation energy. Similarly, the sutra proves effective when working with equilibrium expressions
-                    that yield quadratic relationships, such as in dissociation reactions or concentration-based
-                    problems in chemical equilibrium. By applying the principles of differentiation and factorization,
-                    the sutra simplifies complex numerical computations, leading to faster and more accurate analytical
-                    insights.
+                <p class="text-justify">Within scientific contexts, particularly in sciences, Pūrṇa Pūraṇābhyām offers
+                    practical value in situations that involve ratio analysis, stoichiometric calculations, and
+                    volumetric computations. It can simplify calculations in reaction stoichiometry where the mole ratio
+                    and product of two reactants are known, or assist in solving complex thermodynamic or gas law
+                    equations by transforming them into manageable algebraic forms. This is especially relevant in
+                    real-gas scenarios, such as applying the Van der Waals equation, where solving cubic equations is
+                    necessary to determine properties like molar volume. By promoting algebraic completeness and
+                    symmetry, this sutra supports deeper conceptual understanding and fosters flexible thinking.
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
-                <div class="">
-                    <p class="mb-2">
-                        <b>Example 1: Solving a Quadratic Equation: <span class="math-columbia"><b>5x <sup>2</sup> - 13x -
-                                7 =
-                                0</b></span></b>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Example 1: Find <span class="math-columbia"><b>x - y, if x + y = 12</b></span> and <span class="math-columbia"><b>xy = 35</b></span></b>
+                </p>
+                <div>
+                    <p>
+                        <b>Step 1:</b> Use the identity for the square of a difference:
                     </p>
-                    <div class="ml-5">
-                        <p>
-                            <b>1. Identify coefficients:</b> <span class="math-columbia">a = 5, b = -13, c = -7</span>
-                        </p>
-                        <p>
-                            <b>2. Calculate the discriminant:</b>
-                        </p>
-                        <p class="math-columbia text-center">∆ = b <sup>2</sup> - 4ac = (-13) <sup>2</sup> -4 × 5 × (-7)
-                            =
-                            169 + 140 = 309</p>
-
-                        <p>
-                            <b>3. Apply the formula:</b>
-                        </p>
-                        <div class="math-columbia flex gap-1 justify-center items-center">
-                            <div class="flex flex-col items-center">
-                                <div class="-mb-1">dy</div>
-                                <div class="h-px bg-black w-12 mt-3"></div>
-                                <div class="-mt-2">dx</div>
-                            </div>
-                            <div>(5x <sup>2</sup> - 13x - 7) = 10x - 13 = ±√309</div>
+                    <p class="math-columbia text-center">(x - y) <sup>2</sup> = (x + y) <sup>2</sup> - 4xy</p>
+                    <p>
+                        <b>Step 2:</b> Substitute the given values:
+                    </p>
+                    <p class="math-columbia text-center">(x - y) <sup>2</sup> = (12) <sup>2</sup> - 4×35</p>
+                    <p class="math-columbia text-center">(x - y) <sup>2</sup> = 144 - 140 = 4</p>
+                    <p>
+                        <b>Step 3:</b> Solve for x-y
+                    </p>
+                    <div class="math-columbia flex gap-2 items-center justify-center">
+                        <div>(x - y) =</div>
+                        <div class="flex flex-col items-center leading-[0.5]">
+                            <span>+</span>
+                            <span>-</span>
                         </div>
-                        <p class="ml-4">This gives two linear equations: </p>
+                        <div>√4</div>
+                    </div>
+                    <div class="math-columbia flex gap-2 items-center justify-center">
+                        <div>x - y =</div>
+                        <div class="flex flex-col items-center leading-[0.5]">
+                            <span>+</span>
+                            <span>-</span>
+                        </div>
+                        <div>2</div>
+                    </div>
+                </div>
 
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+
+
+                <p class="mb-2">
+                    <b>Example 2: Solve the equation </b>
+                </p>
+                <p class="math-columbia text-center">
+                    x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6 = 0
+                </p>
+                <div>
+                    <p>
+                        <b>Step 1:</b> Look for ways to rewrite the equation as a perfect cube. Notice that:
+                    </p>
+                    <p class="math-columbia text-center">x <sup>3</sup> + 6x <sup>2</sup> + 12x + 8 = (x + 2)
+                        <sup>3</sup>
+                    </p>
+                    <p>
+                        <b>Step 2:</b> Modify the given equation to match this form:
+                    </p>
+                    <p class="math-columbia text-center">x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6 + (x + 2) = (x + 2)
+                        <sup>3</sup>
+                    </p>
+                    <p>Simplify:</p>
+                    <p class="math-columbia text-center">x <sup>3</sup> + 6x <sup>2</sup> + 12x + 8 = (x + 2)
+                        <sup>3</sup>
+                    </p>
+                    <p>
+                        <b>Step 3:</b> Factorize:
+                    </p>
+                    <p class="math-columbia text-center">(x + 2) <sup>3</sup> - (x + 2) = 0</p>
+                    <p>Factor further:</p>
+                    <p class="math-columbia text-center">(x + 2) ((x + 2) <sup>2</sup> - 1) = 0</p>
+                    <p>
+                        <b>Step 4:</b> Solve each factor:
+                    </p>
+                    <div class="math-columbia ml-12">
+                        <p>1. x + 2 = 0, gives x = -2</p>
                         
                     </div>
                     
                 </div>
-
-                
             </div>
+
+            
+
+            
     </section>
 
     <!-- Download button -->

@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,180 +79,235 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 71</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 mb-4 rounded-lg">
-                <div>
-                    <p>3. Since the numerator and denominator sums are equal, the Samuccaya is <span class="math-columbia">7z + 4</span>. The
-                    <div class="flex flex-wrap items-center gap-2">
-                        <div>the solution is:</div>
-                        <div>z</div>
-                        <div>=</div>
-                        <div class="math-columbia flex flex-col items-center">
-                            <div>(-4)</div>
-                            <div class="h-px bg-black w-10 mt-2"></div>
-                            <div class="-mt-3">7</div>
+            <div class="page-number text-[15px]">76 <i>Part 1: Theoretical Overview</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] mb-4 text-justify px-2 rounded-lg">
+                
+            
+
+                <div class="flex justify-center items-center gap-2">
+                    <div>
+                        P<sub>total</sub>
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>A</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">(x - 32)</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>B</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">(x - 28)</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>C</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">(x - 44)</div>
+                    </div>
+                </div>
+
+                <p class="mb-2 text-justify">
+                    Where x is the molar mass of the gases (in g/mol). Use the sutra to determine the coefficients A, B,
+                    and C.
+                </p>
+                <p class="font-bold mb-1">
+                    Solution:
+                </p>
+                <div class="ps-5">
+                    <div>
+                        <div>
+                            <strong>1. Given Relation: </strong>P<sub>total</sub> = 100 kPa, and molar masses for oxygen
+                            (x = 32), nitrogen (x = 28), and carbon dioxide (x = 44).
+                        </div>
+                        <div>
+                            <div>
+                                <strong>2. Break into Partial Fractions: </strong>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <div class="math-columbia flex flex-col items-center">
+                                    <div>A</div>
+                                    <div class="h-px bg-black w-10 mt-2"></div>
+                                    <div class="-mt-3">(x - 32)</div>
+                                </div>
+                                <div>+</div>
+                                <div class="math-columbia flex flex-col items-center">
+                                    <div>B</div>
+                                    <div class="h-px bg-black w-10 mt-2"></div>
+                                    <div class="-mt-3">(x - 28)</div>
+                                </div>
+                                <div>+</div>
+                                <div class="math-columbia flex flex-col items-center">
+                                    <div>C</div>
+                                    <div class="h-px bg-black w-10 mt-2"></div>
+                                    <div class="-mt-3">(x - 44)</div>
+                                </div>
+                                <div>,</div>
+                            </div>
+                            <div>
+                                we find A, B, and C by substituting the roots of x as 32,28, and 44.
+                            </div>
+                        </div>
+                        <div>
+                            <strong>3. Solve for A, B, C:</strong>
+                        </div>
+                        <div class="pl-12 space-y-1">
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p><strong>For A:</strong> Set x = 32. Ignore the (x − 32) term and evaluate: </p>
+                            </div>
+                            <div>
+                                <div class="flex justify-center items-center gap-2">
+                                    <div>A</div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-24 mt-2"></div>
+                                        <div class="-mt-3">(32 - 28)(32 - 44)</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-12 mt-2"></div>
+                                        <div class="-mt-3">4(-12)</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-10 mt-2"></div>
+                                        <div class="-mt-3">-48</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div>-2.08 kPa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pl-12 space-y-1">
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p><strong>For B:</strong> Set x=28. Ignore the (x−28) term and evaluate: </p>
+                            </div>
+                            <div>
+                                <div class="flex justify-center items-center gap-2">
+                                    <div>B</div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-24 mt-2"></div>
+                                        <div class="-mt-3">(28 - 32)(28 - 44)</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-16 mt-2"></div>
+                                        <div class="-mt-3">(-4)(-16)</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-10 mt-2"></div>
+                                        <div class="-mt-3">64</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div>1.56 kPa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pl-12 space-y-1">
+                            <div class="flex items-end">
+                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                                <p><strong>For C:</strong> Set x=44. Ignore the (x−44) term and evaluate: </p>
+                            </div>
+                            <div>
+                                <div class="flex justify-center items-center gap-2">
+                                    <div>C</div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-24 mt-2"></div>
+                                        <div class="-mt-3">(44 - 32)(44 - 28)</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-16 mt-2"></div>
+                                        <div class="-mt-3">(16)(12)</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>100</div>
+                                        <div class="h-px bg-black w-10 mt-2"></div>
+                                        <div class="-mt-3">192</div>
+                                    </div>
+                                    <div>=</div>
+                                    <div>0.52 kPa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <strong>4. <b>Solution:</b> The partial pressures are:</strong>
+                        </div>
+                        <div class="pl-12 space-y-1">
+                            <div>
+                                <div class="flex justify-center items-center gap-2">
+                                    <div>P<sub>O<sub>2</sub></div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>-2.08</div>
+                                        <div class="h-px bg-black w-16 mt-2"></div>
+                                        <div class="-mt-3">(x - 32)</div>
+                                    </div>
+                                    <div>,</div>
+                                    <div>P<sub>N<sub>2</sub></div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>1.56</div>
+                                        <div class="h-px bg-black w-16 mt-2"></div>
+                                        <div class="-mt-3">(x - 28)</div>
+                                    </div>
+                                    <div>,</div>
+                                    <div>P<sub>CO<sub>2</sub></div>
+                                    <div>=</div>
+                                    <div class="math-columbia flex flex-col items-center">
+                                        <div>0.52</div>
+                                        <div class="h-px bg-black w-16 mt-2"></div>
+                                        <div class="-mt-3">(x - 44)</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>2. In Partial Fractional Equations: </b>If the numerator is the same across all terms, the
-                    Samuccaya is the sum of the denominators. The solution is found by
-                    setting the Samuccaya (sum of denominators) equal to zero.
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-14 rounded-lg">
+                <p class=" text-justify">Parāvartya Yojayet simplifies
+                    complex operations like division, equation solving, and partial fraction decomposition by using
+                    transposition and sign reversal. Its logical structure supports accurate and efficient
+                    problem-solving in scientific applications such as dilution calculations, gas laws, and polynomial
+                    breakdowns that make it a powerful tool for algebraic reasoning in chemistry and related fields.
                 </p>
-                <p class="mb-2">
-                <div class="flex flex-wrap items-center gap-2">
-                    <div>Example: For</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-5 mt-2"></div>
-                        <div class="-mt-3">a</div>
-                    </div>
-                    <div>+</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-5 mt-2"></div>
-                        <div class="-mt-3">b</div>
-                    </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-5 mt-2"></div>
-                        <div class="-mt-3">c</div>
-                    </div>
-                    <div>+</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-5 mt-2"></div>
-                        <div class="-mt-3">d</div>
-                    </div>
-                    <div>,</div>
-                    <div> the Samuccaya is <span class="math-columbia">a + b - c - d</span>, and <span class="math-columbia">a + b = c + d</span> leads to the</div>
-                </div>
-                <p>solution.</p>
-                </p>
-
-                <p class="mb-2">
-                    <b>Example: 1</b>
-                </p>
-                <div class="flex justify-center items-center gap-2">
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">3x - 2</div>
-                    </div>
-                    <div>+</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">5x + 1</div>
-                    </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">5x - 2</div>
-                    </div>
-                    <div>+</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>1</div>
-                        <div class="h-px bg-black w-16 mt-2"></div>
-                        <div class="-mt-3">3x + 1</div>
-                    </div>
-                </div>
-                <p>
-                    <strong>Steps: </strong>
-                </p>
-                <div>
-                    <p>
-                        1.	The numerator is 1 for all fractions
-                    </p>
-                    <p>
-                        2.	Add all denominators on each side:
-                    </p>
-                    <ul class="pl-12 space-y-1">
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p>Left side: <span class="math-columbia">(3x - 2) + (5x + 1) = 8x - 1</span>,</p>
-                        </li>
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <p>Right side: <span class="math-columbia">(5x - 2) + (3x + 1) = 8x - 1</span>.</p>
-                        </li>
-                    </ul>
-                    <div class="flex flex-wrap items-center gap-2">
-                        <div>3. The Samuccaya is 8x - 1. The solution is: </div>
-                        <div>x</div>
-                        <div>=</div>
-                        <div class="math-columbia flex flex-col items-center">
-                            <div>1</div>
-                            <div class="h-px bg-black w-5 mt-2"></div>
-                            <div class="-mt-3">8</div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>3. In Quadratic Equations:</b> If the sum of numerators and the sum of denominators
-                    on both sides are
-                    equal, then 0 is one of the solutions. And, if the difference between numerators and
-                    denominators is
-                    equal on both sides, the solution is found by setting this difference to 0, which is another
-                    solution of the equation.
+            <div class="px-2 text-center">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra 5. Shunyam Sämyasamuchchaye (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        शून्यं साम्यसमुच्चये
+                    </span>)
                 </p>
-                <div class="flex justify-center items-center gap-2">
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>ax + b</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">cx + d</div>
-                    </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>px + q</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">rx + s</div>
-                    </div>
-                </div>
-                <p>Where, <span class="math-columbia">(p - r) = (a - c) and (b - d) = (s - q)</span>.</p>
-
-                <p class="mb-2">
-                    <b>Example: 1</b>
+                <p class="text-[#6B3F69]">
+                    <strong>Meaning:</strong> If the samuchchaya is the same, it is zero.
                 </p>
-                <div class="flex justify-center items-center gap-2">
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>2x + 5</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">3x + 2</div>
-                    </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>5x + 2</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">4x + 5</div>
-                    </div>
-                </div>
-                <p>
-                    <strong>Steps: </strong>
-                </p>
-                <div>
-                    <p class="mb-1">
-                        Add numerators: <span class="math-columbia">(2x + 5) + (5x + 2) = 7x + 7</span>
-                    </p>
-                    <p class="mb-1">
-                        Add denominators: <span class="math-columbia">(3x + 2) + (4x + 5) = 7x + 7</span>
-                    </p>
-                    <p class="mb-1">
-                        Removing the constant term, the samuccaya <span class="math-columbia">x + 1 = 0</span>
-                    </p>
-                    <p class="mb-1">
-                        It is a sum of the numerator or denominator, <span class="math-columbia">(-1)</span> is one root of the given equation.
-                    </p>
-                </div>
+                
             </div>
+
+            
     </section>
 
     <!-- Download button -->

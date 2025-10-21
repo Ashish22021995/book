@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,144 +78,74 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 108</div>
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 117</div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <p>
-                    Perform synthetic or polynomial division:
+                <p class="mb-2">
+                    <b>Step 3: Find the Complement</b>
                 </p>
-                <p class="math-columbia text-center mb-2">
-                    y <sup>3</sup> + 6y <sup>2</sup> + 11y + 6 ÷ (y + 1) = (y + 1) (y <sup>2</sup> + 5y + 6)
-                </p>
-                <p>
-                    <b>Step 2: Sum coefficients of each factor</b>
-                </p>
-                <div class="mb-2 ml-5">
-                    <div class="flex items-end">
-                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                        <p>
-                            For <span class="math-columbia">(y + 1)</span>, the sum is : <span class="math-columbia">1 +
-                                1 = 2</span>
-                        </p>
-                    </div>
-                    <div class="flex items-end">
-                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                        <p>
-                            For <span class="math-columbia">(y <sup>2</sup> + 5y + 6)</span>, the sum is : <span
-                                class="math-columbia">1 + 5 + 6 = 12</span>
-                        </p>
-                    </div>
-                </div>
+                <p>Find the complement of <span class="math-columbia">43</span> with respect to <span
+                        class="math-columbia">99</span>:</p>
 
-                <p>
-                    <b>Step 3: Multiply sums of coefficients</b>
-                </p>
                 <p class="text-center mb-2">
-                    Product of sums <span class="math-columbia">= 2 × 12 = 24</span>
-                </p>
-                <p>
-                    <b>Step 4: Sum coefficients of the original polynomial</b>
-                </p>
-                <div class="mb-2 ml-5">
-                    <div class="flex items-end">
-                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                        <p>
-                            The sum of coefficients of <span class="math-columbia">y <sup>3</sup> + 6y <sup>2</sup> +
-                                11y + 6</span> is: <span class="math-columbia">1 + 6 + 11 + 6 = 24</span>
-                        </p>
-                    </div>
-                </div>
-                <p>
-                    <b>Step 5: Verify</b>
-                </p>
-                <p class="mb-2">
-                    Product of sums <span class="math-columbia">(24) = </span>Sum of coefficients of the polynomial
-                    <span class="math-columbia">(24)</span>
+                    Complement <span class="math-columbia">= 99 − 43 = 56</span> (Right-hand side of the product)
                 </p>
 
+                <p class="mb-2">
+                    <b>Step 4: Combine the Results</b>
+                </p>
                 <p>
-                    <b>Conclusion:</b> The division is correct.
+                    Combine the left-hand side and right-hand side to form the product:
+                </p>
+                <p class="text-center">
+                    <span class="math-columbia">99 × 44 = 4356</span>
+                </p>
+                <p>The total mass of the substance is </p>
+                <p class="text-center">
+                    Mass of the substance <span class="math-columbia">= 4356 g</span>
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="mb-2 leading-relaxed">
-                    <b>Example 3: Multiplication Verification</b>
-                </div>
-                <p class="mb-2">
-                    <b>Verify:</b> <span class="math-columbia"><b>(y + 2) (y <sup>2</sup> + 3y + 4)</b></span>
-                </p>
-                <p>
-                    <b>Step 1: Sum coefficients of each factor</b>
-                </p>
-                <div class="mb-2 ml-5">
-                    <div class="flex items-end">
-                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                        <p>
-                            For <span class="math-columbia">(y + 2) : 1 + 2 = 3</span>
-                        </p>
-                    </div>
-                    <div class="flex items-end">
-                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                        <p>
-                            For <span class="math-columbia">(y <sup>2</sup> + 3y + 4) : 1 + 3 + 4 = 8</span>
-                        </p>
-                    </div>
-                </div>
-
-                <p>
-                    <b>Step 2: Multiply sums of coefficients</b>
-                </p>
-                <p class="text-center mb-2">
-                    Product of sums <span class="math-columbia">= 3 × 8 = 24</span>
-                </p>
-                <p>
-                    <b>Step 3: Expand the product</b>
-                </p>
-                <div class="math-columbia flex justify-center gap-1 mb-2">
-                    <div>(y+2)(y<sup>2</sup>+3y+4)</div>
-                    <div>=</div>
-                    <div>y<sup>3</sup>+3y<sup>2</sup>+4y+2y<sup>2</sup>+6y+8</div>
-                    <div>=</div>
-                    <div>y<sup>3</sup>+3y<sup>2</sup>+4y+2y<sup>2</sup>+6y+8</div>
-                    <div>=</div>
-                    <div>y<sup>3</sup>+5y<sup>2</sup>+10y+8</div>
-                </div>
-                <p>
-                    <b>Step 4: Sum coefficients of the expanded polynomial</b>
-                </p>
-                <p class="math-columbia text-center">
-                    1 + 5 + 10 + 8 = 24
-                </p>
-                <p>
-                    <b>Step 5: Verify</b>
-                </p>
-                <p class="mb-2">
-                    Product of sums <span class="math-columbia">(24) = </span>Sum of coefficients of expanded polynomial
-                    <span class="math-columbia">(24)</span>
-                </p>
-
-                <p>
-                    <b>Conclusion:</b> The multiplication is correct.
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
+                <p class="text-justify">The Ekanyunena Purvena
+                    sutra provides a swift and elegant method for multiplying numbers involving all 9s, simplifying
+                    binary calculations, and converting repeating decimals. Especially useful in scientific computations
+                    involving scaled values or repetitive numeric patterns, this sutra reduces complexity by leveraging
+                    number complements and positional structure that promotes both speed and clarity in arithmetic
+                    operations.
                 </p>
             </div>
-            <p class="spectral font-bold mb-4">Application of Gunitasamuchchaya in chemistry:
-                Rate Law of Reaction</p>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>Problem:</b> The rate law for a hypothetical reaction is:
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra 15. Gunitasamuchchaya (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        गुणितसमुच्ययः
+                    </span>)
                 </p>
-                <p class="math-columbia text-center">
-                    Rate = k[A] <sup>2</sup> + k[A][B] + k[B] <sup>2</sup>
+                <p class="text-[#6B3F69]">
+                    <strong>Meaning:</strong> "The product of the sum of coefficients of the factors."
                 </p>
-                <p>
-                    Verify if the expanded form of the expression is correctly factorized as:
-                </p>
-                <p class="math-columbia text-center">
-                    Rate = k[A + B][A + B]
+                <p class="text-[#6B3F69] leading-relaxed">
+                    <strong>Use:</strong> This sutra is a verification method to check the correctness of results in
+                    multiplication, division, or factorization. It involves comparing the product of the sum of
+                        coefficients of factors to ensure the equality of the expression.
                 </p>
             </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
+                <p class="text-justify">Guṇitasamuccaya is a sutra designed for verification rather than
+                    computation. It offers an elegant method to check the correctness of factorizations,
+                    multiplications, and divisions without expanding entire expressions. The core idea is simple: the
+                    product of the sums of coefficients of each factor must equal the sum of the coefficients of the
+                    final expression. This verification tool is especially valuable when working with polynomials and
+                    expressions involving multiple terms. Instead of re-expanding or recalculating, a simple summation
+                    check provides confirmation of correctness of the solution which is ideal for mental math or
+                    high-pressure testing environments.
+                </p>
+            </div>
+
+            
 
     </section>
 

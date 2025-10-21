@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,136 +79,134 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 111</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <p>
-                    <b>Step 3: Verify by direct differentiation</b>
-                </p>
-                <p>
-                    Differentiate <span class="math-columbia"><span>x <sup>2</sup> − 5x + 4</span></span> directly:
-                </p>
-                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">dy</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">dx</div>
-                    </div>
-                    <div>(x <sup>2</sup> -5x + 4) = 2x - 5</div>
-                </div>
-
-                <p>
-                    <b>Answer:</b> The first differential is: <span class="math-columbia">2x−5</span>
-                </p>
-            </div>
+            <div class="page-number text-[15px]">120 <i>Part 1: Theoretical Overview</i></div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="mb-2 leading-relaxed">
-                    <b>Example 2: Cubic Expression</b>
-                </div>
+                
+                
+                <p>
+                    <b>Step 4: Sum coefficients of the expanded polynomial</b>
+                </p>
+                <p class="math-columbia text-center">
+                    1 + 5 + 10 + 8 = 24
+                </p>
+                <p>
+                    <b>Step 5: Verify</b>
+                </p>
                 <p class="mb-2">
-                    <b>Solve: Find the first differential of </b><span class="math-columbia"><b>x <sup>3</sup> + 6x <sup>2</sup> + 11x +
-                        6</b></span>.
-                </p>
-                <p>
-                    <b>Step 1: Factorize the expression</b>
-                </p>
-                <p class="mb-2">Factorize: <span class="math-columbia">(x <sup>3</sup> + 6x <sup>2</sup> +
-                        11x + 6)</span>
+                    Product of sums <span class="math-columbia">(24) = </span>Sum of coefficients of expanded polynomial
+                    <span class="math-columbia">(24)</span>
                 </p>
 
-                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                    <div>(x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6) =</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">a</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">(x + 1)</div>
-                    </div>
-                    <div>+</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">b</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">(x + 2)</div>
-                    </div>
-                    <div>+</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">c</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">(x + 3)</div>
-                    </div>
-                </div>
-
                 <p>
-                    <b>Step 2: Sum the factors</b>
-                </p>
-                <p>
-                    Sum the linear factors:
-                </p>
-                <p class=" math-columbia text-center mb-2">
-                    (x + 1) + (x + 2) + (x + 3) = x + x + x + 1 + 2 + 3 = 3x + 6
-                </p>
-                <p>
-                    <b>Step 3: Verify by direct differentiation</b>
-                </p>
-                <p>
-                    Differentiate <span class="math-columbia">x <sup>3</sup> − 6x <sup>2</sup> + 11x − 6</span>
-                    directly:
-                </p>
-                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">dy</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">dx</div>
-                    </div>
-                    <div>(x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6) = 3x <sup>2</sup> + 12x + 11</div>
-                </div>
-                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">dy</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">dx</div>
-                    </div>
-                    <div>= (x <sup>2</sup> + 3x + 2) + (x <sup>2</sup> + 5x + 6) + (x <sup>2</sup> + 4x + 3) = ab + bc +
-                        ac = ∑ab</div>
-                </div>
-                <p>
-                    Notice that the sum of the linear factors corresponds to the first step in the process, and
-                    higher derivatives apply further reductions.
-                </p>
-                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">d <sup>2</sup> y</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">dx <sup>2</sup></div>
-                    </div>
-                    <div>= 6x + 12 = 2(3x + 6) = 2[(x + 1) + (x + 2) + (x + 3)]</div>
-                </div>
-                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">d <sup>2</sup> y</div>
-                        <div class="h-px bg-black w-12 mt-3"></div>
-                        <div class="-mt-2">dx <sup>2</sup></div>
-                    </div>
-                    <div>= 2(a + b + c) = 2∑a</div>
-                </div>
-                <p>
-                    <b>Answer:</b> The first differential is: <span class="math-columbia">3x + 6</span>
+                    <b>Conclusion:</b> The multiplication is correct.
                 </p>
             </div>
 
-            <p class="spectral font-bold mb-4">Application of Gunakasamuchchaya in chemistry:
-                Rate of Reaction and Rate Law</p>
+
+            <p class="spectral font-bold mb-4">Application of Gunitasamuchchaya in chemistry:
+                Rate Law of Reaction</p>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
                 <p class="mb-2">
-                    <b>Problem:</b> For a reaction with the rate law equation given by:
+                    <b>Problem:</b> The rate law for a hypothetical reaction is:
                 </p>
-                <p class="text-center math-columbia">
-                    R = k.[A] <sup>2</sup> + 5[A] + 3
+                <p class="math-columbia text-center">
+                    Rate = k[A] <sup>2</sup> + k[A][B] + k[B] <sup>2</sup>
                 </p>
                 <p>
-                    Where:
+                    Verify if the expanded form of the expression is correctly factorized as:
+                </p>
+                <p class="math-columbia text-center">
+                    Rate = k[A + B][A + B]
                 </p>
             </div>
+
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2"><b>Solution:</b></p>
+                <p>
+                    <b>Step 1: Sum the Coefficients of the Factors</b>
+                </p>
+                <p>
+                    The factors are:
+                </p>
+                <div class="mb-2 ml-5">
+                    <p>1. <span class="math-columbia">[A+B]</span>:</p>
+                    <div class="ml-5 mb-2">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>
+                                Coefficients are <span class="math-columbia">1</span> (of <span class="math-columbia">A</span>) and 1 (of <span class="math-columbia">B</span>).
+                            </p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p class="math-columbia">
+                                Sum = 1 + 1 = 2.
+                            </p>
+                        </div>
+                    </div>
+                    <p>2. <span class="math-columbia">[A+B]</span> (same factor):</p>
+                    <div class="ml-5 mb-2">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p class="math-columbia">
+                                Sum = 1 + 1 = 2.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 2: Multiply the Sums of the Coefficients</b>
+                </p>
+                <p class="text-center mb-2">
+                    Product of sums <span class="math-columbia">= 2 × 2 = 4.</span>
+                </p>
+                <p>
+                    <b>Step 3: Expand the Factors</b>
+                </p>
+                <p>Expand <span class="math-columbia">[A + B][A + B]</span>:</p>
+                <p class="math-columbia text-center mb-2">
+                    [A + B][A + B] = A <sup>2</sup> + 2AB + B <sup>2</sup>.
+                </p>
+                <p>
+                    <b>Step 4: Sum coefficients of the expanded polynomial</b>
+                </p>
+                <p class="math-columbia">
+                    In A <sup>2</sup> + 2AB + B <sup>2</sup> :
+                </p>
+                <div class="mb-2 ml-5">
+                    <div class="mb-2">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>
+                                Coefficients are <span class="math-columbia">1</span> (of <span class="math-columbia">A <sup>2</sup></span> ), 2 (of <span class="math-columbia">AB</span> ), and <span class="math-columbia">1</span> (of <span class="math-columbia">B <sup>2</sup></span> ).
+                            </p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p class="math-columbia">
+                                Sum = 1 + 2 + 1 = 4.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <b>Step 5: Verify</b>
+                </p>
+                <p class="">
+                    Compare the product of sums of coefficients of the factors (<span class="math-columbia">4</span>) with the sum of coefficients of the
+                    expanded polynomial
+                    <span class="math-columbia">(<span class="math-columbia">4</span>) :</span>
+                </p>
+                
+
+                
+            </div>
+
+            
 
         </div>
     </section>

@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,90 +79,143 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 95</div>
+            <div class="page-number text-[15px]">104 <i>Part 1: Theoretical Overview</i></div>
 
-            <div class="px-2 text-center mb-4">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 12. Sesanyankena Caramena (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        शेषरायङ्केन चरमेण
-                    </span>)
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                
+
+               
+
+                <p>
+                    Thus:
                 </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> The remainders by the last digit.
+                <p class="math-columbia text-center">
+                    E + 6 = a + 1 and E + 4 = a - 1
                 </p>
-                <div class="text-[#6B3F69] leading-relaxed">
-                    <strong>Use:</strong> This sutra is used to express a fraction as a decimal, to all its decimal
-                    places. It provides an efficient method to determine the recurring decimal representation of
-                    fractions like
-                    <span
-                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
-                        <span>1</span>
-                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
-                        <span class="-mt-1.5">7</span>
-                    </span>,
-                    <span
-                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
-                        <span>1</span>
-                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
-                        <span class="-mt-1.5">13</span>
-                    </span>,
-                    etc. without performing complete long division. Instead, it uses
-                    remainders and multiplications by the last digit.
+                <p>
+                    <b>Step 2: Rewrite the Equation</b>
+                </p>
+            
+                
+                <p>
+                    Substitute <span class="math-columbia">E + 6 = a + 1 and E + 4 = a - 1</span> into the equation:
+                </p>
+                <p>
+                    Expand both terms:
+                </p>
+
+                <div class="text-center math-columbia mb-2">
+                    <p>(a + 1) <sup>4</sup> = a <sup>4</sup> + 4a <sup>3</sup> + 6a <sup>2</sup> + 4a + 1</p>
+                    <p>(a - 1) <sup>4</sup> = a <sup>4</sup> - 4a <sup>3</sup> + 6a <sup>2</sup> - 4a + 1</p>
+                </div>
+
+                <p>
+                    Add these:
+                </p>
+                <p class="mb-1 math-columbia text-center">
+                    (a + 1) <sup>4</sup> + (a - 1) <sup>4</sup> = 2a <sup>4</sup> + 12a <sup>2</sup> + 2 = 1042 (Odd
+                    powers cancle out)
+                </p>
+                <p>
+                    <b>Step 3: Simplify, substitute, and rearrange the Equation</b>
+                </p>
+                <p class="mb-1 math-columbia text-center">
+                    a <sup>4</sup> + 6a <sup>2</sup> -520 = 0
+                </p>
+                <p>
+                    <b>Step 4: Substitute <span class="math-columbia">Z = a <sup>2</sup></span> so the equation becomes:</b>
+                </p>
+                <p class="mb-1 math-columbia text-center">
+                    Z <sup>2</sup> + 6z - 520 = 0
+                </p>
+
+                <p>
+                    <b>Step 5: Solve the Quadratic Equation</b>
+                </p>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>Z =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-b ± √(b <sup>2</sup> - 4ac)</div>
+                        <div class="h-px bg-black w-28 mt-3"></div>
+                        <div class="-mt-2">2a</div>
+                    </div>
+                </div>
+                <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div>Z =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-6 ± √(36 + 2080)</div>
+                        <div class="h-px bg-black w-28 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                    <div>, Where a = 1, b = 6, and c = -520</div>
+                </div>
+                <div class="mb-1 math-columbia flex gap-1 justify-center items-center">
+                    <div>Z =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-6 ± √2116</div>
+                        <div class="h-px bg-black w-20 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                    <div>=</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">-6 ± 46</div>
+                        <div class="h-px bg-black w-16 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                </div>
+                <p>
+                    <b>Step 6: Solve for Z</b>
+                </p>
+                <div class="flex justify-center gap-10">
+                    <div class="math-columbia flex gap-1 justify-center items-center">
+                        <div>Z =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">-6 + 46</div>
+                            <div class="h-px bg-black w-28 mt-3"></div>
+                            <div class="-mt-2">2</div>
+                        </div>
+                        <div>= 20,</div>
+                    </div>
+                    <div class="math-columbia flex gap-1 justify-center items-center">
+                        <div>Z =</div>
+                        <div class="flex flex-col items-center">
+                            <div class="-mb-1">-6 - 46</div>
+                            <div class="h-px bg-black w-28 mt-3"></div>
+                            <div class="-mt-2">2</div>
+                        </div>
+                        <div>= -26</div>
+                    </div>
+                </div>
+                <p class="math-columbia">
+                    Since Z=a <sup>2</sup>, and a <sup>2</sup> ≥ 0, we discard Z = -26
+                </p>
+                <p class="mb-1 math-columbia text-center">
+                    a <sup>2</sup> = 20 = ± √20
+                </p>
+                <p>
+                    <b>Step 7: Back-substitute for <span class="math-columbia">E</span></b>
+                </p>
+                <p>
+                    Recall <span class="math-columbia">a = E + 5</span>:
+                </p>
+                <div class="mb-1 math-columbia text-center">
+                    <p>E + 5 = √20 = √20 - 5</p>
+                    <p>E + 5 = -√20 = -√20 - 5</p>
+                </div>
+                <p>
+                    <b>Final Answer: The possible energy values are</b>
+                </p>
+                <div class="flex math-columbia justify-center gap-5">
+                    <div>E = √20 - 5,</div>
+                    <div>or</div>
+                    <div>E = -√20 - 5</div>
                 </div>
             </div>
 
-            <div class="mb-4 px-2 text-[#3F4F44]">
-                <p class="mb-1"><b>Key Idea:</b></p>
-                <div class="ml-5 mb-2">
-                    <p><b>1. Division Methodology:</b> The remainders from dividing a number step-by-step are used to
-                        generate recurring decimals.</p>
-                    <p><b>2. Multiplication Methodology:</b> The remainders are multiplied by the denominator (or a
-                        "last digit") to determine the recurring sequence directly.</p>
-                </div>
-
-                <p class="mb-1">
-                    <b>Steps:</b>
-                </p>
-                <div class="ml-5">
-                    <p><b>1. Long Division for Remainders:</b> Perform the division to record the sequence of
-                        remainders.</p>
-                    <p><b>2. Multiplication Using Last Digit:</b> Multiply each remainder by the denominator (or a key
-                        multiplier) to compute the recurring digits.</p>
-                    <p><b>3. Use Complements:</b> For certain fractions, the recurring sequence can be derived faster
-                        using complements from 999 (explained below).</p>
-                </div>
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
-                <p class="text-justify mb-4 leading-relaxed">The twelfth sutra of Vedic Mathematics, Śeṣānyankena Carameṇa, provides a
-                    distinctive and efficient approach to converting fractions into recurring decimal representations.
-                    Rather than depending on long, laborious division, this sutra leverages the patterns formed by
-                    remainders and the numerical properties of the denominator to extract recurring digits. By tracking
-                    remainders during successive division steps and combining them with strategic multiplications
-                    involving the last digit or base of the denominator, this method reveals the full decimal cycle with
-                    minimal computation. This sutra is particularly useful when expressing fractions like
-                    <span
-                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
-                        <span>1</span>
-                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
-                        <span class="-mt-1.5">7</span>
-                    </span>,
-                    <span
-                        class="inline-flex flex-col items-center justify-center align-middle relative top-[1px] mx-1 text-[10px]">
-                        <span>1</span>
-                        <span class="h-px bg-[#3F4F44] mt-1 w-3"></span>
-                        <span class="-mt-1.5">13</span>
-                    </span>,
-                    or
-                    other non-terminating decimals especially those with longer recurring cycles.
-                </p>
-                <p class="text-justify">Its relevance extends to scientific domains as well. In physical chemistry,
-                    where mole fractions and concentration ratios frequently yield recurring decimal values, this sutra
-                    aids in obtaining exact representations quickly and reliably. Ultimately, Śeṣānyankena Carameṇa
-                    reinforces the elegance of mathematical cycles, transforming what appears to be a complex decimal
-                    expansion into an intuitive pattern which simply revealed through remainders and repetition.
-                </p>
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 rounded-lg">
+                <p class="text-justify">The Vyasti Samastih Sutra simplifies complex
+                    bi-quadratic expressions by
+                    removing odd-powered terms through symmetric averaging, allowing 
             </div>
     </section>
 

@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,72 +79,135 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 113</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div>
-                    <div class="ml-5">
-                        <div class="flex items-center mb-2">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p>The first differential of the rate law with respect to <span
-                                    class="math-columbia">[A]</span> is</p>
-                        </div>
+            <div class="page-number text-[15px]">122 <i>Part 1: Theoretical Overview</i></div>
+
+            <div class="mb-4">
+                
+                <div class="mb-2 ml-5">
+                    
+                    <div class="flex items-center">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p class="math-columbia">
+                            For cubic or bi-quadratic expressions, the sum of factors relates to the higher-order
+                            differentials.
+                        </p>
                     </div>
-                    <div class="flex justify-center items-center gap-20">
-                        <div class="mb-2 math-columbia flex justify-center items-center gap-2">
-                            <div class="flex flex-col items-center">
-                                <div class="-mb-1">dR</div>
-                                <div class="h-px bg-black w-12 mt-3"></div>
-                                <div class="-mt-2">d[A]</div>
-                            </div>
-                            <div>= 10,</div>
-                        </div>
-                        <div>When <span class="math-columbia">[A] = 3</span></div>
-                    </div>
+                </div>
+                <p>
+                    <b>Steps to Apply Guṇakasamuccaya Sūtra</b>
+                </p>
+                <div class="ml-5 mb-2">
+                    <p>1. Factorize the given polynomial into its linear or simpler factors.</p>
+                    <p>2. Add the factors to derive the first differential of the expression.</p>
+                    <p>3. Optionally verify by differentiating the polynomial directly.</p>
                 </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
-                <p class="text-justify">
-                    The Gunakasamuchchaya sutra elegantly connects factorized polynomial
-                    forms to their first
-                    differentials, offering a shortcut to differentiation by summing linear factors. Its practical
-                    relevance in scientific contexts particularly in analyzing rate laws in chemistry that makes it a
-                    influential tool for both verifying results and instinctively understanding changes in dynamic
-                    systems.
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Quadratic Expression</b>
+                </div>
+                <p class="mb-2">
+                    <b>Solve: Find the first differential of </b><span class="math-columbia"><b>x <sup>2</sup> − 5x +
+                        4</b></span>.
+                </p>
+                <p>
+                    <b>Step 1: Factorize the expression</b>
+                </p>
+                <p class="mb-2">Factorize: <span class="math-columbia">x <sup>2</sup> − 5x + 4 = (x − 4) (x − 1)</span>
+                </p>
+
+                <p>
+                    <b>Step 2: Sum the factors</b>
+                </p>
+                <p class="">
+                    Sum the linear factors: <span class="math-columbia">(x − 4) + (x − 1) = x + x − 4 − 1 = 2x −
+                        5</span>
                 </p>
             </div>
 
-            <div class="px-2 text-center mb-4">
-                <p class="text-[#842A3B] font-bold cinzel">
-                    2.2.2 SUB-SUTRAS OF VEDIC MATHEMATICS STRATEGIES AND ITS APPLICATION
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <p>
+                    <b>Step 3: Verify by direct differentiation</b>
+                </p>
+                <p>
+                    Differentiate <span class="math-columbia"><span>x <sup>2</sup> − 5x + 4</span></span> directly:
+                </p>
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">dy</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">dx</div>
+                    </div>
+                    <div>(x <sup>2</sup> -5x + 4) = 2x - 5</div>
+                </div>
+
+                <p>
+                    <b>Answer:</b> The first differential is: <span class="math-columbia">2x−5</span>
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#CBDCEB] to-[#D9E9CF] px-2 rounded-lg">
-                <p class="text-justify mb-4 indent-8">In Vedic Mathematics, the 13 Sub-Sutras serve as powerful corollaries to
-                    the 16 main Sutras outlined by Jagadguru Swami Bharati Krishna Tirthaji Maharaj. While the principal
-                    Sutras provide general methods applicable to broad mathematical operations such as multiplication,
-                    division, factorization, and algebraic transformations, the Sub-Sutras address specific conditions
-                    or exceptional cases where even more elegant, efficient shortcuts can be applied. Far from being
-                    supplementary or optional, these Sub-Sutras form a critical part of the Vedic system, empowering the
-                    practitioner to recognize unique numerical patterns, proportional relationships, symmetrical
-                    structures, or positional advantages that allow for faster and more intuitive solutions. Derived
-                    through intense meditation and scholarly insight during Swamiji's years of deep tapas in the forests
-                    of Sringeri, the Sub-Sutras are believed to have originated from the Pariśiṣṭa (appendix) of the
-                    Atharvaveda (Maharaja, 1965), and are expressions of ancient Indian mathematical wisdom rediscovered
-                    in a modern form.
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 2: Cubic Expression</b>
+                </div>
+                <p class="mb-2">
+                    <b>Solve: Find the first differential of </b><span class="math-columbia"><b>x <sup>3</sup> + 6x <sup>2</sup> + 11x +
+                        6</b></span>.
                 </p>
-                <p class="text-justify indent-8">Each Sub-Sutra is a distilled principle concise, versatile, and mentally
-                    applicable. For example, some guide us in handling numbers close to a power of 10; others simplify
-                    checks for divisibility, while a few provide clarity when dealing with complex algebraic or
-                    quadratic expressions. Their value lies not just in computation but also in developing the faculties
-                    of observation, mental agility, and creative problem-solving. Many of these Sub-Sutras, like
-                    Yāvadūnam Tāvadūnīkritya Varga Yojayet or Anurupyena, are capable of transforming multi-step
-                    processes into a single mental step, making them extremely practical in both classroom learning and
-                    real-world application. Moreover, Swamiji emphasized that these Sub-Sutras are deeply intuitive.
-                    They train the mind to recognize
+                <p>
+                    <b>Step 1: Factorize the expression</b>
                 </p>
+                <p class="mb-2">Factorize: <span class="math-columbia">(x <sup>3</sup> + 6x <sup>2</sup> +
+                        11x + 6)</span>
+                </p>
+
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div>(x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6) =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">a</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">(x + 1)</div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">b</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">(x + 2)</div>
+                    </div>
+                    <div>+</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">c</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">(x + 3)</div>
+                    </div>
+                </div>
+
+                <p>
+                    <b>Step 2: Sum the factors</b>
+                </p>
+                <p>
+                    Sum the linear factors:
+                </p>
+                <p class=" math-columbia text-center mb-2">
+                    (x + 1) + (x + 2) + (x + 3) = x + x + x + 1 + 2 + 3 = 3x + 6
+                </p>
+                <p>
+                    <b>Step 3: Verify by direct differentiation</b>
+                </p>
+                <p>
+                    Differentiate <span class="math-columbia">x <sup>3</sup> − 6x <sup>2</sup> + 11x − 6</span>
+                    directly:
+                </p>
+                
+                
+                
+                
+                
             </div>
+
+            
 
         </div>
     </section>

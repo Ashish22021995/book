@@ -12,9 +12,9 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
+            left: 31.75mm;
             right: 0;
             text-align: left;
             font-size: 10pt;
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,157 +79,110 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Methodology | 263</div>
+            <div class="page-number text-[15px]">275 <i>Methodology</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                
+
+                <div class="mt-2 flex math-columbia justify-center items-center gap-2">
+                    <div>∣ A ∣ = det ⁡(A) =</div>
+                    <div class="h-[70px] border-l-2 border-black mx-2"></div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col">
+                            <div>3</div>
+                            <div>5</div>
+                            <div>3</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>2</div>
+                            <div>1</div>
+                            <div>1</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>1</div>
+                            <div>0</div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                    <div class="h-[70px] border-l-2 border-black mx-2"></div>
+                </div>
+
+
+                <p>
+                    <b>Step 2: Use the Vertically & Crosswise Sūtra</b>
+                </p>
+
+                <p>To simplify calculations, replace the second and third rows with their respective transformations
+                    based on the Vertically & Crosswise method:</p>
+
+                <div class="mt-1 flex math-columbia justify-center items-center gap-2">
+                    <div>∣ A ∣ = det ⁡(A) =</div>
+                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col">
+                            <div>3</div>
+                            <div>2</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>2</div>
+                            <div>20</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>1</div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                </div>
+                <div class="flex justify-center w-full my-2"><img src="assets/4.png" alt="Left Image"
+                        class="rounded-3xl"></div>
+
+                <p><b>Step 3: Compute the Determinant Using the First Row</b></p>
+                <p>The determinant is calculated by expanding along the first row:</p>
+                <p class="math-columbia text-center my-1">Det (A) = 3(4) - 2(20) + 1(2) = 12 - 40 + 2 = -26</p>
+                <p>The determinant of the given 3rd-order matrix is:</p>
+                <p class="math-columbia text-center">∣ A ∣ = − 26</p>
+            </div>
+
+            <p class="spectral font-bold mb-4">Applications in Chemistry: Calculation of Energy Levels Using
+                Determinants</p>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-
-                <div class="math-columbia">
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>1. For n = 1: E<sub>1</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 1<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">1<sup>2</sup></div>
-                        </div>
-                        <div>= -13.6 eV</div>
-                    </div>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>2. For n = 2: E<sub>2</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 1<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">2<sup>2</sup></div>
-                        </div>
-                        <div>= -3.4 eV</div>
-                    </div>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>3. For n = 3: E<sub>3</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 1<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">3<sup>2</sup></div>
-                        </div>
-                        <div>= -1.51 eV</div>
-                    </div>
-
-                    <p><b>For <span class="math-columbia"><b>Z = 2</b></span> (Helium ion, He<sup>+</sup>)</b></p>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>1. For n = 1: E<sub>1</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 2<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">1<sup>2</sup></div>
-                        </div>
-                        <div>= -54.4 eV</div>
-                    </div>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>2. For n = 2: E<sub>2</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 2<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">2<sup>2</sup></div>
-                        </div>
-                        <div>= -13.6 eV</div>
-                    </div>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>3. For n = 3: E<sub>3</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 2<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">3<sup>2</sup></div>
-                        </div>
-                        <div>= -6.04 eV</div>
-                    </div>
-
-
-                    <p><b>For <span class="math-columbia"><b>Z = 3</b></span> (Lithium-ion, Li<sup>2+</sup>)</b></p>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>1. For n = 1: E<sub>1</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 3<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">1<sup>2</sup></div>
-                        </div>
-                        <div>= -122.4 eV</div>
-                    </div>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>2. For n = 2: E<sub>2</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 3<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">2<sup>2</sup></div>
-                        </div>
-                        <div>= -30.6 eV</div>
-                    </div>
-                    <div class="flex my-1 math-columbia items-center space-x-2">
-                        <div>3. For n = 3: E<sub>3</sub> = -</div>
-                        <div class="flex flex-col items-center">
-                            <div>13.6 × 3<sup>2</sup></div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">3<sup>2</sup></div>
-                        </div>
-                        <div>= -13.6 eV</div>
-                    </div>
-                </div>
-
-
-                <p>Using these calculated energy levels for <span class="math-columbia">n = 1, 2, 3,</span> the
-                    determinant matrix is formed as:</p>
-
-                <div class="flex mt-2 math-columbia my-2 justify-center items-center gap-2">
-                    <div>∣ A ∣ = det ⁡(A) =</div>
-                    <div class="h-[70px] border-l-2 border-black mx-2"></div>
-                    <div class="flex gap-5">
-                        <div class="flex flex-col">
-                            <div>-13.6</div>
-                            <div>-54.4</div>
-                            <div>-122.4</div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div>-3.4</div>
-                            <div>-13.6</div>
-                            <div>-30.6</div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div>-1.51</div>
-                            <div>-6.04</div>
-                            <div>-13.6</div>
-                        </div>
-                    </div>
-                    <div class="h-[70px] border-l-2 border-black mx-2"></div>
-                </div>
-
-                <p class="mb-2">This matrix represents the energy levels of hydrogen-like atoms for <span
-                        class="math-columbia">Z =
-                        1, 2, 3</span> and <span class="math-columbia">n = 1, 2, 3</span>.</p>
-
                 <p>
-                    <b>Step 2: Simplify the Determinant Using the Vertically & Crosswise Sūtra</b>
+                    The energy levels for a hydrogen-like atom are given by:
                 </p>
-                <p>
-                    Replace the second and third rows using transformations based on the Vertically & Crosswise method
-                    to simplify calculations:
-                </p>
-
-                <div class="flex mt-2 math-columbia justify-center items-center gap-2">
-                    <div>∣ A ∣ = det ⁡(A) =</div>
-                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
-                    <div class="flex gap-5">
-                        <div class="flex flex-col">
-                            <div>-13.6</div>
-                            <div>-40.8</div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div>-3.4</div>
-                            <div>-30.6</div>
-                        </div>
-                        <div class="flex flex-col">
-                            <div>-1.51</div>
-                            <div>-6.04</div>
-                        </div>
+                <div class="flex mt-1 math-columbia justify-center items-center space-x-2">
+                    <div>E<sub>n</sub> = -</div>
+                    <div class="flex flex-col items-center leading-tight">
+                        <div>13.6Z<sup>2</sup></div>
+                        <div class="h-px bg-black w-16 mt-2"></div>
+                        <div class="-mt-1">n<sup>2</sup></div>
                     </div>
-                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                    <div>eV</div>
                 </div>
+                <p><span class="math-columbia">E<sub>n</sub> = </span>Energy of the electron in the n-th orbit.</p>
+                <p><span class="math-columbia">Z = </span>Atomic number (<span class="math-columbia">1</span> for hydrogen, <span class="math-columbia">2</span> for helium ion <span class="math-columbia">(He<sup>+</sup>)</span>, <span class="math-columbia">3</span> for lithium-ion
+                    <span class="math-columbia">(Li<sup>2+</sup>)</span>)</p>
+                <p><span class="math-columbia">n = </span>Principal quantum number (energy level, e.g., <span class="math-columbia">n = 1, 2, 3…</span>)</p>
+                <p>Calculate the determinant of a matrix representing the energy levels for <span class="math-columbia">n = 1, 2, 3</span> and <span class="math-columbia">Z = 1, 2, 3</span>.
+                </p>
+                 
+                <p class="mt-2">
+                    <b>Step 1: Write the Determinant Matrix</b>
+                </p>
+            
+
+                
+
+
+                
+
+                
+
+                
+
+                
+                
             </div>
         </div>
     </section>

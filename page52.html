@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,78 +78,124 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 106</div>
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 115</div>
+
+            <div class="ml-10 mb-4">
+                
+                <div>
+                    
+                    <div class="ml-5">
+                        
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Apply the sutra to each part sequentially.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mb-2"><b>2. Binary Multiplication</b></p>
+            <div class="ml-5 mb-2">
+                <div class="flex items-center">
+                    <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                    <p>The sutra works for binary systems when the multiplier is in the form 2 <sup>n−1</sup> (e.g., 1, 11, and
+                        111…).</p>
+                </div>
+            </div>
+
+            <p class="mb-2"><b>3. Recurring Decimals</b></p>
+            <div class="ml-5 mb-4">
+                <div class="flex items-center">
+                    <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                    <p>The sutra can convert fractions where the numerator is 1 into their recurring decimal forms.</p>
+                </div>
+            </div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>Step 3: Find the Complement</b>
-                </p>
-                <p>Find the complement of <span class="math-columbia">43</span> with respect to <span
-                        class="math-columbia">99</span>:</p>
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Multiplicand and Multiplier have the same number of digits</b>
+                </div>
 
-                <p class="text-center mb-2">
-                    Complement <span class="math-columbia">= 99 − 43 = 56</span> (Right-hand side of the product)
-                </p>
-
-                <p class="mb-2">
-                    <b>Step 4: Combine the Results</b>
-                </p>
+                <div class="ml-5 mb-2">
+                    <p class="math-columbia text-center">
+                        777 × 999
+                    </p>
+                    <p>1. Subtract <span class="math-columbia">1</span> from <span class="math-columbia">777</span> :
+                    </p>
+                    <p class="math-columbia text-center">
+                        777−1=776(Left-hand side of the product).
+                    </p>
+                    <p>2. Find the complement of <span class="math-columbia">776</span> with respect to <span
+                            class="math-columbia">999</span> :</p>
+                    <p class="math-columbia text-center">
+                        Complement <span class="math-columbia">= 999 − 776 = 223</span> (Right-hand side of the
+                        product).
+                    </p>
+                </div>
                 <p>
-                    Combine the left-hand side and right-hand side to form the product:
-                </p>
-                <p class="text-center">
-                    <span class="math-columbia">99 × 44 = 4356</span>
-                </p>
-                <p>The total mass of the substance is </p>
-                <p class="text-center">
-                    Mass of the substance <span class="math-columbia">= 4356 g</span>
+                    <b>Answer: </b><span class="math-columbia">777 × 999 = 776223</span>
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
-                <p class="text-justify">The Ekanyunena Purvena
-                    sutra provides a swift and elegant method for multiplying numbers involving all 9s, simplifying
-                    binary calculations, and converting repeating decimals. Especially useful in scientific computations
-                    involving scaled values or repetitive numeric patterns, this sutra reduces complexity by leveraging
-                    number complements and positional structure that promotes both speed and clarity in arithmetic
-                    operations.
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 2: Multiplicand has fewer digits than the multiplier</b>
+                </div>
+
+                <div class="ml-5 mb-2">
+                    <p class="math-columbia text-center">
+                        79 × 99999
+                    </p>
+                    <p>1. Pad <span class="math-columbia">79</span> with leading zeros to match the multiplier:</p>
+                    <p class="math-columbia text-center">
+                        79 → 00079
+                    </p>
+                    <p>2. Subtract <span class="math-columbia">1</span> from <span class="math-columbia">00079</span> :
+                    </p>
+                    <p class="text-center">
+                        <span class="math-columbia">00079 − 1 = 00078</span> (Left-hand side of the product).
+                    </p>
+                    <p>
+                        3. Find the complement of <span class="math-columbia">00078</span> with respect to <span
+                            class="math-columbia">99999</span> :
+                    </p>
+                    <p class="math-columbia text-center">
+                        Complement <span class="math-columbia">= 99999 − 00078 = 99921</span> (Right-hand side of the
+                        product).
+                    </p>
+                </div>
+                <p>
+                    <b>Answer: </b><span class="math-columbia">79 × 99999 = 78999921</span>
                 </p>
             </div>
 
-            <div class="px-2 text-center mb-4">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 15. Gunitasamuchchaya (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        गुणितसमुच्ययः
-                    </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> "The product of the sum of coefficients of the factors."
-                </p>
-                <p class="text-[#6B3F69] leading-relaxed">
-                    <strong>Use:</strong> This sutra is a verification method to check the correctness of results in
-                    multiplication, division, or factorization. It involves comparing the product of the sum of
-                        coefficients of factors to ensure the equality of the expression.
-                </p>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 3: Multiplier has fewer digits than multiplicand</b>
+                </div>
+
+                <div class="ml-5">
+                    <p class="math-columbia text-center">
+                        12319 × 99
+                    </p>
+                </div>
+            
+                <div class="ml-5 mb-2">
+                    <p><b>1. Split <span class="math-columbia"><b>12319</b></span> into parts based on the number of digits in the
+                        multiplier:</b></p>
+                    <p class="math-columbia text-center">
+                        123 and 19
+                    </p>
+                    <p>
+                        <b>2. Apply the sutra to each part:</b>
+                    </p>
+                    
+                    
+                </div>
+                
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
-                <p class="text-justify mb-4">Guṇitasamuccaya is a sutra designed for verification rather than
-                    computation. It offers an elegant method to check the correctness of factorizations,
-                    multiplications, and divisions without expanding entire expressions. The core idea is simple: the
-                    product of the sums of coefficients of each factor must equal the sum of the coefficients of the
-                    final expression. This verification tool is especially valuable when working with polynomials and
-                    expressions involving multiple terms. Instead of re-expanding or recalculating, a simple summation
-                    check provides confirmation of correctness of the solution which is ideal for mental math or
-                    high-pressure testing environments.
-                </p>
-                <p class="text-justify">Beyond algebra, this sutra finds meaningful applications in science. In
-                    chemistry, for instance, it can be used to verify rate laws or balance reactions without detailed
-                    expansion. By summing coefficients of component terms in a factorized rate equation and comparing it
-                    to the coefficients in the expanded form, students can validate their derivation with clarity and
-                    precision. This proves useful when handling large expressions in reaction kinetics, 
-                </p>
-            </div>
+            
     </section>
 
     <!-- Download button -->

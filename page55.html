@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,125 +79,96 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 109</div>
+            <div class="page-number text-[15px]">118 <i>Part 1: Theoretical Overview</i></div>
+
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] mb-4 px-2 rounded-lg">
+                <p class="text-justify">Beyond algebra, this sutra finds meaningful applications in science. In
+                    chemistry, for instance, it can be used to verify rate laws or balance reactions without detailed
+                    expansion. By summing coefficients of component terms in a factorized rate equation and comparing it
+                    to the coefficients in the expanded form, students can validate their derivation with clarity and
+                    precision. This proves useful when handling large expressions in reaction kinetics, energy
+                    transformations, or molecular interactions, where terms often reflect combinations of species or
+                    concentrations.
+                </p>
+            </div>
+
+
+            <div class="mb-4">
+                <p class="mb-2">
+                    <b>Steps to Use Guṇitasamuccaya Sūtra:</b>
+                </p>
+                <div class="ml-5">
+                    <p><b>1. Identify the factors:</b> Break the given polynomial or expression into its factors.</p>
+                    <p><b>2. Sum the coefficients of each factor:</b> Calculate the sum of coefficients for each factor
+                        (ignore the variable terms and add the coefficients as numbers).</p>
+                    <p><b>3. Multiply the sums of coefficients:</b> Find the product of the sums of coefficients.</p>
+                    <p><b>4. Sum coefficients of the original polynomial:</b> Do the same for the expanded (or original)
+                        polynomial.</p>
+                    <p><b>5. Verify:</b> Compare the two results. If they match, the factorization or computation is
+                        correct.</p>
+                </div>
+            </div>
+
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <p class="mb-2"><b>Solution:</b></p>
-                <p>
-                    <b>Step 1: Sum the Coefficients of the Factors</b>
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Factorization Verification</b>
+                </div>
+                <p class="mb-2">
+                    <b>Verify:</b> <span class="math-columbia"><b>(y + 2) (y + 3) (y + 5)</b></span>
                 </p>
                 <p>
-                    The factors are:
+                    <b>Step 1: Sum coefficients of each factor</b>
                 </p>
                 <div class="mb-2 ml-5">
-                    <p>1. <span class="math-columbia">[A+B]</span>:</p>
-                    <div class="ml-5 mb-2">
-                        <div class="flex items-end">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p>
-                                Coefficients are <span class="math-columbia">1</span> (of <span class="math-columbia">A</span>) and 1 (of <span class="math-columbia">B</span>).
-                            </p>
-                        </div>
-                        <div class="flex items-end">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p class="math-columbia">
-                                Sum = 1 + 1 = 2.
-                            </p>
-                        </div>
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 2)</span>, the coefficients are <span class="math-columbia">1</span> (of y) and <span class="math-columbia">2</span> : <span class="math-columbia">Sum = 1 + 2 = 3</span>
+                        </p>
                     </div>
-                    <p>2. <span class="math-columbia">[A+B]</span> (same factor):</p>
-                    <div class="ml-5 mb-2">
-                        <div class="flex items-end">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p class="math-columbia">
-                                Sum = 1 + 1 = 2.
-                            </p>
-                        </div>
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 3)</span>, the coefficients are <span class="math-columbia">1</span> and <span class="math-columbia">3</span> : <span class="math-columbia">Sum = 1 + 3 = 4</span>
+                        </p>
+                    </div>
+                    <div class="flex items-end">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p>
+                            For <span class="math-columbia">(y + 5)</span>, the coefficients are <span class="math-columbia">1</span> and <span class="math-columbia">5</span> : <span class="math-columbia">Sum = 1 + 5 = 6</span>
+                        </p>
                     </div>
                 </div>
 
                 <p>
-                    <b>Step 2: Multiply the Sums of the Coefficients</b>
+                    <b>Step 2: Multiply sums of coefficients</b>
                 </p>
                 <p class="text-center mb-2">
-                    Product of sums <span class="math-columbia">= 2 × 2 = 4.</span>
+                    Product of sums <span class="math-columbia">= 3 × 4 × 6 = 72</span>
                 </p>
                 <p>
-                    <b>Step 3: Expand the Factors</b>
+                    <b>Step 3: Expand the product</b>
                 </p>
-                <p>Expand <span class="math-columbia">[A + B][A + B]</span>:</p>
-                <p class="math-columbia text-center mb-2">
-                    [A + B][A + B] = A <sup>2</sup> + 2AB + B <sup>2</sup>.
+                <p>
+                    Expand <span class="math-columbia ml-2">(y + 2) (y + 3) (y + 5) = (y + 2) ((y + 3) (y + 5))</span>
                 </p>
+                <div class="math-columbia ml-52 mb-2">
+                    <p>= (y + 2) (y <sup>2</sup> + 8y + 15)</p>
+                    <p>= y <sup>3</sup> + 8y <sup>2</sup> + 15y + 2y <sup>2</sup> + 16y + 30</p>
+                    <p>= y <sup>3</sup> + 10y <sup>2</sup> + 31y + 30</p>
+                </div>
+
                 <p>
                     <b>Step 4: Sum coefficients of the expanded polynomial</b>
                 </p>
-                <p class="math-columbia">
-                    In A <sup>2</sup> + 2AB + B <sup>2</sup> :
-                </p>
-                <div class="mb-2 ml-5">
-                    <div class="mb-2">
-                        <div class="flex items-end">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p>
-                                Coefficients are <span class="math-columbia">1</span> (of <span class="math-columbia">A <sup>2</sup></span> ), 2 (of <span class="math-columbia">AB</span> ), and <span class="math-columbia">1</span> (of <span class="math-columbia">B <sup>2</sup></span> ).
-                            </p>
-                        </div>
-                        <div class="flex items-end">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p class="math-columbia">
-                                Sum = 1 + 2 + 1 = 4.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <p>
-                    <b>Step 5: Verify</b>
-                </p>
-                <p class="">
-                    Compare the product of sums of coefficients of the factors (<span class="math-columbia">4</span>) with the sum of coefficients of the
-                    expanded polynomial
-                    <span class="math-columbia">(<span class="math-columbia">4</span>) :</span>
-                </p>
-                <p class="text-center mb-2">
-                    Product of sums=Sum of coefficients of expanded polynomial.
-                </p>
-
-                <p>
-                    <b>Conclusion:</b>
-                </p>
-                <p>
-                    The expanded form of the rate law expression is correctly factorized:
-                </p>
-                <p class="text-center">
-                    Rate <span class="math-columbia">= k[A + B][A + B]</span>
-                </p>
+                
+                
+                
+                
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
-                <p class="text-justify">
-                    The Gunitasamuchchaya sutra is a powerful verification tool in Vedic
-                    Mathematics that confirms the
-                    correctness of multiplication, division, or factorization by comparing the product of sums of
-                    coefficients. Its simplicity and accuracy make it especially effective in algebra and scientific
-                    applications, such as verifying chemical rate laws, where it ensures structural and numerical
-                    integrity without full expansion.
-                </p>
-            </div>
-
-            <div class="px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 16. Gunakasamuchchaya (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        गुणक अमुच्चय
-                    </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> All the multipliers.
-                </p>
-                <p class="text-[#6B3F69] leading-relaxed">
-                    <strong>Use:</strong> This sutra establishes a relationship between a polynomial expression and its
-                </p>
-            </div>
+            
 
         </div>
     </section>

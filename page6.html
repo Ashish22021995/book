@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -78,13 +77,32 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 60</div>
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 65</div>
+
             <div class="pb-2 bg-gradient-to-r from-[#FFF2EF] to-[#D3DAD9] px-2 mb-4 rounded-lg">
+                <p class=" mb-4 text-justify">translates to “all
+                    from nine and the last from ten.” This mental strategy simplifies subtraction by allowing learners
+                    to quickly calculate complements relative to the nearest base of 10, 100, 1000, and so on. Rather
+                    than following conventional borrowing methods, it promotes a direct and efficient approach to
+                    subtraction that is especially useful when dealing with large numbers or values close to base
+                    units. This sutra is particularly helpful in reducing the cognitive effort involved in long-step
+                    subtraction, making it easier for students to perform these operations mentally.
+                </p>
                 <p class="text-justify">
-                    equipping learners with a mental strategy that supports fast, accurate, and confident
+                    In scientific contexts, especially in chemistry, this sutra holds practical relevance. It can be
+                    applied in calculations where determining the remaining or unreacted quantity of a substance is
+                    necessary. During experimental processes or analytical tasks, students often need to subtract
+                    consumed amounts from a total, and using this sutra makes that process significantly quicker.
+                    This efficiency is not just a matter of speed but also contributes to greater focus on conceptual
+                    understanding and interpretation of scientific data.
+                
+                    Ultimately, Nikhilam Navataścaramam Daśataḥ bridges numerical
+                    simplicity with practical
+                    application, equipping learners with a mental strategy that supports fast, accurate, and confident
                     problem-solving in both academic and real-world scientific settings.
                 </p>
             </div>
+
 
             <div class="pb-2 bg-gradient-to-r from-[#F9F3EF] to-[#D9A299] text-justify px-2 mb-4 rounded-lg">
                 <p class="mb-2">
@@ -132,76 +150,7 @@
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#D7D3BF] to-[#FFF5D7] text-justify px-2 mb-4 rounded-lg">
-                <p class="mb-2">
-                    <strong>Example 2: Find <span class="math-columbia">1000 − 358</span></strong>
-                </p>
-                <div class="ps-5">
-                    <p>
-                        1. Functional base: <span class="math-columbia">1000</span>.
-                    </p>
-                    <p>
-                        2. Subtract:
-                    </p>
-                    <ul class="pl-6 space-y-1">
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">9 − 3 = 6</span> (first digit)
-                        </li>
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">9 − 5 = 4</span> (last digit)
-                        </li>
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">10 − 8 = 2</span> (last digit)
-                        </li>
-                    </ul>
-                    <p class="pl-4 mb-2">
-                        Complement: <span class="math-columbia"><b>642</b></span>. 
-                    </p>
-                </div>
-                <p>
-                    <strong>Result:</strong> <span class="math-columbia">1000 – 358 = 642</span>.
-                </p>
-            </div>
-            <div class="pb-2 bg-gradient-to-r from-[#FEEBF6] to-[#FFE3BB] text-justify px-2 rounded-lg">
-                <p class="mb-2">
-                    <strong>Example 3: Find <span class="math-columbia"><b>10000 − 67421</b></span></strong>
-                </p>
-                <div class="ps-5">
-                    <p>
-                        1. Functional base: <span class="math-columbia">10000</span>.
-                    </p>
-                    <p>
-                        2. Subtract:
-                    </p>
-                    <ul class="ml-6">
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">9 − 6 = 3</span> (first digit)
-                        </li>
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">9 − 7 = 2</span> (last digit)
-                        </li>
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">9 − 4 = 5</span> (third digit)
-                        </li>
-                        <li class="flex items-end">
-                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                            <span class="math-columbia">10 − 2 = 8</span> (last digit)
-                        </li>
-                    </ul>
-                    <p class="pl-4">
-                        Complement: <span class="math-columbia"><b>3258</b></span>.
-                    </p>
-                </div>
-                <p>
-                    <strong>Result:</strong> <span class="math-columbia">10000 – 6742 = 3258</span>.
-                </p>
-            </div>
+            
         </div>
     </section>
 

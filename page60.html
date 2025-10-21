@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,51 +78,118 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 114</div>
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 123</div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#CBDCEB] to-[#D9E9CF] mb-4 px-2 rounded-lg">
-                <p class="text-justify mb-4">mathematical structure almost instantly, allowing the learner to
-                    proceed not through rote, but through insight.
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                
+
+                
+
+                
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">dy</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">dx</div>
+                    </div>
+                    <div>(x <sup>3</sup> + 6x <sup>2</sup> + 11x + 6) = 3x <sup>2</sup> + 12x + 11</div>
+                </div>
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">dy</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">dx</div>
+                    </div>
+                    <div>= (x <sup>2</sup> + 3x + 2) + (x <sup>2</sup> + 5x + 6) + (x <sup>2</sup> + 4x + 3) = ab + bc +
+                        ac = ∑ab</div>
+                </div>
+                <p>
+                    Notice that the sum of the linear factors corresponds to the first step in the process, and
+                    higher derivatives apply further reductions.
                 </p>
-                <p class="indent-8">
-                    In essence, the Sub-Sutras are like hidden keys that unlock quicker pathways within the broader
-                    structure of Vedic Mathematics. They complement the main Sutras and complete the system, giving it
-                    flexibility, depth, and elegance. Whether used for mental arithmetic, algebraic simplification, or
-                    number theory, they reflect the ancient Indian vision that mathematics, when rightly understood, is
-                    not just logical but also beautiful and profoundly efficient. Here are the 13 Sub-Sutras given below
-                    with their meaning:
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">d <sup>2</sup> y</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">dx <sup>2</sup></div>
+                    </div>
+                    <div>= 6x + 12 = 2(3x + 6) = 2[(x + 1) + (x + 2) + (x + 3)]</div>
+                </div>
+                <div class="mb-2 math-columbia flex justify-center items-center gap-2">
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">d <sup>2</sup> y</div>
+                        <div class="h-px bg-black w-12 mt-3"></div>
+                        <div class="-mt-2">dx <sup>2</sup></div>
+                    </div>
+                    <div>= 2(a + b + c) = 2∑a</div>
+                </div>
+                <p>
+                    <b>Answer:</b> The first differential is: <span class="math-columbia">3x + 6</span>
                 </p>
             </div>
 
-            <div class="mb-4">
-                <div class="text-left"><b>Figure 2.2:</b></div>
-                <p><i>Sub-Sutras of Vedic Mathematics</i></p>
-                <div class="flex justify-between">
-                    <div class="w-[48%]"><img src="assets/sl-last.jpg" alt="Left Image" class="rounded-lg"></div>
-                    <div class="w-[48%]"><img src="assets/l-last.jpg" alt="Left Image" class="rounded-lg"></div>
+            <p class="spectral font-bold mb-4">Application of Gunakasamuchchaya in chemistry:
+                Rate of Reaction and Rate Law</p>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <b>Problem:</b> For a reaction with the rate law equation given by:
+                </p>
+                <p class="text-center math-columbia">
+                    R = k.[A] <sup>2</sup> + 5[A] + 3
+                </p>
+                <p>
+                    Where:
+                </p>
+            </div>
+            
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="ml-5">
+                    <div class="flex items-center mb-2">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p><span class="math-columbia">R</span> is the rate of reaction,</p>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p><span class="math-columbia">k</span> is the rate constant,<span class="math-columbia">(k =
+                                1)</span></p>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                        <p><span class="math-columbia">[A]</span> is the concentration of reactant <span
+                                class="math-columbia">A</span>.</p>
+                    </div>
                 </div>
+                <p class="mb-2">
+                    The concentration of <span class="math-columbia">A</span> is <span class="math-columbia">3M</span>.
+                    find the rate of reaction and the first differential of the rate law expression.
+                </p>
+                <p class="mb-2"><b>Solution:</b></p>
+                <p>
+                    <b>Step 1: Express the Rate Law as a Quadratic Polynomial</b>
+                </p>
+                <p class="">The rate law is already expressed as a quadratic polynomial:</p>
+                <p class="math-columbia text-center mb-2">
+                    R = [A] <sup>2</sup> + 5[A] + 3
+                </p>
+                <p>
+                    <b>Step 2: Apply Gunakasamuchchaya Sutra to Find the First Differential</b>
+                </p>
+                <p>
+                    We need to find the first differential of the expression <span class="math-columbia">R = [A]
+                        <sup>2</sup> + 5[A] + 3</span> with respect to <span class="math-columbia">[A]</span>.
+                </p>
+                <p>
+                    <b>Factorize the Expression</b>
+                </p>
+                
+                
+                
+
                 
             </div>
 
-            <div class="spectral font-bold mb-4 text-[#3A6F43]">
-                2.2.3 APPLICATIONS OF SUB-SUTRAS OF VEDIC MATHEMATICS
-            </div>
-
-            <div class="pb-2 bg-gradient-to-r from-[#EEEEEE] to-[#E7D3D3] px-2 rounded-lg">
-                <p class="text-justify indent-8">
-                    The sub-sutras of Vedic Mathematics serve as a valuable asset for higher secondary school students,
-                    especially those studying science. These concise and intuitive mathematical principles simplify
-                    calculations that frequently appear in subjects such as Chemistry, Physics and advanced Mathematics.
-                    Many scientific problems demand quick and accurate arithmetic solutions for a problem. Such as
-                    squaring numbers, solving algebraic expressions, or working with proportions and this is where
-                    sub-sutras like Yāvadūnam Tāvadūnam (reduce by the deficiency and add
-                    its square) or
-                    Antyayor-Dasake’pi (useful in completing base-10 squares and cubes)
-                    become extremely effective.
-                    These techniques reduce cognitive load during complex calculations, allowing students to focus more
-                    on concepts rather than lengthy computations.
-                </p>
-            </div>
+            
 
     </section>
 

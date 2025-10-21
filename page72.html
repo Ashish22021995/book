@@ -12,9 +12,9 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
+            left: 31.75mm;
             right: 0;
             text-align: left;
             font-size: 10pt;
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,64 +79,163 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Methodology | 265</div>
+            <div class="page-number text-[15px]">277 <i>Methodology</i></div>
 
-            <div class="py-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
+                
+                
+
+
+
+                
                 <p>
-                    <b>Step 2: Apply the Vedic Crosswise Sutra</b>
+                    Replace the second and third rows using transformations based on the Vertically & Crosswise method
+                    to simplify calculations:
                 </p>
 
-                <div class="flex justify-center w-full my-2"><img src="assets/6.png" alt="Left Image"
-                        class="rounded-3xl"></div>
-
-                <p>
-                    From the above figure:
-                </p>
-                <div class="flex my-1 math-columbia justify-center items-center space-x-2">
-                    <div class="flex flex-col items-center">
-                        <div>dy</div>
-                        <div class="h-px bg-black w-10 mt-3"></div>
-                        <div class="-mt-2">dx</div>
+                <div class="flex mt-2 math-columbia justify-center items-center gap-2">
+                    <div>∣ A ∣ = det ⁡(A) =</div>
+                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col">
+                            <div>-13.6</div>
+                            <div>-40.8</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>-3.4</div>
+                            <div>-30.6</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div>-1.51</div>
+                            <div>-6.04</div>
+                        </div>
                     </div>
-                    <div>= (x<sup>2</sup> - 3)(1) + (x - 5)(2x) = x<sup>2</sup> - 3 + 2x<sup>2</sup> -10x =
-                        3x<sup>2</sup> - 10x - 3</div>
+                    <div class="h-[50px] border-l-2 border-black mx-2"></div>
+                </div>
+            
+
+
+                <div class="flex justify-center w-full my-4"><img src="assets/5.png" alt="Left Image"
+                        class="rounded-3xl w-[45%]"></div>
+
+                <p class="mb-2">
+                    <b>Step 3: Compute the Determinant Using the First Row</b>
+                </p>
+                <p>
+                    Expand along the first row:
+                </p>
+                <p class="math-columbia text-center">
+                    det⁡ (A) = (-13.6)(-6.04) - (-3.4)(-30.6) + (-1.51)(-40.8)
+                </p>
+                <p class="ml-5">
+                    1. Compute each term using the sutra (3×3 digit multiplication):
+                </p>
+
+                <div class="my-4 flex justify-between">
+                    <div class="w-[32%] text-center border border-black p-4">
+                        <div class="flex justify-between">
+                            <div class="w-[25%]"></div>
+                            <div class="w-[25%]">1</div>
+                            <div class="w-[25%]">3</div>
+                            <div class="w-[25%]">6</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="w-[25%]">×</div>
+                            <div class="w-[25%]">6</div>
+                            <div class="w-[25%]">0</div>
+                            <div class="w-[25%]">4</div>
+                        </div>
+                        <div class="bg-black mt-3 h-px w-[100%]"></div>
+                        <div>6 / 18 / 40 / 12 / 24</div>
+                        <div class="bg-black mt-3 h-px w-[100%]"></div>
+                        <div class="">
+                            <div class="flex justify-between"><div>After balancing</div> <div>82144</div></div>
+                            <div class="flex justify-between"><div>Answer</div> <div>82.144</div></div>
+                        </div>
+                    </div>
+
+
+                    <div class="w-[32%] text-center border border-black p-4">
+                        <div class="flex justify-between">
+                            <div class="w-[25%]"></div>
+                            <div class="w-[25%]">3</div>
+                            <div class="w-[25%]">4</div>
+                            <div class="w-[25%]">0</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="w-[25%]">×</div>
+                            <div class="w-[25%]">3</div>
+                            <div class="w-[25%]">0</div>
+                            <div class="w-[25%]">6</div>
+                        </div>
+                        <div class="bg-black mt-3 h-px w-[100%]"></div>
+                        <div>9 / 12 / 18 / 24 / 0</div>
+                        <div class="bg-black mt-3 h-px w-[100%]"></div>
+                        <div class="">
+                            <div class="flex justify-between"><div>After balancing</div> <div>104040</div></div>
+                            <div class="flex justify-between"><div>Answer</div> <div>104.40</div></div>
+                        </div>
+                    </div>
+
+
+                    <div class="w-[32%] text-center border border-black p-4">
+                        <div class="flex justify-between">
+                            <div class="w-[25%]"></div>
+                            <div class="w-[25%]">1</div>
+                            <div class="w-[25%]">5</div>
+                            <div class="w-[25%]">1</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="w-[25%]">×</div>
+                            <div class="w-[25%]">4</div>
+                            <div class="w-[25%]">0</div>
+                            <div class="w-[25%]">8</div>
+                        </div>
+                        <div class="bg-black mt-3 h-px w-[100%]"></div>
+                        <div>4 / 20 / 12 / 40 / 8</div>
+                        <div class="bg-black mt-3 h-px w-[100%]"></div>
+                        <div class="">
+                            <div class="flex justify-between"><div>After balancing</div> <div>61608</div></div>
+                            <div class="flex justify-between"><div>Answer</div> <div>61.608</div></div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <p><b>Answer: </b></p>
+                <p class="ml-5">
+                    2.	Substitute into the determinant formula:
+                </p>
+
+
+                <p class="math-columbia my-1 text-center">
+                    ∣ A ∣ = det⁡(A) = 82.144 - 104.40 + 61.608 = 39.352
+                </p>
+
+                <p>
+                    <b>Answer:</b>
+                </p>
+                <p>
+                    The determinant of the matrix representing the energy levels is:
+                </p>
+
                 <p class="math-columbia text-center my-1">
-                    y<sup>'</sup> = 3x<sup>2</sup> - 10x - 3
+                    ∣ A ∣ = det⁡(A) = 39.352
                 </p>
             </div>
 
-            <div class="py-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-
-                <p class="mb-2">
-                    <b>4.1. Stepwise Explanation of Integration Using the Ūrdhva-Tiryagbhyām Sutra</b>
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p class="">
+                    <b>4. Stepwise Explanation of Differentiation Using the Ūrdhva-Tiryagbhyām Sutra</b>
                 </p>
 
-                <p>
-                    Using the standard formulas for derivatives and integration, the integration of the product of two
-                    functions can be efficiently determined.
-                </p>
+
                 
-                <p><b>Consider,</b></p>
 
-                <p class="math-columbia text-center my-1">
-                    I = ∫(x + 3)<sup>2</sup> (e<sup>x</sup>) dx
-                </p>
-                <p>
-                    Here, let <span class="math-columbia">u = (x + 3)<sup>2</sup></span>, perform successive
-                    differentiation of u until it reduces to zero.
-                </p>
-                <p>
-                    Simultaneously, compute successive integrations of the other function <span class="math-columbia">v
-                        = e<sup>x</sup></span> (e.g., double, triple,
-                    etc.). Arrange the results in a tabular format and apply the Crosswise Sutra, alternating the
-                    signs
-                    for each term to arrive at the final solution.
-                </p>
-                <div class="flex justify-center w-full my-2"><img src="assets/7.png" alt="Left Image"
-                        class="rounded-3xl"></div>
+
+                
+
+                
+                
             </div>
         </div>
     </section>

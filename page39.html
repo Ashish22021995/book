@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,148 +79,88 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 93</div>
+            <div class="page-number text-[15px]">102 <i>Part 1: Theoretical Overview</i></div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                
-
-                <p>
-                    <b>Step 4: Simplify and rearrange the equation</b>
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">The eleventh sutra of Vedic Mathematics, Vyasti
+                    Samastih, introduces a
+                    strategic approach to solving bi-quadratic equations by transforming them into symmetric forms. This
+                    sutra is especially valuable in simplifying expressions where two binomial terms differ by a
+                    constant and their powers generate complex polynomial equations. The method involves taking the
+                    average of binomial expressions, thereby converting the problem into a more manageable form. When
+                    applied to fourth powers (bi-quadratics), this sutra effectively cancels out the odd-powered terms
+                    through algebraic symmetry. The resulting equation typically contains only even powers, which can
+                    then be further simplified into a quadratic form using substitution. Solving this quadratic yields
+                    intermediate values that are then traced back to determine the original unknowns.
                 </p>
-                <p class="math-columbia text-center mb-2">
-                    a <sup>4</sup> + 6a <sup>2</sup> -352 = 0
+                <p class="text-justify">Vyasti
+                    Samastih has practical value beyond
+                    theoretical algebra. In scientific
+                    applications, the energy expressions involving symmetrical orbitals or related particle interactions
+                    often involve fourth power terms. This sutra simplifies such expressions when energy levels are
+                    centered on a mean value, offering a systematic pathway to compute possible energy states
+                    efficiently. By reducing the complexity of high-degree polynomial equations and focusing on balanced
+                    transformations.
                 </p>
-                <p>
-                    <b>Step 5: Substitute <span class="math-columbia">Z = a <sup>2</sup></span> so the equation becomes:</b>
-                </p>
-                <p class="math-columbia text-center mb-2">
-                    Z <sup>2</sup> + 6z - 352 = 0
-                </p>
-                <p>
-                    <b>Step 6: Solve the quadratic equation</b>
-                </p>
-                <div class="math-columbia flex gap-1 justify-center items-center">
-                    <div>Z =</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">-6 ± √(36 + 1408)</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">2</div>
-                    </div>
-                    <div>, Where a = 1, b = 6, and c = -352</div>
-                </div>
-                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                    <div>Z =</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">-6 ± √1444</div>
-                        <div class="h-px bg-black w-20 mt-3"></div>
-                        <div class="-mt-2">2</div>
-                    </div>
-                    <div>=</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">-6 ± 38</div>
-                        <div class="h-px bg-black w-16 mt-3"></div>
-                        <div class="-mt-2">2</div>
-                    </div>
-                </div>
-                <p>
-                    <b>Step 7: Solve for <span class="math-columbia"><b>Z</b></span></b>
-                </p>
-
-                <div class="flex justify-center gap-10">
-                    <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                        <div>Z =</div>
-                        <div class="flex flex-col items-center">
-                            <div class="-mb-1">-6 + 38</div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">2</div>
-                        </div>
-                        <div>= 16,</div>
-                    </div>
-                    <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                        <div>Z =</div>
-                        <div class="flex flex-col items-center">
-                            <div class="-mb-1">-6 - 38</div>
-                            <div class="h-px bg-black w-16 mt-3"></div>
-                            <div class="-mt-2">2</div>
-                        </div>
-                        <div>= -22</div>
-                    </div>
-                </div>
-
-                <p>
-                    Since <span class="math-columbia">Z = a <sup>2</sup></span> ,and <span class="math-columbia">a
-                        <sup>2</sup> ≥ 0</span>, we discard <span class="math-columbia">Z = -22</span>
-                </p>
-                <p class="math-columbia text-center">
-                    a <sup>2</sup> = 16 = ±4
-                </p>
-                <p>
-                    <b>Step 8: Back-substitute for x</b>
-                </p>
-                <p>
-                    Recall <span class="math-columbia">a = x + 6</span>:
-                </p>
-                <div class="math-columbia text-center">
-                    <p>x + 6 = 4 = -2</p>
-                    <p>x + 6 = -4 = -10</p>
-                </div>
-                <p>
-                    <b>Final Answer:</b>
-                </p>
-                <div class="flex justify-center gap-10 math-columbia">
-                    <div>x = -2,</div>
-                    <div>or</div>
-                    <div>x = -10</div>
-                </div>
             </div>
 
-            <p class="spectral font-bold mb-4">Application of Vyasti Samastih in chemistry:
-                Energy of Two Orbital</p>
-
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <p>
-                    <b>Problem:</b> The energy of two molecular orbitals is related as follows:
-                </p>
+                <div class="mb-2">
+                    <b>Example: Solve</b>
+                </div>
                 <p class="mb-2 text-center math-columbia">
-                    (E + 6) <sup>4</sup> + (E + 4) <sup>4</sup> = 1042
-                </p>
-                <p class="mb-2">
-                    Solve for the possible energy values of <span class="math-columbia">E</span>.
-                </p>
-                
-                <p class="mb-1">
-                    <b>Solution:</b>
+                    (x + 7) <sup>4</sup> + (x + 5) <sup>4</sup> = 706
                 </p>
                 <p>
-                    <b>Step 1: Take the Average of the Two Energies</b>
+                    <b>Step 1: Take the average of the two binomials</b>
                 </p>
                 <p>
-                    The two terms are <span class="math-columbia">E + 6 and E + 4</span>.
+                    The two binomials are <span class="math-columbia">x + 7</span> and <span class="math-columbia">x +
+                        5</span>.
                 </p>
                 <p>
                     Find their average:
                 </p>
+                <p class="mb-2 text-center">
+                    <span class="math-columbia">x + 6</span> (Let this be a)
+                </p>
+                <p class="mb-2">
+                    Thus, <span class="math-columbia">x + 7 + a + 1</span> and <span class="math-columbia">x + 5 = a -
+                        1</span>
+                </p>
 
-                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                    <div>a =</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">(E + 6) + (E + 4)</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">2</div>
-                    </div>
-                    <div>= E + 5</div>
+                <p>
+                    <b>Step 2: Replace the binomials in the equation</b>
+                </p>
+                <p class="math-columbia text-center mb-2">
+                    (x + 7) <sup>4</sup> + (x + 5) <sup>4</sup> = (a + 1) <sup>4</sup> + (a - 1) <sup>4</sup> = 706
+                </p>
+
+                <p>
+                    <b>Step 3: Expand and cancel odd powers</b>
+                </p>
+                <p>
+                    Expand both terms:
+                </p>
+                <div class="text-center math-columbia mb-2">
+                    <p>(a + 1) <sup>4</sup> = a <sup>4</sup> + 4a <sup>3</sup> + 6a <sup>2</sup> + 4a + 1</p>
+                    <p>(a - 1) <sup>4</sup> = a <sup>4</sup> - 4a <sup>3</sup> + 6a <sup>2</sup> - 4a + 1</p>
                 </div>
 
                 <p>
-                    Thus:
+                    Add these:
                 </p>
-                <p class="math-columbia text-center">
-                    E + 6 = a + 1 and E + 4 = a - 1
+                <p class="text-center">
+                    <span class="math-columbia">(a + 1) <sup>4</sup> + (a - 1) <sup>4</sup> = 2a <sup>4</sup> + 12a
+                        <sup>2</sup> + 2 = 706</span> (Odd powers cancle out)
                 </p>
-                <p>
-                    <b>Step 2: Rewrite the Equation</b>
-                </p>
+
+            
+             
+                
             </div>
+
+            
     </section>
 
     <!-- Download button -->

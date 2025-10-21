@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        .page-number {
+            position: absolute;
+            top: 21.6mm;
+            /* distance from bottom edge */
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
+            font-size: 10pt;
+            color: #4b5563;
+            /* Tailwind gray-600 */
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* A4 page style */
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
+            border-radius: 8px;
+            color: #1f2937;
+            /* Tailwind gray-800 */
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Special Math font (STIX Two Math as Columbia-like font) */
+        .math-columbia {
+            font-family: 'STIX Two Math', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .cinzel {
+            font-family: 'Cinzel', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .spectral {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Hide button when printing or exporting */
+        @media print {
+            #downloadBtn {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Columbia-like Math Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center">
+
+    <section id="a4-page"
+        class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
+        <div class="">
+            <div class="page-number text-[15px]">98 <i>Part 1: Theoretical Overview</i></div>
+
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] mb-4 px-2 rounded-lg">
+                <p class="text-justify mb-4">arithmetic. Additionally, its application to finding complements is
+                    useful in subtraction and error-checking in numeric systems.
+                </p>
+                <p class="text-justify">Beyond arithmetic, this sutra demonstrates practical utility in scientific
+                    computations. In chemistry and physics, volume-related problems often require cube calculations such
+                    as determining the volume of atoms, molecules, or crystalline structures. Yāvadūnam simplifies these
+                    computations, making it an effective tool when calculating volumes based on atomic radii or edge
+                    lengths of unit cells. For instance, the sutra helps derive precise values when computing r<sup>3</sup> in
+                    spherical volume formulas or in stoichiometry where side lengths of molecular units are cubed to
+                    estimate total volume.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="">
+                    <p class="mb-2">
+                        <b>Case 1: Finding the Complement to the Nearest Functional Base</b>
+                    </p>
+                    <p>
+                        <b>Example:</b> Find the complement of <span class="math-columbia">118</span> to the nearest base (<span class="math-columbia">100</span>).
+                    </p>
+                    <p>
+                        <b>Solution:</b>
+                    </p>
+                    
+                </div>
+
+            </div>
+            
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <div class="mb-4">
+                    
+                    <div class="ml-5">
+                        <p><b>1. Identify the functional base:</b> The nearest base to <span class="math-columbia">118</span> is <span class="math-columbia">100</span>.</p>
+                        <p><b>2. Calculate the complement:</b> <span class="math-columbia">Complement = Base − Number = 100 − 118 = −18</span></p>
+                        <p><b>3. In absolute terms:</b> Complement <span class="math-columbia">= 18</span></p>
+                    </div>
+                    <p>
+                        <b>Answer:</b> The complement of <span class="math-columbia">118</span> to the base <span class="math-columbia">100</span> is <span. class="math-columbia">±18</span.
+                    </p>
+                </div>
+
+                <p class="mb-2">
+                    <b>Case 2: Finding the Cube of a Two-Digit Number</b>
+                </p>
+                <div class="ml-5">
+                    <p><b>1. Split the number into digits:</b></p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Let the number <span class="math-columbia">xy</span> have: </p>
+                        </div>
+                        <p class="text-center">
+                            <span class="math-columbia">x =</span> tens digit, <span class="math-columbia">y =</span> units digit.
+                        </p>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <p><b>2. Compute the six terms:</b></p>
+                    <div class="ml-8">
+                        <div class="flex items-end">
+                            <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
+                            <p>Calculate the following:</p>
+                        </div>
+                        <div class="ml-8">
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p><span class="math-columbia">x <sup>3</sup></span>: Cube of the tens digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p><span class="math-columbia">x <sup>2</sup>y</span>: Square of the tens digit multiplied by the units digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p><span class="math-columbia">xy <sup>2</sup></span>: Tens digit multiplied by the square of the unit digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p><span class="math-columbia">y <sup>3</sup></span>: Cube of the units’ digit.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p><span class="math-columbia">2x <sup>2</sup></span>: Twice the product of <span class="math-columbia">x<sup>2</sup></span> and <span class="math-columbia">y</span>.</p>
+                            </div>
+                            <div class="flex items-end">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <p><span class="math-columbia">2xy <sup>2</sup></span>: Twice the product of <span class="math-columbia">xxx</span> and <span class="math-columbia">y<sup>2</sup></span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-5">
+                    <p><b>3. Arrange the terms:</b></p>
+                    
+                </div>
+                
+                
+            </div>
+
+            
+
+            
+
+            
+    </section>
+
+    <!-- Download button -->
+    <button id="downloadBtn" onclick="downloadPDF()"
+        class="mt-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+        Download as PDF
+    </button>
+
+    <!-- jsPDF + html2canvas from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("a4-page");
+
+            // Capture full content as canvas
+            const canvas = await html2canvas(element, { scale: 4 });
+            const imgData = canvas.toDataURL("image/png");
+
+            // Create A4 PDF
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("my-page.pdf");
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>

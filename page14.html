@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,160 +78,134 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 68</div>
-            <div class="pb-2 bg-gradient-to-r from-[#EFF3EA] to-[#F9E6CF] text-justify px-2 mb-4 rounded-lg">
-                <div class="math-columbia flex items-center justify-center gap-1 mb-2">
-                    <div>C</div>
-                    <div>=</div>
-                    <div class="flex flex-col justify-center items-center">
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 73</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#FEF9E1] to-[#FFEDFA] text-justify px-2 mb-4 rounded-lg">
+                
+                <div class="ms-1">
+                    
+                    <div class="ml-5">
                         <div>
-                            2(5)<sup>2</sup> − 5 − 5
+                            <div class="flex items-center mb-1">
+                                
+                                <div>
+                                    <p>Add to the next dividend digit <span class="math-columbia">(6): 6 + (-3) = 3</span>. Next quotient digit <span class="math-columbia">= 3</span>.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-1">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <div>
+                                    <p>Multiply by <span class="math-columbia">(−3): 3 × (-3) = -9</span>.</p>
+                                    <p>Add to the next digit <span class="math-columbia">(9): 9 + (-9) = 0</span>. Next quotient digit <span class="math-columbia">= 0</span>.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                                <div>
+                                    <p>Multiply by <span class="math-columbia">(−3): 0 × (-3) = 0</span>.</p>
+                                    <p>Add to the last digit <span class="math-columbia">(7): 7 + 0 = 7</span>. Remainder <span class="math-columbia">= 7</span>.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="h-px bg-black w-28 mt-2"></div>
-                        <div class="-mt-2">(5 − 3) (5 − 4)</div>
                     </div>
-                    <div>=</div>
-                    <div>20</div>
+                    <p class="">
+                        <b>4. Result</b> Quotient <span class="math-columbia">Q = 130</span>, Remainder <span
+                            class="math-columbia">R = 7</span>.
+                    </p>
                 </div>
-                <p class="mb-1"><b>Solution:</b></p>
-                <div class="flex justify-center items-center gap-2">
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+                <p class="">
+                    <strong>2. Solving Simple Linear Equations</strong>
+                </p>
+                <p class="">
+                    <strong>Steps to Apply:</strong>
+                </p>
+                <p>
+                    <strong>Step 1: </strong> Rearrange the equation into the format <span class="math-columbia">ax + b
+                        = cx + d</span>
+                </p>
+                <p>
+                    <strong>Step 2:</strong> Apply Parāvartya by transposing terms and reversing their signs.
+                </p>
+                <p>
+                    <strong>Step 3:</strong> Solve for <span class="math-columbia">x</span>.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#D1F8EF] to-[#CCDF92] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <b>Example: Solve <span class="math-columbia font-semibold">8x + 3 = 5x + 6</span></b>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        1. Rearrange: <span class="math-columbia">8x − 5x = 6 − 3</span> (transpose terms and reverse
+                        signs).
+                    </p>
+                    <p>
+                        2. Simplify: <span class="math-columbia">3x = 3</span>.
+                    </p>
+                    <p>
+                        3. Solve: <span class="math-columbia">x = 3/3 = 1</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#CCDF92] to-[#EAFAEA] mb-4 text-justify px-2 rounded-lg">
+                <p class="mb-2">
+                    <strong>3. Polynomial Division</strong>
+                </p>
+                <p class="mb-2">
+                    <strong>Steps to Apply:</strong>
+                </p>
+                <p>
+                    <b>Step 1:</b>   Write the polynomial division in synthetic form.
+                </p>
+            
+                <p>
+                    <b>Step 2:</b>   Keep the leading coefficient as it is, and reverse the signs of subsequent coefficients
+                    based on <span class="">the divisor.</span>
+                </p>
+                <p>
+                    <b>Step 3:</b>   Solve step-by-step until all terms are divided.
+                </p>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#EAFAEA] to-[#DAD2FF] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <strong>Example: Divide <span class="math-columbia"><b>x<sup>3</sup> − 7x<sup>2</sup> + 41 x −35 by x − 1</b></span></strong>
+                </p>
+                <div class="ps-5">
+                    <p>
+                        <b>1.</b> Divisor: <span class="math-columbia">x − 1</span> → Transform by keeping the sign of <span class="math-columbia">1</span> as it is.
+                    </p>
                     <div>
-                        E
+                        <div><b>2.</b> Write coefficients of the polynomial:</div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p class="math-columbia">[1, −7, 41, −35].</p>
+                        </div>
                     </div>
-                    <div>=</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>5</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">x - 3</div>
-                    </div>
-                    <div>-</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>23</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">x - 4</div>
-                    </div>
-                    <div>+</div>
-                    <div class="math-columbia flex flex-col items-center">
-                        <div>20</div>
-                        <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">x - 5</div>
+                    <div>
+                        <div><b>3.</b> Perform synthetic division:</div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>The first coefficient (1) remains the same.</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>Multiply <span class="math-columbia">1 × 1</span> and add to <span class="math-columbia">−7: −7 + 1 = −6</span>.</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>Multiply <span class="math-columbia">−6 × 1</span> and add to <span class="math-columbia">41: 41 − 6 = 35</span>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p class="spectral font-bold mb-4">Application of the Parāvartya in Chemistry: Concentration Dilution
-                Calculation</p>
-
-            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] text-justify mb-4 px-2 rounded-lg">
-                <p class=" text-justify">
-                    <strong>Problem:</strong> A chemist has <span class="math-columbia">1697</span> mL of a concentrated
-                    acid solution and wants to divide
-                    it into
-                    smaller containers, each holding <span class="math-columbia">13 mL</span>. How many containers can
-                    be filled, and how much acid
-                    will remain? Solve this using the division method from the sutra.
-                </p>
-                <p class="font-bold mb-1">
-                    Solution:
-                </p>
-                <div class="">
-                    <div class="mb-1">
-                        <div>
-                            <strong> Given Values:</strong>
-                        </div>
-                        <div class="ms-5">
-                            <div class="flex items-end">
-                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p>Total volume: <span class="math-columbia">1697 mL</span></p>
-                            </div>
-                            <div class="flex items-end">
-                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p>Volume per container: <span class="math-columbia">13 mL</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <p>
-                        <strong>Apply the Sutra to Divide <span class="math-columbia">1697÷13</span>:</strong>
-                    </p>
-                    <p>
-                        <Strong>Step-by-Step Division Using the Sutra:</Strong>
-                    </p>
-
-                    <div class="ms-1">
-                        <p>
-                            <b>1. Divisor:</b> <span class="math-columbia">13</span> → Write as <span
-                                class="math-columbia">10 + 3</span>.
-                        </p>
-                        <p class="ml-4">
-                            Reverse the sign of the deviation <span class="math-columbia">(3)</span>. Transformed
-                            divisor =
-                            <span class="math-columbia">(10 - 3)</span>. So, deviation <span class="math-columbia">=
-                                –3</span>.
-                        </p>
-                        <p>
-                            <b>2. Dividend:</b> <span class="math-columbia">1697</span>.
-                        </p>
-                        <p>
-                            <b>3. Perform division step-by-step:</b>
-                        </p>
-                        <div class="ml-5">
-                            <div>
-                                <div class="flex items-end mb-1">
-                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                                    <p>Bring down the first digit <span class="math-columbia">(1)</span>. This is the
-                                        first quotient digit.</p>
-                                </div>
-                                <div class="flex items-center mb-1">
-                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                                    <div>
-                                        <p>Multiply by <span class="math-columbia">(−3): 1 × (-3) = -3</span>.</p>
-                                        <p>Add to the next dividend digit <span class="math-columbia">(6): 6 + (-3) =
-                                                3</span>. Next quotient digit <span class="math-columbia">= 3</span>.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center mb-1">
-                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                                    <div>
-                                        <p>Multiply by <span class="math-columbia">(−3): 3 × (-3) = -9</span>.</p>
-                                        <p>Add to the next digit <span class="math-columbia">(9): 9 + (-9) = 0</span>.
-                                            Next quotient digit <span class="math-columbia">= 0</span>.</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center">
-                                    <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
-                                    <div>
-                                        <p>Multiply by <span class="math-columbia">(−3): 0 × (-3) = 0</span>.</p>
-                                        <p>Add to the last digit <span class="math-columbia">(7): 7 + 0 = 7</span>.
-                                            Remainder <span class="math-columbia">= 7</span>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="">
-                            <b>4. Result</b> Quotient <span class="math-columbia">Q = 130</span>, Remainder <span
-                                class="math-columbia">R = 7</span>.
-                        </p>
-                        <p>
-                            <b>Interpretation:</b> The chemist can fill <span class="math-columbia">103</span> full
-                            containers, and <span class="math-columbia">7 mL</span> of acid will remain
-                            unused.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <p class="spectral font-bold mb-4">Application in Chemistry: Determining Partial Pressures of Gases Using
-                Dalton's Law</p>
-
-            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] text-justify px-2 rounded-lg">
-                <p class="text-justify">
-                    <strong>Problem:</strong> A gas mixture contains three gases: oxygen (O<sub>2</sub>), nitrogen
-                    (N<sub>2</sub>), and carbon
-                    dioxide (CO<sub>2</sub>). The total pressure of the mixture is P<sub>total</sub> = 100 kPa. The
-                    partial pressures of
-                </p>
-            </div>
+            
     </section>
 
     <!-- Download button -->

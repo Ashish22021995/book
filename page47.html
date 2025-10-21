@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,150 +79,90 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 101</div>
+            <div class="page-number text-[15px]">110 <i>Part 1: Theoretical Overview</i></div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">rational expressions involving products of binomials arranged in an
+                    arithmetic progression.
+                </p>
+                <p class="text-justify">In scientific domains, the sutra extends its value by aiding in problems
+                    involving structured sequences. For example, ionization energy trends in chemistry. When successive
+                    ionization energies form an arithmetic progression, Sopāntyadvayamantyam helps to deduce unknown
+                    values from symmetric expressions that would otherwise require multi-step algebraic work. By merging
+                    digit-wise logic with pattern recognition, this sutra empowers learners to handle arithmetic and
+                    algebraic challenges with precision.
+                </p>
+            </div>
+
+
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <p>
-                    Write <span class="math-columbia">8</span>, no carryover.
-                </p>
-                <div class="">
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p><b>Third step:</b> <span class="math-columbia">2</span> (ultimate) and <span
-                                class="math-columbia">8</span> (penultimate):</p>
-                    </div>
-                    <p class="text-center math-columbia">2 + 2(8) = 2 + 16 = 18</p>
+                <div class="mb-2 leading-relaxed">
+                    <b>Example 1: Divisibility by <span class="math-columbia"><b>4</b></span></b>
                 </div>
-                <p>
-                    Write <span class="math-columbia">8</span>, carry over <span class="math-columbia">1</span>.
-                </p>
-                <div class="">
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p><b>Fourth step:</b> <span class="math-columbia">8</span> (ultimate) and <span
-                                class="math-columbia">0</span> (penultimate):</p>
-                    </div>
-                    <p class="text-center math-columbia">8 + 2(0) = 8</p>
-                </div>
-                <p>
-                    Add the carryover 1: <span class="math-columbia">8 + 1 = 9</span>.
-                </p>
+                <p class="mb-2">Check if <span class="math-columbia">12384</span> is divisible by <span class="math-columbia">4</span>.</p>
+                
                 <p class="mb-2">
-                    <b>Step 3:</b> Write the final result:
+                    <b>Step 1:</b> Identify the last digit and the second-last digit:
+                </p>
+                <div class="mb-2">
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p>Last digit (ultimate): <span class="math-columbia">4</span></p>
+                    </div>
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p>Second-last digit (penultimate): <span class="math-columbia">8</span>.</p>
+                    </div>
+                </div>
+                <p class="mb-2">
+                    <b>Step 2:</b> Apply the sutra:
                 </p>
                 <p class="mb-2 text-center math-columbia">
-                    824 × 12 = 9888
+                    Sum = Last digit + 2 ⋅ Second-last digit = 4 + 2(8) = 4 + 16 = 20
                 </p>
                 <p class="mb-2">
-                    <b>Answer :</b> <span class="math-columbia">824 × 12 = 9888.</span>
+                    <b>Step 3:</b> Check divisibility:
+                </p>
+                <p class="mb-2 text-center math-columbia">
+                    <span class="math-columbia">20 ÷ 4 = 5</span>(divisible).
+                </p>
+                <p class="mb-2">
+                    <b>Answer :</b> <span class="math-columbia">12384</span> are divisible by <span class="math-columbia">4</span>.
                 </p>
             </div>
 
             <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
                 <div class="mb-2 leading-relaxed">
-                    <b>Example: Solve for <span class="math-columbia">x</span></b>
+                    <b>Example 2: Divisibility by <span class="math-columbia">4</span></b>
                 </div>
-                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-24 mt-3"></div>
-                        <div class="-mt-2">x <sup>2</sup> + 5x + 6 </div>
+                <p class="mb-2">Check if <span class="math-columbia">25619</span> is divisible by <span class="math-columbia">4</span>.</p>
+                <p class="mb-2">
+                    <b>Step 1:</b> Identify the last two digits:
+                </p>
+                <div class="mb-2">
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p>Last digit: <span class="math-columbia">9</span></p>
                     </div>
-                    <div>+</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-24 mt-3"></div>
-                        <div class="-mt-2">x <sup>2</sup> + 6x + 8</div>
-                    </div>
-                    <div>=</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-24 mt-3"></div>
-                        <div class="-mt-2">x <sup>2</sup> + 7x + 10</div>
-                    </div>
-                    <div>+</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-24 mt-3"></div>
-                        <div class="-mt-2">x <sup>2</sup> +7x + 12</div>
+                    <div class="ml-5 flex items-end">
+                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                        <p>Second-last digit: <span class="math-columbia">1</span>.</p>
                     </div>
                 </div>
                 <p class="mb-2">
-                    <b>Step 1: Identify <span class="math-columbia"><b>A, B, C, D</b></span></b>
+                    <b>Step 2:</b> Apply the sutra:
                 </p>
-                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">(x + 2) (x + 3)</div>
-                    </div>
-                    <div>+</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">(x + 2) (x + 4)</div>
-                    </div>
-                    <div>=</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">(x + 2) (x + 5)</div>
-                    </div>
-                    <div>+</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">1</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">(x + 3) (x + 4)</div>
-                    </div>
-                </div>
-                <div class="mb-2 flex gap-16 justify-center">
-                    <div>Or, <span class="math-columbia">A = x + 2,</span></div>
-                    <div><span class="math-columbia">B = x + 3,</span></div>
-                    <div><span class="math-columbia">C = x + 4,</span></div>
-                    <div><span class="math-columbia">D = x + 5</span></div>
-                </div>
-                <p class="ml-12 mb-2">Also <span class="math-columbia">A, B, C,</span> and <span class="math-columbia">D</span> are in Arithmetic Progression.</p>
-                <p class="mb-2">
-                    <b>Step 2: Verify Arithmetic Progression</b>
+                <p class="mb-2 text-center math-columbia">
+                    Sum = 9 + 2(1) = 9 + 2 = 11
                 </p>
-                <p>
-                    Check if <span class="math-columbia">A, B, C,</span> and <span class="math-columbia">D</span> are in AP:
-                </p>
-                <p class="math-columbia">
-                    Difference between terms: (B − A) = (C − B) = (D − C) = 1
-                </p>
-                <p class="math-columbia">
-                    (x + 3) – (x + 2) = (x + 4) – (x + 3) = (x + 5) – (x + 4) = 1
-                </p>
-                <p class="mb-2">
-                    Thus, <span class="math-columbia">A, B, C,</span> and <span class="math-columbia">D</span> are in AP.
-                </p>
-
-                <p class="mb-2">
-                    <b>Step 3: Apply the Property <span class="math-columbia"><b>D + 2C = 0</b></span></b>
-                </p>
-                <div class="flex gap-5">
-                    <div>Substitute</div>
-                    <div class="math-columbia">A = x + 2,</div>
-                    <div class="math-columbia">B = x + 3,</div>
-                    <div class="math-columbia">C = x + 4,</div>
-                    <div class="math-columbia">D = x + 5</div>
-                    <div>into the formula.</div>
-                </div>
-                <div class="ml-5">
-                    <p>Therefore, <span class="math-columbia">x + 5 + 2 (x + 4) = 0</span></p>
-                    <p>Or, <span class="math-columbia">x + 5 + 2x + 8 = 0</span></p>
-                    <p>Or, <span class="math-columbia">3x + 13 = 0</span></p>
-                    <p>Or, <span class="math-columbia">3x = -13</span></p>
-                    <div class="math-columbia flex gap-1 items-center">
-                        <div>Hence, <span class="math-columbia">x =</span></div>
-                        <div class="flex math-columbia flex-col items-center">
-                            <div class="-mb-1">-13</div>
-                            <div class="h-px bg-black w-8 mt-3"></div>
-                            <div class="-mt-2">3</div>
-                        </div>
-                    </div>
-                </div>
+                
+                
+                
             </div>
+
+            
+
+            
         </div>
     </section>
 

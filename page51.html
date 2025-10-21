@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,128 +79,99 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 105</div>
+            <div class="page-number text-[15px]">114 <i>Part 1: Theoretical Overview</i></div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="ml-5 mb-2">
-                    <p><b>1. Split <span class="math-columbia"><b>12319</b></span> into parts based on the number of digits in the
-                        multiplier:</b></p>
-                    <p class="math-columbia text-center">
-                        123 and 19
-                    </p>
-                    <p>
-                        <b>2. Apply the sutra to each part:</b>
-                    </p>
-                    <div class="ml-5 mb-2">
-                        <div class="flex items-center">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p class="math-columbia">
-                                123 + 1 = 124
-                            </p>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p>
-                                Subtract <span class="math-columbia">12319 - 124 = 12195</span>
-                            </p>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
-                            <p>
-                                Find the complement of <span class="math-columbia">19</span> with respect to <span
-                                    class="math-columbia">100: 100 − 19 = 81</span>.
-                            </p>
-                        </div>
-                    </div>
-                    <p>
-                        <b>3. Combine the results:</b>
-                    </p>
-                    <div class="math-columbia flex justify-center items-center gap-2">
-                        <div>12319 × 99 =</div>
-                        <div class="flex flex-col items-center">
-                            <div class="-mb-1">12195</div>
-                            <div class="h-px bg-black w-12 mt-3"></div>
-                            <div class="-mt-2"> 81</div>
-                        </div>
-                    </div>
-                </div>
-                <p>
-                    <b>Answer: </b><span class="math-columbia">12319 × 99 = 1219581</span>
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra 14. Ekanyunena Purvena (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        एकन्यूनेन पूर्वेण
+                    </span>)
+                </p>
+                <p class="text-[#6B3F69]">
+                    <strong>Meaning:</strong> By one less than the one before.
+                </p>
+                <p class="text-[#6B3F69] leading-relaxed">
+                    <strong>Use:</strong> This sutra is a corollary of the <b>Nikhilam Sutra</b> and the converse of the
+                    <b>Ekādhikena Pūrveṇa Sutra</b>. It simplifies multiplication problems where the multiplier consists
+                    entirely of the digit 9 or its equivalent in binary or recurring decimals.
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="mb-2 leading-relaxed">
-                    <b>Example 4: Binary Multiplication</b>
-                </div>
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 mb-4 rounded-lg">
+                <p class="text-justify mb-4">This sutra, a corollary to Nikhilam Navataścaramam
+                        Daśatah, offers an
+                    elegant approach to multiplication, particularly where the multiplier is composed entirely of 9s
+                    (like 9, 99, 999, etc.). It is the inverse of the more commonly known Ekādhikena Pūrveṇa sutra and
+                    is especially useful when one of the numbers in the multiplication pair consists of repeated nines.
+                    Beyond arithmetic, the sutra is applicable in binary multiplication, where it aligns with numbers of
+                    the form 2<sup>n</sup> - 1, and also finds use in expressing recurring decimals in rational
+                    fractions involving
+                    the digit 9 or its variations.
+                </p>
+                <p class="text-justify">In scientific settings, this sutra proves beneficial when scaling fixed units.
+                    Whether used for multiplying in decimal or binary, simplifying repeating fractions, or executing
+                    scale-up problems in science, Ekādhikena Pūrveṇa reinforces the Vedic
+                    principle of simplifying
+                    through patterns. It demonstrates how profound insight into number structure can lead to
+                    computational clarity and speed, especially where traditional multiplication would require multiple
+                    steps.
+                </p>
+            </div>
 
-                <div class="ml-5 mb-2">
-                    <p class="text-center">
-                        <span class="math-columbia">1011 × 1111</span> (Binary representation of <span
-                            class="math-columbia">11 × 15</span> )
-                    </p>
-                    <p><b>1. Subtract <span class="math-columbia"><b>1</b></span> from <span class="math-columbia"><b>1011</b></span>
-                        (binary subtraction):</b>
-                    </p>
-                    <p class=" text-center">
-                        <span class="math-columbia">1011 − 1 = 1010</span> (Left-hand side of the binary product)
-                    </p>
-                    <p>
-                        <b>2. Find the complement of <span class="math-columbia"><b>1010</b></span> with respect to <span
-                            class="math-columbia"><b>1111</b></span> (binary):</b>
-                    </p>
-
-                    <p class="text-center">
-                        Complement <span class="math-columbia">= 1111 − 1010 = 0101</span>
-                    </p>
-                    <p>
-                        <b>3. Combine the results:</b>
-                    </p>
-                    <div class="math-columbia flex justify-center items-center gap-2">
-                        <div>1011 × 1111 = 1010/0101</div>
+            
+            <p class="mb-2"><b>1. Multiplications with a Multiplier of All 9's</b></p>
+            <div class="ml-10">
+                <div>
+                    <p><b>1. When the multiplicand and multiplier have the same number of digits:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Subtract 1 from the multiplicand for the left-hand side of the product.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>For the right-hand side, take the complement of the left-hand side with respect to the
+                                multiplier (e.g., 9, 99, and 999…).</p>
+                        </div>
                     </div>
                 </div>
-                <p>
-                    <b>Answer: </b><span class="math-columbia">1011 × 1111 = 10100101</span> (Binary for <span class="math-columbia">165</span>)
-                </p>
             </div>
 
-            <p class="spectral font-bold mb-4">Application of Ekanyunena Purvena in chemistry:
-                Moles of Gas</p>
-
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
-                <div class="mb-2 leading-relaxed">
-                    <b>Problem:</b> A reaction produces <span class="math-columbia">99</span> moles of a substance, and
-                    each mole of the substance contains <span class="math-columbia">44</span> g. Calculate the total
-                    mass of the substance used.
+            <div class="ml-10">
+                <div>
+                    <p><b>2. When the multiplicand has fewer digits than the multiplier:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-center">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Pad the multiplicand with leading zeros to match the number of digits in the multiplier.
+                            </p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Subtract 1 from the padded multiplicand for the left-hand side.</p>
+                        </div>
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Complement the result to form the right-hand side.</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="mb-2">
-                    <b>Solution: </b>
-                </p>
-
-                <p>
-                    To find the total mass, we compute
-                </p>
-                <div class="math-columbia text-center mb-2">
-                    <p>Total Mass=Moles×Molar mass</p>
-                    <p>Total Mass=99×44</p>
+                <div>
+                    <p><b>3. When the multiplier has fewer digits than the multiplicand:</b></p>
+                    <div class="ml-5">
+                        <div class="flex items-end">
+                            <span class="w-1 h-1 mr-4 bg-black rounded-full shrink-0"></span>
+                            <p>Divide the multiplicand into parts corresponding to the multiplier.</p>
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <p class="mb-2">
-                    <b>Step 1: Identify the Structure</b>
-                </p>
-                <p class="mb-2">
-                    The multiplier is <span class="math-columbia">99</span> (repetitive digits), which matches the
-                    sutra’s condition. The multiplicand is <span class="math-columbia">44</span> (the same number of
-                    digits).
-                </p>
-                <p class="mb-2">
-                    <b>Step 2: Subtract 1 from the Multiplicant</b>
-                </p>
-                <p class="text-center">
-                    <span class="math-columbia">44 − 1 = 43</span> (Left-hand side of the product)
-                </p>
             </div>
+
+            
+
+            
         </div>
     </section>
 

@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,134 +78,156 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 94</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 103</div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] mb-4 text-justify px-2 rounded-lg">
                 
-                <p>
-                    Substitute <span class="math-columbia">E + 6 = a + 1 and E + 4 = a - 1</span> into the equation:
-                </p>
-                <p>
-                    Expand both terms:
-                </p>
-
-                <div class="text-center math-columbia mb-2">
-                    <p>(a + 1) <sup>4</sup> = a <sup>4</sup> + 4a <sup>3</sup> + 6a <sup>2</sup> + 4a + 1</p>
-                    <p>(a - 1) <sup>4</sup> = a <sup>4</sup> - 4a <sup>3</sup> + 6a <sup>2</sup> - 4a + 1</p>
-                </div>
+               
 
                 <p>
-                    Add these:
+                    <b>Step 4: Simplify and rearrange the equation</b>
                 </p>
-                <p class="mb-1 math-columbia text-center">
-                    (a + 1) <sup>4</sup> + (a - 1) <sup>4</sup> = 2a <sup>4</sup> + 12a <sup>2</sup> + 2 = 1042 (Odd
-                    powers cancle out)
-                </p>
-                <p>
-                    <b>Step 3: Simplify, substitute, and rearrange the Equation</b>
-                </p>
-                <p class="mb-1 math-columbia text-center">
-                    a <sup>4</sup> + 6a <sup>2</sup> -520 = 0
+                <p class="math-columbia text-center mb-2">
+                    a <sup>4</sup> + 6a <sup>2</sup> -352 = 0
                 </p>
                 <p>
-                    <b>Step 4: Substitute <span class="math-columbia">Z = a <sup>2</sup></span> so the equation becomes:</b>
+                    <b>Step 5: Substitute <span class="math-columbia">Z = a <sup>2</sup></span> so the equation becomes:</b>
                 </p>
-                <p class="mb-1 math-columbia text-center">
-                    Z <sup>2</sup> + 6z - 520 = 0
+                <p class="math-columbia text-center mb-2">
+                    Z <sup>2</sup> + 6z - 352 = 0
                 </p>
-
                 <p>
-                    <b>Step 5: Solve the Quadratic Equation</b>
+                    <b>Step 6: Solve the quadratic equation</b>
                 </p>
                 <div class="math-columbia flex gap-1 justify-center items-center">
                     <div>Z =</div>
                     <div class="flex flex-col items-center">
-                        <div class="-mb-1">-b ± √(b <sup>2</sup> - 4ac)</div>
-                        <div class="h-px bg-black w-28 mt-3"></div>
-                        <div class="-mt-2">2a</div>
-                    </div>
-                </div>
-                <div class="math-columbia flex gap-1 justify-center items-center">
-                    <div>Z =</div>
-                    <div class="flex flex-col items-center">
-                        <div class="-mb-1">-6 ± √(36 + 2080)</div>
+                        <div class="-mb-1">-6 ± √(36 + 1408)</div>
                         <div class="h-px bg-black w-28 mt-3"></div>
                         <div class="-mt-2">2</div>
                     </div>
-                    <div>, Where a = 1, b = 6, and c = -520</div>
+                    <div>, Where a = 1, b = 6, and c = -352</div>
                 </div>
-                <div class="mb-1 math-columbia flex gap-1 justify-center items-center">
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
                     <div>Z =</div>
                     <div class="flex flex-col items-center">
-                        <div class="-mb-1">-6 ± √2116</div>
+                        <div class="-mb-1">-6 ± √1444</div>
                         <div class="h-px bg-black w-20 mt-3"></div>
                         <div class="-mt-2">2</div>
                     </div>
                     <div>=</div>
                     <div class="flex flex-col items-center">
-                        <div class="-mb-1">-6 ± 46</div>
+                        <div class="-mb-1">-6 ± 38</div>
                         <div class="h-px bg-black w-16 mt-3"></div>
                         <div class="-mt-2">2</div>
                     </div>
                 </div>
                 <p>
-                    <b>Step 6: Solve for Z</b>
+                    <b>Step 7: Solve for <span class="math-columbia"><b>Z</b></span></b>
                 </p>
+
                 <div class="flex justify-center gap-10">
-                    <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
                         <div>Z =</div>
                         <div class="flex flex-col items-center">
-                            <div class="-mb-1">-6 + 46</div>
-                            <div class="h-px bg-black w-28 mt-3"></div>
+                            <div class="-mb-1">-6 + 38</div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
                             <div class="-mt-2">2</div>
                         </div>
-                        <div>= 20,</div>
+                        <div>= 16,</div>
                     </div>
-                    <div class="math-columbia flex gap-1 justify-center items-center">
+                    <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
                         <div>Z =</div>
                         <div class="flex flex-col items-center">
-                            <div class="-mb-1">-6 - 46</div>
-                            <div class="h-px bg-black w-28 mt-3"></div>
+                            <div class="-mb-1">-6 - 38</div>
+                            <div class="h-px bg-black w-16 mt-3"></div>
                             <div class="-mt-2">2</div>
                         </div>
-                        <div>= -26</div>
+                        <div>= -22</div>
                     </div>
                 </div>
-                <p class="math-columbia">
-                    Since Z=a <sup>2</sup>, and a <sup>2</sup> ≥ 0, we discard Z = -26
+
+                <p>
+                    Since <span class="math-columbia">Z = a <sup>2</sup></span> ,and <span class="math-columbia">a
+                        <sup>2</sup> ≥ 0</span>, we discard <span class="math-columbia">Z = -22</span>
                 </p>
-                <p class="mb-1 math-columbia text-center">
-                    a <sup>2</sup> = 20 = ± √20
+                <p class="math-columbia text-center">
+                    a <sup>2</sup> = 16 = ±4
                 </p>
                 <p>
-                    <b>Step 7: Back-substitute for <span class="math-columbia">E</span></b>
+                    <b>Step 8: Back-substitute for x</b>
                 </p>
                 <p>
-                    Recall <span class="math-columbia">a = E + 5</span>:
+                    Recall <span class="math-columbia">a = x + 6</span>:
                 </p>
-                <div class="mb-1 math-columbia text-center">
-                    <p>E + 5 = √20 = √20 - 5</p>
-                    <p>E + 5 = -√20 = -√20 - 5</p>
+                <div class="math-columbia text-center">
+                    <p>x + 6 = 4 = -2</p>
+                    <p>x + 6 = -4 = -10</p>
                 </div>
                 <p>
-                    <b>Final Answer: The possible energy values are</b>
+                    <b>Final Answer:</b>
                 </p>
-                <div class="flex math-columbia justify-center gap-5">
-                    <div>E = √20 - 5,</div>
+                <div class="flex justify-center gap-10 math-columbia">
+                    <div>x = -2,</div>
                     <div>or</div>
-                    <div>E = -√20 - 5</div>
+                    <div>x = -10</div>
                 </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 rounded-lg">
-                <p class="text-justify">The Vyasti Samastih Sutra simplifies complex
-                    bi-quadratic expressions by
-                    removing odd-powered terms through symmetric averaging, allowing transformation into solvable
-                    quadratic forms. In science, especially in quantum chemistry and orbital theory, this method proves
-                    effective in solving energy equations involving fourth powers. Its ability to reduce algebraic
-                    complexity into balanced and structured forms makes it a valuable tool for deriving precise values
-                    in high-level scientific and mathematical problems.
+            <p class="spectral font-bold mb-4">Application of Vyasti Samastih in chemistry:
+                Energy of Two Orbital</p>
+
+            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify px-2 rounded-lg">
+                <p>
+                    <b>Problem:</b> The energy of two molecular orbitals is related as follows:
                 </p>
+                <p class="mb-2 text-center math-columbia">
+                    (E + 6) <sup>4</sup> + (E + 4) <sup>4</sup> = 1042
+                </p>
+                <p class="mb-2">
+                    Solve for the possible energy values of <span class="math-columbia">E</span>.
+                </p>
+                
+                <p class="mb-1">
+                    <b>Solution:</b>
+                </p>
+                <p>
+                    <b>Step 1: Take the Average of the Two Energies</b>
+                </p>
+                <p>
+                    The two terms are <span class="math-columbia">E + 6 and E + 4</span>.
+                </p>
+                <p>
+                    Find their average:
+                </p>
+
+                <div class="math-columbia mb-2 flex gap-1 justify-center items-center">
+                    <div>a =</div>
+                    <div class="flex flex-col items-center">
+                        <div class="-mb-1">(E + 6) + (E + 4)</div>
+                        <div class="h-px bg-black w-28 mt-3"></div>
+                        <div class="-mt-2">2</div>
+                    </div>
+                    <div>= E + 5</div>
+                </div>
+
+                
+                
+                
+                
+
+                
+                
+                
+
+               
+                
+                
+                
+                
             </div>
+
+            
     </section>
 
     <!-- Download button -->

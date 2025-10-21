@@ -12,23 +12,22 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 10mm;
-            right: 0;
-            text-align: left;
+            left: 0;
+            right: 31.75mm;
+            text-align: right;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
             font-family: 'Times New Roman', Times, serif;
         }
-
         /* A4 page style */
         .a4 {
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 30mm 20mm 20mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,106 +78,110 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 100</div>
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <p class="mb-2">
-                    <b>Step 1:</b> Identify the last digit and the second-last digit:
-                </p>
-                <div class="mb-2">
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p>Last digit (ultimate): <span class="math-columbia">4</span></p>
-                    </div>
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p>Second-last digit (penultimate): <span class="math-columbia">8</span>.</p>
-                    </div>
-                </div>
-                <p class="mb-2">
-                    <b>Step 2:</b> Apply the sutra:
-                </p>
-                <p class="mb-2 text-center math-columbia">
-                    Sum = Last digit + 2 ⋅ Second-last digit = 4 + 2(8) = 4 + 16 = 20
-                </p>
-                <p class="mb-2">
-                    <b>Step 3:</b> Check divisibility:
-                </p>
-                <p class="mb-2 text-center math-columbia">
-                    <span class="math-columbia">20 ÷ 4 = 5</span>(divisible).
-                </p>
-                <p class="mb-2">
-                    <b>Answer :</b> <span class="math-columbia">12384</span> are divisible by <span class="math-columbia">4</span>.
+            <div class="page-number text-[15px]"><i>Part 1: Theoretical Overview</i> 109</div>
+
+
+            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] mb-14 px-2 rounded-lg">
+                <p class="text-justify">The Sesanyankena Caramena sutra
+                    offers a clever and efficient method to convert fractions into recurring decimal form by using
+                    remainders and their relationship with the last digit of the denominator. Especially valuable in
+                    chemistry for mole fractions and precise ratio expressions, this sutra transforms repetitive
+                    division into a simple, structured pattern, making decimal expansion more intuitive and accessible.
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="mb-2 leading-relaxed">
-                    <b>Example 2: Divisibility by <span class="math-columbia">4</span></b>
-                </div>
-                <p class="mb-2">Check if <span class="math-columbia">25619</span> is divisible by <span class="math-columbia">4</span>.</p>
-                <p class="mb-2">
-                    <b>Step 1:</b> Identify the last two digits:
+            <div class="px-2 text-center mb-4">
+                <p class="text-[#6B3F69] font-bold cinzel">
+                    Sutra 13. Sopantyadvayamantyam (
+                    <span style="font-family: 'Noto Serif Devanagari', serif;">
+                        सोपान्त्यद्वयमन्तयम्
+                    </span>)
                 </p>
-                <div class="mb-2">
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p>Last digit: <span class="math-columbia">9</span></p>
-                    </div>
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p>Second-last digit: <span class="math-columbia">1</span>.</p>
-                    </div>
-                </div>
-                <p class="mb-2">
-                    <b>Step 2:</b> Apply the sutra:
-                </p>
-                <p class="mb-2 text-center math-columbia">
-                    Sum = 9 + 2(1) = 9 + 2 = 11
-                </p>
-                <p class="mb-2">
-                    <b>Step 3:</b> Check divisibility:
-                </p>
-                <p class="mb-2 text-center">
-                    <span class="math-columbia">11 ÷ 4</span> = not divisible.
-                </p>
-                <p class="mb-2">
-                    <b>Answer :</b> <span class="math-columbia">25619</span> is not divisible by <span class="math-columbia">4</span>.
+                <p class="text-[#6B3F69]">
+                    <strong>Meaning:</strong> The ultimate and twice the penultimate.
                 </p>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#F7F7F7] to-[#FEF9E1] text-justify mb-4 px-2 rounded-lg">
-                <div class="mb-2 leading-relaxed">
-                    <b>Example 3: Multiplication by <span class="math-columbia">12</span></b>
+            <div class="mb-4 px-2 text-[#6B3F69]">
+                <div class="text-[#6B3F69] leading-relaxed">
+                    <strong>Use:</strong> This sutra focuses on operations involving the ultimate digit (last
+                    digit) and
+                    penultimate digit (second-to-last digit). It is primarily used for:
                 </div>
-                <p class="mb-2">Multiply <span class="math-columbia">824</span> by <span class="math-columbia">12</span>.</p>
-                <p class="mb-2">
-                    <b>Step 1:</b> Write the number with a zero before and after:
-                </p>
-                <p class="math-columbia text-center">
-                    824 → 08240
-                </p>
-                <p class="mb-2">
-                    <b>Step 2:</b> Apply the sutra step-by-step:
-                </p>
-                <div class="">
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p><b>First step:</b> Last digit <span class="math-columbia">0</span> (ultimate) and second-last digit <span class="math-columbia">4</span> (penultimate):</p>
+                <div class="ml-5">
+                    <div>
+                        <p><b>1. Checking divisibility by <span class="math-columbia"><b>4</b></span>.</b></p>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>Add the last digit and twice the second-last digit of the number.</p>
+                        </div>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>If the sum is divisible by <span class="math-columbia">4</span>, the entire number is divisible by <span class="math-columbia">4</span>.</p>
+                        </div>
                     </div>
-                    <p class="text-center math-columbia">0 + 2(4) = 0 + 8 = 8</p>
-                </div>
-                <p>
-                    Write <span class="math-columbia">8</span>, no carryover.
-                </p>
-                <div class="">
-                    <div class="ml-5 flex items-end">
-                        <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
-                        <p><b>Second step:</b> <span class="math-columbia">4</span> (ultimate) and <span class="math-columbia">2</span> (penultimate):</p>
+                    <div>
+                        <p><b>2. Simplifying multiplication by <span class="math-columbia"><b>12</b></span></b> using a systematic approach.</p>
+                        <div class="ml-5 flex items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>Add a zero before and after the number.</p>
+                        </div>
+                        <div class="ml-5 flex items-center">
+                            <span class="w-1 h-1 mr-2 bg-black rounded-full"></span>
+                            <p>Work step-by-step, adding the last digit and twice the second-last digit, accounting for
+                                carryovers.</p>
+                        </div>
                     </div>
-                    <p class="text-center math-columbia">4 + 2(2) = 4 + 4 = 8</p>
+                    <div>
+                        <p>This sutra can be used to find the value of a variable in an equation where terms A, B, C,
+                            D are in Arithmetic Progression (AP), and the equation takes the form:</p>
+                        <div class="math-columbia mb-2 flex gap-1 justify-start items-center">
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">AB</div>
+                            </div>
+                            <div>+</div>
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">AC</div>
+                            </div>
+                            <div>=</div>
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">AD</div>
+                            </div>
+                            <div>+</div>
+                            <div class="flex flex-col items-center">
+                                <div class="-mb-1">1</div>
+                                <div class="h-px bg-black w-8 mt-3"></div>
+                                <div class="-mt-2">BC</div>
+                            </div>
+                        </div>
+                        <p>
+                            And <span class="math-columbia">A, B, C,</span> and <span class="math-columbia">D</span> are in Arithmetic Progression, the equation has a solution derived from
+                            <span class="math-columbia">D + 2C = 0</span>
+                        </p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#DDEB9D] to-[#FEF9E1] px-2 rounded-lg">
+                <p class="text-justify">The thirteenth sutra of Vedic Mathematics,
+                    Sopāntyadvayamantyam, reveals a method grounded in positional digit
+                    manipulation specifically
+                    focusing on the last digit (ultimate) and the second-to-last digit (penultimate) of numbers. Though
+                    subtle in appearance, this technique provides insightful shortcuts for arithmetic processes like
+                    divisibility checks and rapid multiplication, as well as algebraic simplifications. This approach
+                    breaks down what might seem like a complex multiplication into manageable steps by operating on
+                    digit pairs. It also deals with
+                </p>
                 
             </div>
+
+            
     </section>
 
     <!-- Download button -->

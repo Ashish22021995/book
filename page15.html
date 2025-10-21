@@ -12,11 +12,11 @@
     <style>
         .page-number {
             position: absolute;
-            top: 5mm;
+            top: 21.6mm;
             /* distance from bottom edge */
-            left: 0;
-            right: 10mm;
-            text-align: right;
+            left: 31.75mm;
+            right: 0;
+            text-align: left;
             font-size: 10pt;
             color: #4b5563;
             /* Tailwind gray-600 */
@@ -28,7 +28,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: auto;
-            padding: 20mm 20mm 20mm 30mm;
+            padding: 35.56mm 31.75mm 30.48mm 31.75mm;
             border-radius: 8px;
             color: #1f2937;
             /* Tailwind gray-800 */
@@ -79,238 +79,161 @@
     <section id="a4-page"
         class="relative a4 text-[12pt] leading-[1.5] bg-gradient-to-br from-[#eef2ff] via-[#fdf2f8] to-[#f0fdf4]">
         <div class="">
-            <div class="page-number">Part 1: Theoretical Overview | 69</div>
+            <div class="page-number text-[15px]">74 <i>Part 1: Theoretical Overview</i></div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#FFF8E6] to-[#F5EFFF] text-justify px-2 mb-4 rounded-lg">
-                <p class="mb-2 text-justify">
-                    the
-                    gases are inversely proportional to their molar masses, given by:
-                </p>
-
-                <div class="flex justify-center items-center gap-2">
+            <div class="pb-2 bg-gradient-to-r from-[#EAFAEA] to-[#DAD2FF] text-justify px-2 mb-4 rounded-lg">
+                
+                <div class="ps-5">
+                    
                     <div>
-                        P<sub>total</sub>
+                        
+                        <div class="flex ml-8 items-end">
+                            <span class="w-1 h-1 mr-2 bg-black rotate-45"></span>
+                            <p>Multiply <span class="math-columbia">35 × 1</span> and add to <span class="math-columbia">−35: −35 + 35 = 0</span>.</p>
+                        </div>
                     </div>
-                    <div>=</div>
+                    <div>
+                        <div><b>Result:</b></div>
+                        <div class="flex ml-8 items-end">
+                            <!-- <span class="mr-2 text-green-600">✔</span> -->
+                            <p>Quotient: <span class="math-columbia">Q = x<sup>2</sup>−6x + 35</span>,</p>
+                        </div>
+                        <div class="flex ml-8 items-end">
+                            <!-- <span class="mr-2 text-green-600">✔</span> -->
+                            <p>Remainder: <span class="math-columbia">R = 0</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pb-2 bg-gradient-to-r from-[#D1F8EF] to-[#F5F5F5] text-justify px-2 mb-4 rounded-lg">
+                <p class="mb-2">
+                    <strong>4. Solving Partial Fractions</strong>
+                </p>
+                <p class="mb-2">
+                    <strong>Steps to Apply:</strong>
+                </p>
+                <div class="flex items-center gap-2">
+                    <div>
+                        1. Break the given fraction into partial fractions of the form
+                    </div>
                     <div class="math-columbia flex flex-col items-center">
                         <div>A</div>
                         <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">(x - 32)</div>
+                        <div class="-mt-3">x - a</div>
                     </div>
                     <div>+</div>
                     <div class="math-columbia flex flex-col items-center">
                         <div>B</div>
                         <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">(x - 28)</div>
+                        <div class="-mt-3">x - b</div>
                     </div>
                     <div>+</div>
                     <div class="math-columbia flex flex-col items-center">
                         <div>C</div>
                         <div class="h-px bg-black w-10 mt-2"></div>
-                        <div class="-mt-3">(x - 44)</div>
+                        <div class="-mt-3">x - c</div>
                     </div>
                 </div>
+                <p>
+                    2. Use the sutra to find A, B, and C by substituting the roots of <span class="math-columbia">x = a, b, c</span> into the equation.
+                </p>
+                <p>
+                    3. Simplify to find values.
+                </p>
+            </div>
 
-                <p class="mb-2 text-justify">
-                    Where x is the molar mass of the gases (in g/mol). Use the sutra to determine the coefficients A, B,
-                    and C.
+            <div class="pb-2 bg-gradient-to-r from-[#EFF3EA] to-[#F9E6CF] mb-4 text-justify px-2 rounded-lg">
+                <p class="mb-1">
+                    <strong>Example: Solve</strong>
                 </p>
-                <p class="font-bold mb-1">
-                    Solution:
-                </p>
-                <div class="ps-5">
+                <div class="math-columbia flex items-center justify-center gap-1 mb-2">
+                    <div>E</div>
+                    <div>=</div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div>
+                            2x<sup>2</sup> − x − 5
+                        </div>
+                        <div class="h-px bg-black w-36 mt-2"></div>
+                        <div class="-mt-2">(x − 3) (x − 4) (x − 5)</div>
+                    </div>
+                </div>
+                <p>Substituting <span class="math-columbia">x = 3, 4, 5</span></p>
+                <p class="mb-1">For A, set <span class="math-columbia">x = 3</span>: Ignore <span
+                        class="math-columbia">(x - 3)</span> in the denominator and evaluate:</p>
+                <div class="math-columbia flex items-center justify-center gap-1 mb-2">
+                    <div>A</div>
+                    <div>=</div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div>
+                            2(3)<sup>2</sup> − 3 − 5
+                        </div>
+                        <div class="h-px bg-black w-28 mt-2"></div>
+                        <div class="-mt-2">(3 − 4) (3 − 5)</div>
+                    </div>
+                    <div>=</div>
+                    <div>5</div>
+                </div>
+                <p class="mb-1">For B, set <span class="math-columbia">x = 4</span>: Ignore <span
+                        class="math-columbia">(x − 4)</span>:</p>
+                <div class="math-columbia flex items-center justify-center gap-1 mb-2">
+                    <div>B</div>
+                    <div>=</div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div>
+                            2(4)<sup>2</sup> − 4 − 5
+                        </div>
+                        <div class="h-px bg-black w-28 mt-2"></div>
+                        <div class="-mt-2">(4 − 3) (4 − 5)</div>
+                    </div>
+                    <div>=</div>
+                    <div>-23</div>
+                </div>
+                <p class="mb-1">For C, set <span class="math-columbia">x = 5</span>: Ignore <span
+                        class="math-columbia">(x − 5)</span>:</p>
+                
+            
+                <div class="math-columbia flex items-center justify-center gap-1 mb-2">
+                    <div>C</div>
+                    <div>=</div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div>
+                            2(5)<sup>2</sup> − 5 − 5
+                        </div>
+                        <div class="h-px bg-black w-28 mt-2"></div>
+                        <div class="-mt-2">(5 − 3) (5 − 4)</div>
+                    </div>
+                    <div>=</div>
+                    <div>20</div>
+                </div>
+                <p class="mb-1"><b>Solution:</b></p>
+                <div class="flex justify-center items-center gap-2">
                     <div>
-                        <div>
-                            <strong>1. Given Relation: </strong>P<sub>total</sub> = 100 kPa, and molar masses for oxygen
-                            (x = 32), nitrogen (x = 28), and carbon dioxide (x = 44).
-                        </div>
-                        <div>
-                            <div>
-                                <strong>2. Break into Partial Fractions: </strong>
-                            </div>
-                            <div class="flex justify-center items-center gap-2">
-                                <div class="math-columbia flex flex-col items-center">
-                                    <div>A</div>
-                                    <div class="h-px bg-black w-10 mt-2"></div>
-                                    <div class="-mt-3">(x - 32)</div>
-                                </div>
-                                <div>+</div>
-                                <div class="math-columbia flex flex-col items-center">
-                                    <div>B</div>
-                                    <div class="h-px bg-black w-10 mt-2"></div>
-                                    <div class="-mt-3">(x - 28)</div>
-                                </div>
-                                <div>+</div>
-                                <div class="math-columbia flex flex-col items-center">
-                                    <div>C</div>
-                                    <div class="h-px bg-black w-10 mt-2"></div>
-                                    <div class="-mt-3">(x - 44)</div>
-                                </div>
-                                <div>,</div>
-                            </div>
-                            <div>
-                                we find A, B, and C by substituting the roots of x as 32,28, and 44.
-                            </div>
-                        </div>
-                        <div>
-                            <strong>3. Solve for A, B, C:</strong>
-                        </div>
-                        <div class="pl-12 space-y-1">
-                            <div class="flex items-end">
-                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p><strong>For A:</strong> Set x = 32. Ignore the (x − 32) term and evaluate: </p>
-                            </div>
-                            <div>
-                                <div class="flex justify-center items-center gap-2">
-                                    <div>A</div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-24 mt-2"></div>
-                                        <div class="-mt-3">(32 - 28)(32 - 44)</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-12 mt-2"></div>
-                                        <div class="-mt-3">4(-12)</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-10 mt-2"></div>
-                                        <div class="-mt-3">-48</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div>-2.08 kPa</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pl-12 space-y-1">
-                            <div class="flex items-end">
-                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p><strong>For B:</strong> Set x=28. Ignore the (x−28) term and evaluate: </p>
-                            </div>
-                            <div>
-                                <div class="flex justify-center items-center gap-2">
-                                    <div>B</div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-24 mt-2"></div>
-                                        <div class="-mt-3">(28 - 32)(28 - 44)</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-16 mt-2"></div>
-                                        <div class="-mt-3">(-4)(-16)</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-10 mt-2"></div>
-                                        <div class="-mt-3">64</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div>1.56 kPa</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pl-12 space-y-1">
-                            <div class="flex items-end">
-                                <span class="w-1.5 h-1.5 mr-2 bg-black rounded-full"></span>
-                                <p><strong>For C:</strong> Set x=44. Ignore the (x−44) term and evaluate: </p>
-                            </div>
-                            <div>
-                                <div class="flex justify-center items-center gap-2">
-                                    <div>C</div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-24 mt-2"></div>
-                                        <div class="-mt-3">(44 - 32)(44 - 28)</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-16 mt-2"></div>
-                                        <div class="-mt-3">(16)(12)</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>100</div>
-                                        <div class="h-px bg-black w-10 mt-2"></div>
-                                        <div class="-mt-3">192</div>
-                                    </div>
-                                    <div>=</div>
-                                    <div>0.52 kPa</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <strong>4. <b>Solution:</b> The partial pressures are:</strong>
-                        </div>
-                        <div class="pl-12 space-y-1">
-                            <div>
-                                <div class="flex justify-center items-center gap-2">
-                                    <div>P<sub>O<sub>2</sub></div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>-2.08</div>
-                                        <div class="h-px bg-black w-16 mt-2"></div>
-                                        <div class="-mt-3">(x - 32)</div>
-                                    </div>
-                                    <div>,</div>
-                                    <div>P<sub>N<sub>2</sub></div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>1.56</div>
-                                        <div class="h-px bg-black w-16 mt-2"></div>
-                                        <div class="-mt-3">(x - 28)</div>
-                                    </div>
-                                    <div>,</div>
-                                    <div>P<sub>CO<sub>2</sub></div>
-                                    <div>=</div>
-                                    <div class="math-columbia flex flex-col items-center">
-                                        <div>0.52</div>
-                                        <div class="h-px bg-black w-16 mt-2"></div>
-                                        <div class="-mt-3">(x - 44)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        E
+                    </div>
+                    <div>=</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>5</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">x - 3</div>
+                    </div>
+                    <div>-</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>23</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">x - 4</div>
+                    </div>
+                    <div>+</div>
+                    <div class="math-columbia flex flex-col items-center">
+                        <div>20</div>
+                        <div class="h-px bg-black w-10 mt-2"></div>
+                        <div class="-mt-3">x - 5</div>
                     </div>
                 </div>
             </div>
 
-            <div class="pb-2 bg-gradient-to-r from-[#A3D1C6] to-[#E3D2C3] px-2 mb-14 rounded-lg">
-                <p class=" text-justify">Parāvartya Yojayet simplifies
-                    complex operations like division, equation solving, and partial fraction decomposition by using
-                    transposition and sign reversal. Its logical structure supports accurate and efficient
-                    problem-solving in scientific applications such as dilution calculations, gas laws, and polynomial
-                    breakdowns that make it a powerful tool for algebraic reasoning in chemistry and related fields.
-                </p>
-            </div>
-
-            <div class="px-2 text-center">
-                <p class="text-[#6B3F69] font-bold cinzel">
-                    Sutra 5. Shunyam Sämyasamuchchaye (
-                    <span style="font-family: 'Noto Serif Devanagari', serif;">
-                        शून्यं साम्यसमुच्चये
-                    </span>)
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Meaning:</strong> If the samuchchaya is the same, it is zero.
-                </p>
-                <p class="text-[#6B3F69]">
-                    <strong>Use:</strong> This sutra is used to determine those numbers which is common to all, that
-                    must be equal to zero. This may be used in the following ways.
-                </p>
-            </div>
+            <p class="spectral font-bold">Application of the Parāvartya in Chemistry: Concentration Dilution
+                Calculation</p>
     </section>
 
     <!-- Download button -->
